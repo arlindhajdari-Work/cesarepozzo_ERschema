@@ -1,0 +1,1092 @@
+[
+  {
+      "title": "db/Accounts",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "accountname",
+          "account_no",
+          "phone",
+          "website",
+          "fax",
+          "tickersymbol",
+          "otherphone",
+          "account_id",
+          "email1",
+          "employees",
+          "email2",
+          "ownership",
+          "rating",
+          "industry",
+          "siccode",
+          "accounttype",
+          "annual_revenue",
+          "assigned_user_id",
+          "phone_extra",
+          "mission_statement",
+          "welfare",
+          "otherfax",
+          "vats_id",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby",
+          "bill_street",
+          "ship_street",
+          "bill_city",
+          "ship_city",
+          "bill_state",
+          "ship_state",
+          "bill_code",
+          "ship_code",
+          "bill_country",
+          "ship_country",
+          "bill_pobox",
+          "ship_pobox",
+          "description",
+          "campaignrelstatus",
+          "isconvertedfromlead",
+          "convertedfromlead",
+          "created_user_id",
+          "oldid"
+      ],
+      "text": "* accountname\n* account_no\n* phone\n* website\n* fax\n* tickersymbol\n* otherphone\n* account_id\n* email1\n* employees\n* email2\n* ownership\n* rating\n* industry\n* siccode\n* accounttype\n* annual_revenue\n* assigned_user_id\n* phone_extra\n* mission_statement\n* welfare\n* otherfax\n* vats_id\n* createdtime\n* modifiedtime\n* modifiedby\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* oldid"
+  },
+  {
+      "title": "db/Assets",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "serialnumber",
+          "name",
+          "asset_no",
+          "product",
+          "dateinservice",
+          "purchase_date",
+          "invoice_name",
+          "invoice_no",
+          "category",
+          "status",
+          "subasset",
+          "assetservice",
+          "assetserviceid",
+          "vendor_id",
+          "contactid",
+          "lastservice_date",
+          "purchase_cost",
+          "parentid",
+          "invoice_status",
+          "assigned_user_id",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby",
+          "description",
+          "imageformat",
+          "imageid"
+      ],
+      "text": "* serialnumber\n* name\n* asset_no\n* product\n* dateinservice\n* purchase_date\n* invoice_name\n* invoice_no\n* category\n* status\n* subasset\n* assetservice\n* assetserviceid\n* vendor_id\n* contactid\n* lastservice_date\n* purchase_cost\n* parentid\n* invoice_status\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* imageformat\n* imageid"
+  },
+  {
+      "title": "db/AutoNumberPrefix",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "module",
+          "prefix",
+          "prelength",
+          "current_id",
+          "active",
+          "createdtime",
+          "modifiedtime"
+      ],
+      "text": "* module\n* prefix\n* prelength\n* current_id\n* active\n* createdtime\n* modifiedtime"
+  },
+  {
+      "title": "db/BusinessActions",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "action",
+          "businessactionsid",
+          "businessactions_relid",
+          "relatedmodule",
+          "actname",
+          "reftype",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby"
+      ],
+      "text": "* action\n* businessactionsid\n* businessactions_relid\n* relatedmodule\n* actname\n* reftype\n* createdtime\n* modifiedtime\n* modifiedby"
+  },
+  {
+      "title": "db/CPParent",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "cp_parent_id",
+          "cp_name",
+          "cp_parent_type",
+          "p_createdtime",
+          "p_modifiedtime",
+          "p_modifiedby",
+          "description"
+      ],
+      "text": "* cp_parent_id\n* cp_name\n* cp_parent_type\n* p_createdtime\n* p_modifiedtime\n* p_modifiedby\n* description"
+  },
+  {
+      "title": "db/CPRelatedTo",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "cp_relatedto_id",
+          "cp_name",
+          "cp_parent_id",
+          "cp_related_type",
+          "r_createdtime",
+          "r_modifiedtime",
+          "r_modifiedby",
+          "description"
+      ],
+      "text": "* cp_relatedto_id\n* cp_name\n* cp_parent_id\n* cp_related_type\n* r_createdtime\n* r_modifiedtime\n* r_modifiedby\n* description"
+  },
+  {
+      "title": "db/Campaigns",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "campaignname",
+          "campaign_no",
+          "campaignstatus",
+          "campaigntype",
+          "product_id",
+          "targetaudience",
+          "targetsize",
+          "numsent",
+          "numresponded",
+          "expectedrevenue",
+          "budgetcost",
+          "actualcost",
+          "expectedresponse",
+          "assigned_user_id",
+          "startdate",
+          "enddate",
+          "expectedrevenue_date",
+          "actualcost_date",
+          "product",
+          "num_views",
+          "expectedenddate",
+          "productname",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby",
+          "description",
+          "targetaudiencetype",
+          "campaign_layout_id",
+          "campaignrelstatus",
+          "relatedto",
+          "sponsor",
+          "targetaudience_ref",
+          "campaign_subtype",
+          "ctc_supplier"
+      ],
+      "text": "* campaignname\n* campaign_no\n* campaignstatus\n* campaigntype\n* product_id\n* targetaudience\n* targetsize\n* numsent\n* numresponded\n* expectedrevenue\n* budgetcost\n* actualcost\n* expectedresponse\n* assigned_user_id\n* startdate\n* enddate\n* expectedrevenue_date\n* actualcost_date\n* product\n* num_views\n* expectedenddate\n* productname\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* targetaudiencetype\n* campaign_layout_id\n* campaignrelstatus\n* relatedto\n* sponsor\n* targetaudience_ref\n* campaign_subtype\n* ctc_supplier"
+  },
+  {
+      "title": "db/CobroPago",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "cta_nombreditada",
+          "cta_clavecobropago",
+          "cta_nombrecliente",
+          "cta_estatus",
+          "cta_nmodulo",
+          "cta_periodo",
+          "cta_ncomponente",
+          "cta_glosa",
+          "cta_abreviatura",
+          "cta_operacion",
+          "cta_ultimologins",
+          "cta_time",
+          "cta_numdoc",
+          "cta_total",
+          "cta_detalle",
+          "cta_iva",
+          "cta_debito",
+          "cta_abono",
+          "cta_saldo",
+          "cta_recibefactura"
+      ],
+      "text": "* cta_nombreditada\n* cta_clavecobropago\n* cta_nombrecliente\n* cta_estatus\n* cta_nmodulo\n* cta_periodo\n* cta_ncomponente\n* cta_glosa\n* cta_abreviatura\n* cta_operacion\n* cta_ultimologins\n* cta_time\n* cta_numdoc\n* cta_total\n* cta_detalle\n* cta_iva\n* cta_debito\n* cta_abono\n* cta_saldo\n* cta_recibefactura"
+  },
+  {
+      "title": "db/ConfigEditor",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "fieldname",
+          "thedescription",
+          "fieldvalue",
+          "modifiedby",
+          "modifiedtime",
+          "createdtime",
+          "confideditorid"
+      ],
+      "text": "* fieldname\n* thedescription\n* fieldvalue\n* modifiedby\n* modifiedtime\n* createdtime\n* confideditorid"
+  },
+  {
+      "title": "db/Contacts",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "salutationtype",
+          "firstname",
+          "contact_no",
+          "phone",
+          "lastname",
+          "mobile",
+          "account_id",
+          "homephone",
+          "leadsource",
+          "otherphone",
+          "title",
+          "fax",
+          "department",
+          "birthday",
+          "assistant",
+          "mailingstreet",
+          "otherstreet",
+          "mailingcity",
+          "othercity",
+          "mailingstate",
+          "otherstate",
+          "mailingzip",
+          "otherzip",
+          "mailingcountry",
+          "othercountry",
+          "mailingpobox",
+          "otherpobox",
+          "imagename",
+          "description",
+          "campaignrelstatus",
+          "isconvertedfromlead",
+          "convertedfromlead",
+          "created_user_id",
+          "template_language",
+          "portalpasswordtype",
+          "portalloginuser",
+          "oldid"
+      ],
+      "text": "* salutationtype\n* firstname\n* contact_no\n* phone\n* lastname\n* mobile\n* account_id\n* homephone\n* leadsource\n* otherphone\n* title\n* fax\n* department\n* birthday\n* assistant\n* mailingstreet\n* otherstreet\n* mailingcity\n* othercity\n* mailingstate\n* otherstate\n* mailingzip\n* otherzip\n* mailingcountry\n* othercountry\n* mailingpobox\n* otherpobox\n* imagename\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* template_language\n* portalpasswordtype\n* portalloginuser\n* oldid"
+  },
+  {
+      "title": "db/CustomViews",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "cvid",
+          "viewname",
+          "setdefault",
+          "status",
+          "entitytype",
+          "viewcontent",
+          "usrid",
+          "createdtime",
+          "modifiedtime",
+          "status",
+          "entitytype"
+      ],
+      "text": "* cvid\n* viewname\n* setdefault\n* status\n* entitytype\n* viewcontent\n* usrid\n* createdtime\n* modifiedtime\n* status\n* entitytype"
+  },
+  {
+      "title": "db/EmailsOptOut",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "email_opt_out_id",
+          "email_opt_out",
+          "type",
+          "assigned_user_id",
+          "createdtime",
+          "modifiedtime",
+          "description"
+      ],
+      "text": "* email_opt_out_id\n* email_opt_out\n* type\n* assigned_user_id\n* createdtime\n* modifiedtime\n* description"
+  },
+  {
+      "title": "db/Entities",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "fieldname",
+          "tablename",
+          "entityidfield",
+          "sec_table",
+          "sec_table_keyfield",
+          "defaultincrement",
+          "fieldid",
+          "visible",
+          "modules",
+          "imgname",
+          "parentid",
+          "popup",
+          "type",
+          "setype",
+          "workflow",
+          "handler",
+          "jsfile",
+          "sequence",
+          "iscustommodule",
+          "showinmodule",
+          "promogroup",
+          "allowduplicates",
+          "uitype",
+          "show_title",
+          "show_filters",
+          "hide_columns",
+          "required_in_sequence"
+      ],
+      "text": "* fieldname\n* tablename\n* entityidfield\n* sec_table\n* sec_table_keyfield\n* defaultincrement\n* fieldid\n* visible\n* modules\n* imgname\n* parentid\n* popup\n* type\n* setype\n* workflow\n* handler\n* jsfile\n* sequence\n* iscustommodule\n* showinmodule\n* promogroup\n* allowduplicates\n* uitype\n* show_title\n* show_filters\n* hide_columns\n* required_in_sequence"
+  },
+  {
+      "title": "db/FaqCategories",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "faqcategoriesid",
+          "category",
+          "parent_id",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby"
+      ],
+      "text": "* faqcategoriesid\n* category\n* parent_id\n* createdtime\n* modifiedtime\n* modifiedby"
+  },
+  {
+      "title": "db/FaqHasComments",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "faq_id",
+          "comments_id",
+          "createdtime"
+      ],
+      "text": "* faq_id\n* comments_id\n* createdtime"
+  },
+  {
+      "title": "db/FaqRelatedTo",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "faqrelatedid",
+          "faqid",
+          "related_module",
+          "related_id",
+          "createdtime"
+      ],
+      "text": "* faqrelatedid\n* faqid\n* related_module\n* related_id\n* createdtime"
+  },
+  {
+      "title": "db/Faqs",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "faqid",
+          "question",
+          "category_id",
+          "faq_no",
+          "product_id",
+          "description",
+          "folderid",
+          "faqstatus",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby"
+      ],
+      "text": "* faqid\n* question\n* category_id\n* faq_no\n* product_id\n* description\n* folderid\n* faqstatus\n* createdtime\n* modifiedtime\n* modifiedby"
+  },
+  {
+      "title": "db/GITUpdates",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "projectname",
+          "updfilename",
+          "updatefile",
+          "version",
+          "deleted",
+          "description"
+      ],
+      "text": "* projectname\n* updfilename\n* updatefile\n* version\n* deleted\n* description"
+  },
+  {
+      "title": "db/HomePageBlocks",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "blockid",
+          "module",
+          "sequence",
+          "smodule",
+          "sblockid",
+          "action",
+          "createdtime",
+          "modifiedtime"
+      ],
+      "text": "* blockid\n* module\n* sequence\n* smodule\n* sblockid\n* action\n* createdtime\n* modifiedtime"
+  },
+  {
+      "title": "db/InternalComments",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "commentsid",
+          "related_to",
+          "from_roleid",
+          "to_roleid",
+          "from_id",
+          "from_name",
+          "from_email",
+          "to_name",
+          "to_email",
+          "assigned_date",
+          "sent_date",
+          "status",
+          "comtype",
+          "feedback",
+          "questionid",
+          "createdtime",
+          "modifiedtime"
+      ],
+      "text": "* commentsid\n* related_to\n* from_roleid\n* to_roleid\n* from_id\n* from_name\n* from_email\n* to_name\n* to_email\n* assigned_date\n* sent_date\n* status\n* comtype\n* feedback\n* questionid\n* createdtime\n* modifiedtime"
+  },
+  {
+      "title": "db/Invoice",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "invoiceno",
+          "invoice_date",
+          "due_date",
+          "status",
+          "recur_type",
+          "assigned_user_id",
+          "sub_total",
+          "exciseduty",
+          "grand_total",
+          "shipper_id",
+          "bill_street",
+          "ship_street",
+          "bill_city",
+          "ship_city",
+          "bill_state",
+          "ship_state",
+          "bill_code",
+          "ship_code",
+          "bill_country",
+          "ship_country",
+          "bill_pobox",
+          "ship_pobox",
+          "paid"
+      ],
+      "text": "* invoiceno\n* invoice_date\n* due_date\n* status\n* recur_type\n* assigned_user_id\n* sub_total\n* exciseduty\n* grand_total\n* shipper_id\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* paid"
+  },
+  {
+      "title": "db/Labels",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "id_labels",
+          "labelname",
+          "fieldname",
+          "description"
+      ],
+      "text": "* id_labels\n* labelname\n* fieldname\n* description"
+  },
+  {
+      "title": "db/MailingList",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "publicidad",
+          "mailingtipo",
+          "permiso",
+          "domicilio",
+          "urbanizacion",
+          "district",
+          "municipio",
+          "telefono2",
+          "telefono1",
+          "telefono4",
+          "telefono3",
+          "telefono5",
+          "telefono6",
+          "telefono",
+          "parroquia",
+          "correo2",
+          "correo",
+          "municipiocontacto",
+          "nombres",
+          "apellidos",
+          "cedula",
+          "sexo",
+          "fecharel",
+          "lista",
+          "listaespecial",
+          "imagenombre",
+          "activo",
+          "id_mailist"
+      ],
+      "text": "* publicidad\n* mailingtipo\n* permiso\n* domicilio\n* urbanizacion\n* district\n* municipio\n* telefono2\n* telefono1\n* telefono4\n* telefono3\n* telefono5\n* telefono6\n* telefono\n* parroquia\n* correo2\n* correo\n* municipiocontacto\n* nombres\n* apellidos\n* cedula\n* sexo\n* fecharel\n* lista\n* listaespecial\n* imagenombre\n* activo\n* id_mailist"
+  },
+  {
+      "title": "db/Meetings",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "description",
+          "meeting_no",
+          "meeting_subject",
+          "location",
+          "status",
+          "assigned_user_id",
+          "priority",
+          "startdate",
+          "starttime",
+          "enddate",
+          "endtime",
+          "duration_hours",
+          "duration_minutes",
+          "contact_id",
+          "reminder_time",
+          "sendnotification",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby"
+      ],
+      "text": "* description\n* meeting_no\n* meeting_subject\n* location\n* status\n* assigned_user_id\n* priority\n* startdate\n* starttime\n* enddate\n* endtime\n* duration_hours\n* duration_minutes\n* contact_id\n* reminder_time\n* sendnotification\n* createdtime\n* modifiedtime\n* modifiedby"
+  },
+  {
+      "title": "db/Notes",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "notecontent",
+          "filename",
+          "filetype",
+          "filesize",
+          "filelocationtype",
+          "filestatus",
+          "downloadcount",
+          "note_no",
+          "parentid",
+          "assigned_user_id",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby",
+          "id"
+      ],
+      "text": "* notecontent\n* filename\n* filetype\n* filesize\n* filelocationtype\n* filestatus\n* downloadcount\n* note_no\n* parentid\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* id"
+  },
+  {
+      "title": "db/OrganizationDetails",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "organization_name",
+          "website",
+          "tvlcity",
+          "approval_status",
+          "organization_address",
+          "state",
+          "country",
+          "zipcode",
+          "city",
+          "phone",
+          "fax",
+          "logoname",
+          "vatid",
+          "userid",
+          "taxid",
+          "email",
+          "portal",
+          "currency_name",
+          "currency_symbol",
+          "currency_code",
+          "createdtime",
+          "modifiedtime",
+          "oldid"
+      ],
+      "text": "* organization_name\n* website\n* tvlcity\n* approval_status\n* organization_address\n* state\n* country\n* zipcode\n* city\n* phone\n* fax\n* logoname\n* vatid\n* userid\n* taxid\n* email\n* portal\n* currency_name\n* currency_symbol\n* currency_code\n* createdtime\n* modifiedtime\n* oldid"
+  },
+  {
+      "title": "db/PaymentDetails",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "account_name",
+          "account_no",
+          "transaction_id",
+          "module",
+          "payment_no",
+          "bank_transfer_date",
+          "bank_name",
+          "bank_account_name",
+          "bank_account_no",
+          "routing_number",
+          "branch_code",
+          "swift_code",
+          "cheque_date",
+          "cheque_amount",
+          "cheque_no",
+          "account_ids",
+          "paid",
+          "invoicenumber",
+          "createdtime",
+          "modifiedtime",
+          "oldid"
+      ],
+      "text": "* account_name\n* account_no\n* transaction_id\n* module\n* payment_no\n* bank_transfer_date\n* bank_name\n* bank_account_name\n* bank_account_no\n* routing_number\n* branch_code\n* swift_code\n* cheque_date\n* cheque_amount\n* cheque_no\n* account_ids\n* paid\n* invoicenumber\n* createdtime\n* modifiedtime\n* oldid"
+  },
+  {
+      "title": "db/Potentials",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "potentialname",
+          "potential_no",
+          "amount",
+          "related_to",
+          "closingdate",
+          "opportunity_type",
+          "nextstep",
+          "leadsource",
+          "sales_stage",
+          "assigned_user_id",
+          "probability",
+          "campaignid",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby",
+          "description",
+          "forecast_amount",
+          "email",
+          "isconvertedfromlead",
+          "convertedfromlead"
+      ],
+      "text": "* potentialname\n* potential_no\n* amount\n* related_to\n* closingdate\n* opportunity_type\n* nextstep\n* leadsource\n* sales_stage\n* assigned_user_id\n* probability\n* campaignid\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* forecast_amount\n* email\n* isconvertedfromlead\n* convertedfromlead"
+  },
+  {
+      "title": "db/PriceBooks",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "pricebookname",
+          "active",
+          "description",
+          "assigned_user_id",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby"
+      ],
+      "text": "* pricebookname\n* active\n* description\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby"
+  },
+  {
+      "title": "db/PriceBook2Product",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "pricebookid",
+          "productid",
+          "listprice",
+          "usedcurrency",
+          "createdtime",
+          "modifiedtime",
+          "description"
+      ],
+      "text": "* pricebookid\n* productid\n* listprice\n* usedcurrency\n* createdtime\n* modifiedtime\n* description"
+  },
+  {
+      "title": "db/ProductComponent",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "productid",
+          "componentmodule",
+          "componentid",
+          "comptype",
+          "sequence",
+          "assigned_user_id",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby",
+          "status",
+          "description"
+      ],
+      "text": "* productid\n* componentmodule\n* componentid\n* comptype\n* sequence\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* status\n* description"
+  },
+  {
+      "title": "db/ProductComponentBuild",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "buildid",
+          "componentid",
+          "version",
+          "description",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby"
+      ],
+      "text": "* buildid\n* componentid\n* version\n* description\n* createdtime\n* modifiedtime\n* modifiedby"
+  },
+  {
+      "title": "db/ProductComponentTypes",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "component_type",
+          "singular",
+          "plural",
+          "description",
+          "userid",
+          "active",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby"
+      ],
+      "text": "* component_type\n* singular\n* plural\n* description\n* userid\n* active\n* createdtime\n* modifiedtime\n* modifiedby"
+  },
+  {
+      "title": "db/ProductCosts",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "productcostid",
+          "productid",
+          "productcost_no",
+          "currency_id",
+          "unit_cost",
+          "active",
+          "createdtime",
+          "modifiedtime"
+      ],
+      "text": "* productcostid\n* productid\n* productcost_no\n* currency_id\n* unit_cost\n* active\n* createdtime\n* modifiedtime"
+  },
+  {
+      "title": "db/ProductGLAccount",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "product_id",
+          "gl_account",
+          "createdtime",
+          "modifiedtime"
+      ],
+      "text": "* product_id\n* gl_account\n* createdtime\n* modifiedtime"
+  },
+  {
+      "title": "db/Products",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "productname",
+          "productcode",
+          "serialnumber",
+          "qty_per_unit",
+          "listprice",
+          "unit_price",
+          "commissionrate",
+          "manufacturer",
+          "startdate",
+          "expirydate",
+          "serial_number",
+          "website",
+          "vendor_id",
+          "qtyinstock",
+          "reorderlevel",
+          "productcategory",
+          "taxclass",
+          "cost_factor",
+          "qty_per_unit",
+          "assigned_user_id",
+          "discontinued",
+          "services",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby",
+          "description",
+          "weight",
+          "imagefile"
+      ],
+      "text": "* productname\n* productcode\n* serialnumber\n* qty_per_unit\n* listprice\n* unit_price\n* commissionrate\n* manufacturer\n* startdate\n* expirydate\n* serial_number\n* website\n* vendor_id\n* qtyinstock\n* reorderlevel\n* productcategory\n* taxclass\n* cost_factor\n* qty_per_unit\n* assigned_user_id\n* discontinued\n* services\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* weight\n* imagefile"
+  },
+  {
+      "title": "db/ProjectMilestone",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "projectmilestoneid",
+          "projectmilestonename",
+          "projectid",
+          "startdate",
+          "projectmilestone_no",
+          "assigned_user_id",
+          "projectmilestonedate",
+          "description",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby",
+          "targetenddate",
+          "targetstartdate"
+      ],
+      "text": "* projectmilestoneid\n* projectmilestonename\n* projectid\n* startdate\n* projectmilestone_no\n* assigned_user_id\n* projectmilestonedate\n* description\n* createdtime\n* modifiedtime\n* modifiedby\n* targetenddate\n* targetstartdate"
+  },
+  {
+      "title": "db/ProjectTask",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "projecttaskid",
+          "projecttaskname",
+          "projectid",
+          "milestoneid",
+          "projecttaskpriority",
+          "projecttaskprogress",
+          "assigned_user_id",
+          "startdate",
+          "targetenddate",
+          "targetstartdate",
+          "projecttask_no",
+          "status",
+          "parentid",
+          "depends_on",
+          "projecttaskestimatedwork",
+          "projecttaskactualwork",
+          "projecttaskremainingwork",
+          "projecttaskplannedwork",
+          "projecttaskdate",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby",
+          "description"
+      ],
+      "text": "* projecttaskid\n* projecttaskname\n* projectid\n* milestoneid\n* projecttaskpriority\n* projecttaskprogress\n* assigned_user_id\n* startdate\n* targetenddate\n* targetstartdate\n* projecttask_no\n* status\n* parentid\n* depends_on\n* projecttaskestimatedwork\n* projecttaskactualwork\n* projecttaskremainingwork\n* projecttaskplannedwork\n* projecttaskdate\n* createdtime\n* modifiedtime\n* modifiedby\n* description"
+  },
+  {
+      "title": "db/ProjectTaskPredecessors",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "precedenceid",
+          "projecttaskid",
+          "predecessor",
+          "sequence",
+          "createdtime",
+          "modifiedtime"
+      ],
+      "text": "* precedenceid\n* projecttaskid\n* predecessor\n* sequence\n* createdtime\n* modifiedtime"
+  },
+  {
+      "title": "db/Projects",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "projectname",
+          "startdate",
+          "targetenddate",
+          "targetstartdate",
+          "project_no",
+          "projectstatus",
+          "estimated_work_time",
+          "actual_work_time",
+          "targetbudget",
+          "projectpriority",
+          "projectdescription",
+          "assigned_user_id",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby"
+      ],
+      "text": "* projectname\n* startdate\n* targetenddate\n* targetstartdate\n* project_no\n* projectstatus\n* estimated_work_time\n* actual_work_time\n* targetbudget\n* projectpriority\n* projectdescription\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby"
+  },
+  {
+      "title": "db/ProjectTaskSubtasks",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "subtasksid",
+          "projecttaskid",
+          "status",
+          "taskstartdate",
+          "taskenddate",
+          "taskpriority",
+          "assigned_user_id",
+          "total_work",
+          "actual_work",
+          "remaining_work",
+          "planned_work",
+          "updatedtime",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby",
+          "projecttasksid"
+      ],
+      "text": "* subtasksid\n* projecttaskid\n* status\n* taskstartdate\n* taskenddate\n* taskpriority\n* assigned_user_id\n* total_work\n* actual_work\n* remaining_work\n* planned_work\n* updatedtime\n* createdtime\n* modifiedtime\n* modifiedby\n* projecttasksid"
+  },
+  {
+      "title": "db/ProjectTaskUser",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "projecttaskid",
+          "users",
+          "createdtime",
+          "modifiedtime"
+      ],
+      "text": "* projecttaskid\n* users\n* createdtime\n* modifiedtime"
+  },
+  {
+      "title": "db/ProjectTaskGantt",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "user",
+          "projecttaskid"
+      ],
+      "text": "* user\n* projecttaskid"
+  },
+  {
+      "title": "db/Roles",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "roleid",
+          "parentrole",
+          "depth",
+          "rolename",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby"
+      ],
+      "text": "* roleid\n* parentrole\n* depth\n* rolename\n* createdtime\n* modifiedtime\n* modifiedby"
+  },
+  {
+      "title": "db/SalesOrders",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "subject",
+          "salesorder_no",
+          "quotation_no",
+          "contact_id",
+          "account_id",
+          "duedate",
+          "carrier",
+          "deliverydate",
+          "sales_stage",
+          "assigned_user_id",
+          "total",
+          "subtotal",
+          "taxtype",
+          "s_h_amount",
+          "adjustment",
+          "discount_percent",
+          "discount_amount",
+          "salescommission",
+          "exciseduty",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby",
+          "description"
+      ],
+      "text": "* subject\n* salesorder_no\n* quotation_no\n* contact_id\n* account_id\n* duedate\n* carrier\n* deliverydate\n* sales_stage\n* assigned_user_id\n* total\n* subtotal\n* taxtype\n* s_h_amount\n* adjustment\n* discount_percent\n* discount_amount\n* salescommission\n* exciseduty\n* createdtime\n* modifiedtime\n* modifiedby\n* description"
+  },
+  {
+      "title": "db/ServiceContracts",
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "servicename",
+          "contract_no",
+          "salesorder_id",
+          "status",
+          "total_units",
+          "used_units",
+          "startdate",
+          "duedate",
+          "priority",
+          "billing_cycle",
+          "assigned_user_id",
+          "createdtime",
+          "modifiedtime",
+          "modifiedby",
+          "description"
+      ],
+      "text": "* servicename\n* contract_no\n* salesorder_id\n* status\n* total_units\n* used_units\n* startdate\n* duedate\n* priority\n* billing_cycle\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* description"
+  },
+  {
+      "title": "db/ServiceContractsAgain", 
+      "tags": [
+          "map-node"
+      ],
+      "fields": [
+          "description",
+          "contract_no",
+          "status",
+          "total_units",
+          "used_units",
+          "startdate",
+          "duedate",
+          "priority",
+          "billing_cycle",
+          "assigned_user_id"
+      ],
+      "text": "* description\n* contract_no\n* status\n* total_units\n* used_units\n* startdate\n* duedate\n* priority\n* billing_cycle\n* assigned_user_id"
+  }
+]
