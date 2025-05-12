@@ -1,0 +1,905 @@
+[
+  {
+    "title": "db/Potentials",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* potentialname\n* potential_no\n* amount\n* related_to\n* closingdate\n* opportunity_type\n* nextstep\n* leadsource\n* sales_stage\n* assigned_user_id\n* probability\n* campaignid\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* forecast_amount\n* email\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id"
+  },
+  {
+    "title": "db/Contacts",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* salutationtype\n* firstname\n* contact_no\n* phone\n* lastname\n* mobile\n* account_id\n* homephone\n* leadsource\n* otherphone\n* title\n* fax\n* department\n* birthday\n* email\n* contact_id\n* assistant\n* secondaryemail\n* assistantphone\n* donotcall\n* emailoptout\n* assigned_user_id\n* reference\n* notify_owner\n* createdtime\n* modifiedtime\n* modifiedby\n* portal\n* support_start_date\n* support_end_date\n* mailingstreet\n* otherstreet\n* mailingcity\n* othercity\n* mailingstate\n* otherstate\n* mailingzip\n* otherzip\n* mailingcountry\n* othercountry\n* mailingpobox\n* otherpobox\n* imagename\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* template_language\n* portalpasswordtype\n* portalloginuser\n* oldid",
+    "map-to": [
+      "db/Accounts",
+      "db/Contacts"
+    ]
+  },
+  {
+    "title": "db/Accounts",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* accountname\n* account_no\n* phone\n* website\n* fax\n* tickersymbol\n* otherphone\n* account_id\n* email1\n* employees\n* email2\n* ownership\n* rating\n* industry\n* siccode\n* accounttype\n* annual_revenue\n* emailoptout\n* notify_owner\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* oldid",
+    "map-to": [
+      "db/Accounts"
+    ]
+  },
+  {
+    "title": "db/Leads",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* salutationtype\n* firstname\n* lead_no\n* phone\n* lastname\n* mobile\n* company\n* fax\n* designation\n* email\n* leadsource\n* website\n* industry\n* leadstatus\n* annualrevenue\n* rating\n* noofemployees\n* assigned_user_id\n* secondaryemail\n* createdtime\n* modifiedtime\n* modifiedby\n* lane\n* code\n* city\n* country\n* state\n* pobox\n* description\n* campaignrelstatus\n* emailoptout\n* created_user_id"
+  },
+  {
+    "title": "db/Documents",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* notes_title\n* createdtime\n* modifiedtime\n* filename\n* assigned_user_id\n* notecontent\n* filetype\n* filesize\n* filelocationtype\n* fileversion\n* filestatus\n* filedownloadcount\n* folderid\n* note_no\n* modifiedby\n* created_user_id\n* template\n* template_for\n* mergetemplate\n* document_number\n* document_category\n* document_date"
+  },
+  {
+    "title": "db/Emails",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* date_start\n* parent_type\n* activitytype\n* assigned_user_id\n* subject\n* filename\n* description\n* time_start\n* createdtime\n* modifiedtime\n* access_count\n* modifiedby\n* from_email\n* saved_toid\n* ccmail\n* bccmail\n* parent_id\n* email_flag\n* bounce\n* clicked\n* spamreport\n* delivered\n* dropped\n* open\n* unsubscribe\n* replyto"
+  },
+  {
+    "title": "db/HelpDesk",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* ticket_no\n* assigned_user_id\n* parent_id\n* ticketpriorities\n* product_id\n* ticketseverities\n* ticketstatus\n* ticketcategories\n* update_log\n* hours\n* days\n* createdtime\n* modifiedtime\n* from_portal\n* modifiedby\n* ticket_title\n* description\n* solution\n* comments\n* email\n* from_mailscanner\n* commentadded\n* created_user_id",
+    "map-to": [
+      "db/Products"
+    ]
+  },
+  {
+    "title": "db/Products",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* productname\n* product_no\n* productcode\n* discontinued\n* manufacturer\n* productcategory\n* sales_start_date\n* sales_end_date\n* start_date\n* expiry_date\n* website\n* vendor_id\n* mfr_part_no\n* vendor_part_no\n* serial_no\n* productsheet\n* glacct\n* createdtime\n* modifiedtime\n* modifiedby\n* unit_price\n* commissionrate\n* taxclass\n* usageunit\n* qty_per_unit\n* qtyinstock\n* reorderlevel\n* assigned_user_id\n* qtyindemand\n* imagename\n* description\n* cost_price\n* divisible\n* created_user_id",
+    "map-to": [
+      "db/Vendors"
+    ]
+  },
+  {
+    "title": "db/Faq",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* product_id\n* faq_no\n* faqcategories\n* faqstatus\n* question\n* faq_answer\n* comments\n* createdtime\n* modifiedtime\n* modifiedby\n* created_user_id",
+    "map-to": [
+      "db/Products"
+    ]
+  },
+  {
+    "title": "db/Vendors",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* vendorname\n* vendor_no\n* phone\n* email\n* website\n* glacct\n* category\n* createdtime\n* modifiedtime\n* modifiedby\n* street\n* pobox\n* city\n* state\n* postalcode\n* country\n* description\n* assigned_user_id\n* created_user_id"
+  },
+  {
+    "title": "db/PriceBooks",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* bookname\n* pricebook_no\n* active\n* createdtime\n* modifiedtime\n* currency_id\n* modifiedby\n* description\n* created_user_id"
+  },
+  {
+    "title": "db/Quotes",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* quote_no\n* subject\n* potential_id\n* quotestage\n* validtill\n* contact_id\n* carrier\n* hdnSubTotal\n* shipping\n* assigned_user_id1\n* txtAdjustment\n* hdnGrandTotal\n* hdnTaxType\n* hdnDiscountPercent\n* hdnDiscountAmount\n* hdnS_H_Amount\n* account_id\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* currency_id\n* conversion_rate\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* terms_conditions\n* created_user_id\n* tandc\n* pl_gross_total\n* pl_dto_line\n* pl_dto_global\n* pl_dto_total\n* pl_net_total\n* pl_sh_total\n* pl_sh_tax\n* pl_adjustment\n* pl_grand_total\n* sum_nettotal\n* sum_tax1\n* sum_tax2\n* sum_tax3\n* sum_taxtotal\n* sum_taxtotalretention",
+    "map-to": [
+      "db/Accounts",
+      "db/Contacts",
+      "db/Potentials"
+    ]
+  },
+  {
+    "title": "db/PurchaseOrder",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* purchaseorder_no\n* subject\n* vendor_id\n* requisition_no\n* tracking_no\n* contact_id\n* duedate\n* carrier\n* txtAdjustment\n* salescommission\n* exciseduty\n* hdnGrandTotal\n* hdnSubTotal\n* hdnTaxType\n* hdnDiscountPercent\n* hdnDiscountAmount\n* hdnS_H_Amount\n* postatus\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* currency_id\n* conversion_rate\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* terms_conditions\n* created_user_id\n* tandc\n* pl_gross_total\n* pl_dto_line\n* pl_dto_global\n* pl_dto_total\n* pl_net_total\n* pl_sh_total\n* pl_sh_tax\n* pl_adjustment\n* pl_grand_total\n* sum_nettotal\n* sum_tax1\n* sum_tax2\n* sum_tax3\n* sum_taxtotal\n* sum_taxtotalretention",
+    "map-to": [
+      "db/Contacts",
+      "db/Vendors"
+    ]
+  },
+  {
+    "title": "db/SalesOrder",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* salesorder_no\n* subject\n* potential_id\n* customerno\n* quote_id\n* vtiger_purchaseorder\n* contact_id\n* duedate\n* carrier\n* pending\n* sostatus\n* txtAdjustment\n* salescommission\n* exciseduty\n* hdnGrandTotal\n* hdnSubTotal\n* hdnTaxType\n* hdnDiscountPercent\n* hdnDiscountAmount\n* hdnS_H_Amount\n* account_id\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* currency_id\n* conversion_rate\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* terms_conditions\n* enable_recurring\n* recurring_frequency\n* start_period\n* end_period\n* payment_duration\n* invoicestatus\n* created_user_id\n* tandc\n* pl_gross_total\n* pl_dto_line\n* pl_dto_global\n* pl_dto_total\n* pl_net_total\n* pl_sh_total\n* pl_sh_tax\n* pl_adjustment\n* pl_grand_total\n* sum_nettotal\n* sum_tax1\n* sum_tax2\n* sum_tax3\n* sum_taxtotal\n* sum_taxtotalretention\n* invoiced",
+    "map-to": [
+      "db/Accounts",
+      "db/Contacts",
+      "db/Potentials",
+      "db/Quotes"
+    ]
+  },
+  {
+    "title": "db/Invoice",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* subject\n* salesorder_id\n* customerno\n* contact_id\n* invoicedate\n* duedate\n* vtiger_purchaseorder\n* txtAdjustment\n* salescommission\n* exciseduty\n* hdnSubTotal\n* hdnGrandTotal\n* hdnTaxType\n* hdnDiscountPercent\n* hdnDiscountAmount\n* hdnS_H_Amount\n* account_id\n* invoicestatus\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* currency_id\n* conversion_rate\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* terms_conditions\n* invoice_no\n* created_user_id\n* tandc\n* pl_gross_total\n* pl_dto_line\n* pl_dto_global\n* pl_dto_total\n* pl_net_total\n* pl_sh_total\n* pl_sh_tax\n* pl_adjustment\n* pl_grand_total\n* sum_nettotal\n* sum_tax1\n* sum_tax2\n* sum_tax3\n* sum_taxtotal\n* sum_taxtotalretention",
+    "map-to": [
+      "db/Accounts",
+      "db/Contacts",
+      "db/SalesOrder"
+    ]
+  },
+  {
+    "title": "db/Campaigns",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* campaignname\n* campaign_no\n* campaigntype\n* product_id\n* campaignstatus\n* closingdate\n* assigned_user_id\n* numsent\n* sponsor\n* targetaudience\n* targetsize\n* createdtime\n* modifiedtime\n* modifiedby\n* expectedresponse\n* expectedrevenue\n* budgetcost\n* actualcost\n* expectedresponsecount\n* expectedsalescount\n* expectedroi\n* actualresponsecount\n* actualsalescount\n* actualroi\n* description\n* campaignrelstatus\n* created_user_id",
+    "map-to": [
+      "db/Products"
+    ]
+  },
+  {
+    "title": "db/Users",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* user_name\n* is_admin\n* user_password\n* confirm_password\n* first_name\n* last_name\n* roleid\n* email1\n* status\n* activity_view\n* lead_view\n* hour_format\n* end_hour\n* start_hour\n* title\n* phone_work\n* department\n* phone_mobile\n* reports_to_id\n* phone_other\n* email2\n* phone_fax\n* secondaryemail\n* phone_home\n* date_format\n* signature\n* description\n* address_street\n* address_city\n* address_state\n* address_postalcode\n* address_country\n* accesskey\n* time_zone\n* currency_id\n* currency_grouping_pattern\n* currency_decimal_separator\n* currency_grouping_separator\n* currency_symbol_placement\n* imagename\n* internal_mailer\n* theme\n* language\n* reminder_interval\n* asterisk_extension\n* use_asterisk\n* send_email_to_sender\n* no_of_currency_decimals\n* failed_login_attempts\n* ename"
+  },
+  {
+    "title": "db/ServiceContracts",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* assigned_user_id\n* createdtime\n* modifiedtime\n* start_date\n* end_date\n* sc_related_to\n* tracking_unit\n* total_units\n* used_units\n* subject\n* due_date\n* planned_duration\n* actual_duration\n* contract_status\n* contract_priority\n* contract_type\n* progress\n* contract_no\n* modifiedby\n* created_user_id"
+  },
+  {
+    "title": "db/Services",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* servicename\n* service_no\n* discontinued\n* sales_start_date\n* sales_end_date\n* start_date\n* expiry_date\n* website\n* createdtime\n* modifiedtime\n* modifiedby\n* service_usageunit\n* qty_per_unit\n* assigned_user_id\n* servicecategory\n* unit_price\n* taxclass\n* commissionrate\n* description\n* cost_price\n* divisible\n* created_user_id"
+  },
+  {
+    "title": "db/cbupdater",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* cbupd_no\n* author\n* filename\n* classname\n* execstate\n* execdate\n* systemupdate\n* execorder\n* perspective\n* assigned_user_id\n* blocked\n* createdtime\n* modifiedtime\n* description\n* created_user_id\n* appcs"
+  },
+  {
+    "title": "db/CobroPago",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* assigned_user_id\n* reference\n* parent_id\n* related_id\n* register\n* duedate\n* paid\n* credit\n* paymentmode\n* paymentcategory\n* amount\n* cost\n* benefit\n* createdtime\n* modifiedtime\n* reports_to_id\n* description\n* cyp_no\n* paymentdate\n* created_user_id",
+    "map-to": [
+      "db/RelatedTo"
+    ]
+  },
+  {
+    "title": "db/Assets",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* asset_no\n* product\n* serialnumber\n* datesold\n* dateinservice\n* assetstatus\n* tagnumber\n* invoiceid\n* shippingmethod\n* shippingtrackingnumber\n* assigned_user_id\n* assetname\n* account\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* created_user_id"
+  },
+  {
+    "title": "db/ModComments",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* commentcontent\n* assigned_user_id\n* createdtime\n* modifiedtime\n* related_to\n* creator\n* parent_comments\n* relatedassignedemail"
+  },
+  {
+    "title": "db/ProjectMilestone",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* projectmilestonename\n* projectmilestonedate\n* projectid\n* projectmilestonetype\n* assigned_user_id\n* projectmilestone_no\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* created_user_id"
+  },
+  {
+    "title": "db/ProjectTask",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* projecttaskname\n* projecttasktype\n* projecttaskpriority\n* projectid\n* assigned_user_id\n* projecttasknumber\n* projecttask_no\n* projecttaskprogress\n* projecttaskhours\n* startdate\n* enddate\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* email\n* projecttaskstatus\n* created_user_id"
+  },
+  {
+    "title": "db/Project",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* projectname\n* startdate\n* targetenddate\n* actualenddate\n* projectstatus\n* projecttype\n* linktoaccountscontacts\n* assigned_user_id\n* project_no\n* targetbudget\n* projecturl\n* projectpriority\n* progress\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* email\n* created_user_id"
+  },
+  {
+    "title": "db/SMSNotifier",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* message\n* created_user_id"
+  },
+  {
+    "title": "db/GlobalVariable",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* gvname\n* default_check\n* value\n* mandatory\n* assigned_user_id\n* blocked\n* module_list\n* category\n* in_module_list\n* globalno\n* createdtime\n* modifiedtime\n* description\n* bmapid\n* created_user_id\n* rolegv\n* viewtype"
+  },
+  {
+    "title": "db/InventoryDetails",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* inventorydetails_no\n* productid\n* related_to\n* account_id\n* contact_id\n* vendor_id\n* sequence_no\n* lineitem_id\n* quantity\n* listprice\n* tax_percent\n* extgross\n* discount_percent\n* discount_amount\n* extnet\n* linetax\n* linetotal\n* units_delivered_received\n* line_completed\n* assigned_user_id\n* createdtime\n* modifiedtime\n* description\n* cost_price\n* cost_gross\n* total_stock\n* created_user_id\n* id_tax1_perc\n* id_tax2_perc\n* id_tax3_perc\n* remaining_units\n* rel_lineitem_id",
+    "map-to": [
+      "db/Accounts",
+      "db/Contacts",
+      "db/Vendors"
+    ]
+  },
+  {
+    "title": "db/cbMap",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* mapname\n* mapnumber\n* maptype\n* targetname\n* content\n* assigned_user_id\n* createdtime\n* modifiedtime\n* description\n* created_user_id\n* contentjson"
+  },
+  {
+    "title": "db/cbTermConditions",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* cbtandcno\n* assigned_user_id\n* reference\n* createdtime\n* isdefault\n* modifiedtime\n* formodule\n* tandc\n* description\n* srvcto\n* copyfrom"
+  },
+  {
+    "title": "db/cbCalendar",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* subject\n* assigned_user_id\n* dtstart\n* dtend\n* rel_id\n* cto_id\n* eventstatus\n* taskpriority\n* sendnotification\n* createdtime\n* modifiedtime\n* activitytype\n* visibility\n* duration_hours\n* duration_minutes\n* location\n* reminder_time\n* recurringtype\n* notime\n* relatedwith\n* created_user_id\n* modifiedby\n* description\n* followupdt\n* followuptype\n* followupcreate\n* date_start\n* time_start\n* due_date\n* time_end",
+    "map-to": [
+      "db/RelatedTo"
+    ]
+  },
+  {
+    "title": "db/cbtranslation",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* autonum\n* locale\n* translation_module\n* translation_key\n* i18n\n* translates\n* forpicklist\n* forfield\n* proofread\n* assigned_user_id\n* createdtime\n* modifiedtime\n* created_user_id"
+  },
+  {
+    "title": "db/BusinessActions",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* linktype\n* linklabel\n* linkurl\n* linkicon\n* sequence\n* handler_path\n* onlyonmymodule\n* handler_class\n* module_list\n* handler\n* assigned_user_id\n* active\n* acrole\n* mandatory\n* brmap\n* businessactions_no\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* error_msg\n* success_msg\n* widget_header\n* widget_width\n* widget_height\n* confirmalert\n* confirmmessage"
+  },
+  {
+    "title": "db/cbSurvey",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* cbsurveyname\n* cbsurvey_no\n* cbsurveyprovider\n* cbsurveystart\n* cbsurveyurl\n* cbsurveyend\n* total\n* completed\n* cbslastsync\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* note\n* cbsvrystatus\n* document_id",
+    "map-to": [
+      "db/Documents"
+    ]
+  },
+  {
+    "title": "db/cbSurveyQuestion",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* cbsurveyquestion_no\n* cbsurvey\n* cbsquestion\n* cbsanswer\n* cbsq_providerid\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* question_type\n* answeryes\n* answerno\n* questioncat\n* questionsubcat\n* questioncheck\n* questionseq\n* yes_points\n* no_points\n* cbsqstatus\n* cbsqlevel\n* na_answer"
+  },
+  {
+    "title": "db/cbSurveyDone",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* relatewith\n* cbsurveydone_no\n* cbsurvey\n* surveydonedate\n* cbsd_providerid\n* cbsq_completed\n* cbsq_addinfo\n* cbsq_hiddeninfo\n* cbsq_token\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* total_yes\n* total_no\n* note\n* cbsvrydonetype\n* document_id\n* interviewer",
+    "map-to": [
+      "db/Documents"
+    ]
+  },
+  {
+    "title": "db/cbSurveyAnswer",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* relatedwith\n* cbsurveyanswer_no\n* cbsurvey\n* positive\n* cbsurveydone\n* evaluate\n* cbsurveyq\n* cbsa_providerid\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* cbsurveyanswer\n* description\n* cbsqanswertype\n* surveypathid"
+  },
+  {
+    "title": "db/cbCompany",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* companyname\n* cbcompanyno\n* comercialname\n* assigned_user_id\n* siccode\n* accid\n* phone\n* address\n* fax\n* city\n* email\n* state\n* website\n* postalcode\n* companybr\n* country\n* companylopd\n* defaultcompany\n* created_user_id\n* createdtime\n* modifiedtime\n* companylogo\n* applogo\n* favicon\n* description\n* portal_logo\n* login_template"
+  },
+  {
+    "title": "db/cbCVManagement",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* cvid\n* cvcreate\n* assigned_user_id\n* cvretrieve\n* cvrole\n* cvupdate\n* cvdefault\n* cvdelete\n* mandatory\n* cvapprove\n* module_list\n* blocked\n* default_setting\n* description\n* cbcvmno\n* createdtime\n* created_user_id\n* modifiedtime\n* setpublic\n* setprivate\n* sortfieldbyfirst\n* sortfieldbysecond\n* sortorderfirst\n* sortordersecond"
+  },
+  {
+    "title": "db/cbQuestion",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* qname\n* cbquestionno\n* qtype\n* qstatus\n* qcollection\n* qmodule\n* cbmapid\n* qpagesize\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* qcolumns\n* qcondition\n* qpulse\n* schtypeid\n* schtime\n* schdayofmonth\n* schdayofweek\n* schannualdates\n* schminuteinterval\n* nexttrigger_time\n* description\n* mviewcron\n* uniqueid\n* mviewwf\n* condfilterformat\n* crmentityalias\n* maintablealias\n* run_updateview\n* mvrelated_modulelist\n* orderby\n* groupby\n* typeprops\n* querytype\n* active_reactadmin\n* filterlist\n* report_input_file\n* report_template_file"
+  },
+  {
+    "title": "db/ProductComponent",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* frompdo\n* topdo\n* relmode\n* relfrom\n* relno\n* relto\n* quantity\n* assigned_user_id\n* createdtime\n* modifiedtime\n* description\n* instructions"
+  },
+  {
+    "title": "db/Messages",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* messageno\n* messagename\n* messagetype\n* messagesrelatedto\n* messagesuniqueid\n* assigned_user_id\n* createdtime\n* modifiedtime\n* campaign_message\n* clicked\n* dropped\n* bounce\n* open\n* delivered\n* no_mail\n* unsubscribe\n* spamreport\n* status_message\n* lasturlclicked\n* lasteventtime\n* account_message\n* contact_message\n* lead_message\n* email_tplid\n* created_user_id\n* description\n* attachment"
+  },
+  {
+    "title": "db/cbPulse",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* cbpulse_no\n* questionid\n* active\n* sendmethod\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* schtypeid\n* schtime\n* schdayofmonth\n* schdayofweek\n* schannualdates\n* schminuteinterval\n* nexttrigger_time\n* description"
+  },
+  {
+    "title": "db/MsgTemplate",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* reference\n* msgt_type\n* msgt_module\n* msgt_status\n* msgt_language\n* msgt_category\n* tags\n* assigned_user_id\n* createdtime\n* created_user_id\n* modifiedtime\n* description\n* subject\n* msgt_fields\n* msgt_metavars\n* template\n* templateonlytext"
+  },
+  {
+    "title": "db/cbCredentials",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* cbcredentialsno\n* adapter\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* azure_account\n* azure_key\n* azure_container\n* google_clientid\n* google_project_id\n* google_bucket\n* google_client_secret\n* google_developer_key\n* google_application_name\n* google_scopes\n* google_refresh_token\n* ftp_host\n* ftp_port\n* ftp_path\n* ftp_password\n* ftp_username\n* opencloud_username\n* opencloud_password\n* opencloud_projectname\n* cbauthtoken\n* cbauthstart\n* cbauthend\n* certificate\n* server\n* emusername\n* empassword\n* emfrom\n* emauth\n* credname\n* emailfromtype\n* awskey\n* awskey\n* awssecret\n* awssecret\n* awsversion\n* awsversion\n* awsregion\n* awsregion\n* awsbucket\n* awsbucket\n* awsacl\n* awsacl\n* jwtsecret\n* endpoint"
+  },
+  {
+    "title": "db/DocumentFolders",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* foldername\n* documentfolders_no\n* parentfolder\n* sequence\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description"
+  },
+  {
+    "title": "db/pricebookproductrel",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* pricebookid\n* pricebookproductrel_no\n* productid\n* assigned_user_id\n* listprice\n* created_user_id\n* usedcurrency\n* createdtime\n* modifiedtime\n* description"
+  },
+  {
+    "title": "db/AutoNumberPrefix",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* autonumberprefixno\n* prefix\n* semodule\n* format\n* active\n* current\n* default1\n* isworkflowexpression\n* assigned_user_id\n* createdtime\n* modifiedtime\n* created_user_id\n* description"
+  },
+  {
+    "title": "db/cbSurveyPath",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* surveypathname\n* surveypathname\n* cbsurveypath_no\n* cbsurveypath_no\n* surveyid\n* surveyid\n* assigned_user_id\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* path\n* description\n* questionid\n* questioncat\n* sequence\n* questionsubcat\n* yes_points\n* no_points\n* question\n* pathyes\n* pathno"
+  },
+  {
+    "title": "db/iwDipendentiFamigliari",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwdipendentifamigliarino\n* relationshipdegree\n* honorarytitle\n* lastname\n* firstname\n* entrydate\n* notify_entrydate\n* confirm_entrydate\n* exitdate\n* notify_exitdate\n* inputoutput_note\n* certificatetitle\n* portalenabled\n* assisted\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwdipendenti_relation\n* mutua_registration\n* oldid\n* set_status_\n* gender\n* emailfamigliari\n* datastato\n* birth_date\n* age\n* working_status\n* patient_care\n* load_percentage\n* tax_update_date\n* expired_tax_doc\n* subsidies_excluded\n* disability\n* disability_percentage\n* family_assistance_allowance\n* family_assistance_description\n* accompaniment_service\n* birth_province\n* birth_place\n* birth_nation\n* taxcode_famigliari\n* primary_ltc_date\n* secondary_ltc_date\n* primary_ltc\n* primary_ltc_amount\n* secondary_ltc\n* secondary_ltc_amount\n* vision_test_done\n* left_eye_vision\n* right_eye_vision\n* enrolled_before_1998\n* regular_enrollment_2014\n* solidarity_subsidy\n* extra_subsidy_1\n* extra_subsidy_2\n* extra_subsidy_3\n* study_subsidy_1\n* study_subsidy_2\n* seniority_years\n* contactrelation"
+  },
+  {
+    "title": "db/iwEmessi",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwemessino\n* accounting_counterpart\n* accounting_competence\n* sentcontrol\n* datesentcontrol\n* expirationcontrol\n* amountissued\n* accountingreference\n* accountingreference_date\n* amountcollected\n* collectiondate\n* collectionaccounting_ref\n* collectionacc_refdate\n* remainingamount\n* firstcollection_reminderdate\n* secondcollection_reminderdate\n* stateissued\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwdipendenti_relation\n* idmutua_\n* employee_registration\n* agreementid\n* idfda\n* sending_control_issued\n* sending_control\n* deadline_issued\n* progressive_accounting\n* postal_order_number\n* delay\n* sent_document\n* iwemessitestata_relation\n* bu_primary\n* cdc_second\n* cdc_sixth\n* bu_second\n* iwenti_relation\n* general_accountant\n* accountant_id\n* paymentcode_ente\n* paymentcode_assistito\n* postal_envoy\n* type_issued\n* fda_typology\n* payment_request\n* type_ente_assistito\n* paymentcalculation\n* oldid\n* processing_period\n* split_issued\n* movementdate\n* iban\n* barcode_img\n* asse_macro_area\n* asse_regione\n* asse_unita_operativa\n* asse_ente\n* contactrelation"
+  },
+  {
+    "title": "db/iwDipendentiHandicap",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwdipendentihandicapno\n* idhandicap\n* pfh_startdate\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwdipendenti_relation\n* set_status_\n* datastato\n* oldid"
+  },
+  {
+    "title": "db/iwDipendentiIndirizzi",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwdipendentiindirizzino\n* address_type\n* reduceddenomination\n* cap\n* location\n* address\n* at\n* latitude\n* longitude\n* telephone\n* fax\n* mail\n* pec\n* reference_person\n* cellulare\n* date_termination\n* isdefault\n* sending_type\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwdipendenti_relation\n* iwtablocalita_relation\n* iwtabprovince_relation\n* iwtabregioni_relation\n* iwtabnazioni_relation\n* set_status_\n* department_mutates_competence\n* oldid\n* contactrelation"
+  },
+  {
+    "title": "db/iwEntiIndirizzi",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwentiindirizzino\n* address_type\n* department_mutates_competence\n* reduced_denomination\n* cap\n* location\n* address\n* latitude\n* longtitude\n* at\n* telephone\n* fax\n* mail\n* pec\n* reference_person\n* mobilephone\n* termination_date\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwtablocalita_relation\n* iwtabprovince_relation\n* iwtabregioni_relation\n* iwtabnazioni_relation\n* iwenti_relation\n* set_status_\n* oldid\n* contactrelation"
+  },
+  {
+    "title": "db/iwGaranzieListino",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwgaranzielistinono\n* medical_specialty\n* tarifflist\n* discount_rate\n* validity_start_date\n* validity_end_date\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwmedici_relation\n* iwgaranziegruppino_relation\n* gruppo_garanzia_two\n* gruppo_garanzia_three\n* oldid\n* garanzie_testata\n* tariffasconto_garanzie\n* iwgaranzie_relation_mutua\n* drg_code\n* icdm_code\n* struttura_sanitaria\n* firmatario_mutua_ganzie\n* firmatariostruttura_sanitaria\n* tacitorinnovo_garanzie\n* datastato_garanzie\n* notestato_garanzie\n* stato_garanzielistino_\n* int_cd_desc\n* desc_ext_sup\n* cd_perf_sup\n* old_sup_id"
+  },
+  {
+    "title": "db/iwGaranzieFornitori",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwgaranziefornitorino\n* loan_warrantycode\n* vendor_warrantcode\n* supplier_extendeddescr\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwgaranzie_relation\n* iwenti_relation\n* oldid\n* law_managed\n* law_percentage\n* codicedrg_garanzie\n* codiceicdm_garanzie\n* shortage_days\n* iwmedici_relation"
+  },
+  {
+    "title": "db/iwSociMovimenti",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwsocimovimentino\n* movement_date\n* reason\n* logical_status\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwsoci_relation\n* oldid"
+  },
+  {
+    "title": "db/iwSussidiCondizioni",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwsussidicondizionino\n* shortage_dd\n* shortage_type\n* event_date\n* application_date\n* grant_startdate\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwfda_relation\n* iwaccordo_relation\n* iwdipendenti_relation\n* iwtabscontomaggiorazione_relation\n* oldid"
+  },
+  {
+    "title": "db/iwTabScontoMaggiorazione",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwtabscontomaggiorazioneno\n* incr_discountcode\n* incrdiscount_denomination\n* calctype\n* import_incrdiscount\n* incrdiscount_percentage\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* discountsurcharge\n* oldid"
+  },
+  {
+    "title": "db/iwFdaGaranzia",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwfdagaranziano\n* max\n* deductibility\n* maximum_indirect\n* direct_calculation_percentage\n* indirect_presentation_frequency\n* frequencydirect_presentation\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwgaranzie_relation\n* iwfda_relation\n* maximum_direct_number\n* maximum_indirect_number\n* member_refund_amount\n* household_refund_amount\n* direct_deductible\n* indirect_deductible\n* oldid\n* law_managed\n* datafinevalidita\n* datainiziovalidita\n* total_import\n* direct_fam_remb\n* ind_member_remb\n* ind_member_remb_p\n* ind_fam_remb\n* ind_fam_remb_p\n* direct_freq\n* counting_directfreq\n* indirect_freq\n* indirectfreq_counting\n* warranty_validfor\n* warranty_type\n* day_calc_type\n* extra_healthcare\n* auto_liquiditation\n* calculated_age\n* calculated_day\n* visus\n* compensation_on_event\n* sum_values_fda\n* max_deductibles\n* split_values_fda\n* drg_code\n* icdm_code\n* internal_code\n* limiteapplicazionesu_baseeta\n* directmax_p\n* direct_franchise_p\n* indirectmax_p\n* indirect_franchise_p\n* member_remb_nps\n* family_remb_nps\n* auto_liquidation_limit\n* amount_member_remb_nps\n* amount_family_remb_nps\n* natura\n* solidarity_aid\n* extraordinary_aid_1\n* extraordinary_aid_2\n* extraordinary_aid_3\n* study_aid_1\n* study_aid_2\n* shortage_days\n* desc_prestazione"
+  },
+  {
+    "title": "db/iwGaranzie",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwgaranzieno\n* expandeddescription\n* guaranteecode\n* medicalspecialization\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwgaranziegruppi_relation\n* idgg2\n* standard_franchise\n* standard_ceiling_amount\n* member_refund_amount\n* household_refund_amount\n* standard_frequency\n* frequency_count\n* standard_maximum_number\n* oldid\n* percentage_standard\n* subsidy_liquidator\n* gruppo_garanzia_three\n* law_managed\n* law_percentage\n* datafine_validita\n* datainiziovalidita\n* drg_code\n* icdm_code\n* compensation_on_event\n* visus\n* extra_healthcare\n* max_deductibles\n* sum_values_fda\n* split_values_fda\n* calculated_day\n* calculated_age\n* warranty_validfor\n* warranty_type\n* directmax\n* direct_franchise\n* directcalc_percent\n* direct_freq\n* counting_directfreq\n* direct_maxnum\n* indirectmax\n* indirect_franchise\n* indirectcalc_percent\n* indirect_freq\n* indirectfreq_counting\n* indirect_maxnum\n* limiteapplicazionesu_baseeta\n* limitecontrollo_patologia\n* auto_liquidation_limit\n* auto_liquiditation\n* shortage_days"
+  },
+  {
+    "title": "db/iwGaranzieGruppi",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwgaranziegruppino\n* groupname\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* groupcode\n* subsidy_liquidator\n* oldid\n* law_managed\n* law_percentage\n* deductible_amount\n* maximum\n* deductible\n* shortage_days"
+  },
+  {
+    "title": "db/iwMedici",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwmedicino\n* lastname\n* name\n* fiscalcode\n* vatnumber\n* gender\n* aslreference\n* health_insurance_card\n* intramegna\n* birthplace\n* birthdate\n* agreement_start_date\n* enddate_agreement\n* medical_specialty\n* hospitalization_only\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwenti_relation\n* oldid"
+  },
+  {
+    "title": "db/iwDipendentiFda",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwdipendentifdano\n* maximal\n* franchise\n* percentage_calculation\n* deductibility\n* start_of_subsidy_validity\n* end_subsidy_validity\n* suspension_start_date\n* suspension_end_date\n* member_suspension\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* iwfda_relation\n* iwaccordo_relation\n* iwdipendenti_relation\n* entity_id\n* employee_registration\n* idmutua\n* reminder_days\n* annual_amount_issued\n* split_issued\n* installment_amount_issued\n* percentage_authority\n* entityidcc\n* percentage_competence_assist\n* iddicc\n* dependent_type\n* familiarid\n* calculation_check_date\n* calculation_last_date\n* subsidy_convention\n* fdastatus_date\n* entitygroup\n* start_of_membership_validity\n* competence_issued\n* bu_primary\n* bu_second\n* cdc_second\n* cdc_sixth\n* fda_typeagreement\n* set_status_\n* agreement_typology\n* fda_typology\n* description_iwdipendentifda\n* membership_endvalid\n* emessi_chb\n* emessigratis_chb\n* fixedamount_enti\n* fixedamount_assistito\n* oldid\n* sending_control_issued\n* control_days\n* __mastergridid\n* indice_statistico_u\n* indice_statistico_d\n* indice_statistico_t\n* indice_statistico_q\n* subsidy_counterpart\n* bookkeeping_acc\n* cd_contabile_assistitosussidi\n* cd_contabile_entisussidi\n* limiteapplicazionesu_baseeta\n* limitecontrollo_patologia\n* fda_application\n* family_role\n* age_limit_child_memb\n* iban_sussidi\n* iwdipendenti_rel\n* asse_macro_area\n* asse_regione\n* asse_unita_operativa\n* asse_ente\n* contactrelation\n* sequence"
+  },
+  {
+    "title": "db/iwEntifda",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwentifdano\n* liquidation_dd\n* priority_liquidation\n* subsidy_validstart\n* subsidy_endvalidity\n* membership_startvalid\n* membership_endvalid\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* iwfda_relation\n* iwaccordo_relation\n* iwenti_relation\n* idmutua\n* sending_control_issued\n* control_days\n* collection_deadline_days\n* reminder_days\n* subsidy_counterpart\n* competence_issued\n* percentage_competence_ente\n* percentage_competence_assist\n* deductibility\n* annual_amount_issued\n* split_issued\n* rata_amount_issued\n* subsidy_convention\n* fdastatus_date\n* entitygroup\n* oldid\n* bu_primary\n* cdc_second\n* fda_typeagreement\n* set_status_\n* agreement_typology\n* fda_typology\n* description_iwentifda\n* accountantid\n* __mastergridid\n* fixed_amount_enti\n* fixed_amount_assistito\n* emessi_chb\n* emessigratis_chb\n* subsidiesliquidator\n* indice_statistico1\n* indice_statistico2\n* indice_statistico3\n* indice_statistico4\n* subsidies_id\n* bookkeeping_acc\n* limiteapplicazionesu_baseeta\n* limitecontrollo_patologia\n* family_role\n* age_limit_child_memb\n* fda_application\n* iban_sussidi\n* annual_check\n* shortage_days\n* subsidy_used_amt\n* subsidy_limit_amt\n* barcode_img\n* asse_macro_area\n* asse_regione\n* asse_unita_operativa\n* asse_ente\n* contactrelation"
+  },
+  {
+    "title": "db/iwSoci",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwsocino\n* memberstype\n* membersfee\n* collectedfee\n* feepaymentdate\n* membersorigin\n* effectivedate\n* enrollment_proposeddate\n* admissiondate\n* typeofrights\n* rights_effectivedate\n* suspended\n* suspension_proposeddate\n* suspensionreason\n* suspension_effectivedate\n* sociproposeddate\n* cancellationreason\n* cancellation_effectivedate\n* restoration_proposeddate\n* restorationreason\n* restoration_effectivedate\n* resolutiondate\n* memberproposedstatus\n* privacy\n* memberlogicalstatus\n* privacytreatment\n* privacyads\n* privacy_treatmentdate\n* privacy_consentexpdate\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwdipendenti_relation\n* iwenti_relation\n* idmutua\n* iwaccordo_relation\n* emailsoci\n* set_status_\n* agreement_typology\n* membership_type\n* membership_typology\n* datastato\n* entity_group\n* description_iwsoci\n* soci_typology\n* oldid\n* fda_typeagreement\n* enrollmentlocation\n* primary_ltc_calculation_date\n* secondary_ltc_calculation_date\n* primary_ltc_application\n* secondary_ltc_application\n* primary_ltc_amount\n* secondary_ltc_amount"
+  },
+  {
+    "title": "db/iwFdaSostitutive",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwfdasostitutiveno\n* fda_action\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwfda_relation\n* bu_primary\n* cdc_second\n* cdc_fourth\n* cdc_sixth\n* cdc_primary\n* bu_second\n* cdc_third\n* cdc_fifth\n* oldid"
+  },
+  {
+    "title": "db/iwMaggiorazioneCompensi",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwmaggiorazionecompensino\n* compensation_denomination\n* increment_startdate\n* increment_enddate\n* amount_increase\n* percentage_increase\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwaccordo_relation\n* oldid"
+  },
+  {
+    "title": "db/iwFda",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwfdano\n* fda_acronym\n* fda_description\n* fda_status\n* fda_statusdate\n* fda_typology\n* validitybeginning\n* validityend\n* counterpartsubsidies\n* ibansubsidies\n* competenceissued\n* percentageentity\n* percentageassisted\n* deductibility\n* subsidiesqualification\n* subsidies_validfrom\n* subsidies_validto\n* subsidiesperiod_validfrom\n* subsidiesperiod_validto\n* annualamountissued\n* installmentamountissued\n* daysrevocation\n* cancellation_daysrevocation\n* restoration_daysrevocation\n* revocationperiod\n* subsidiesliquidator\n* automaticwithdrawal\n* fda_application\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* dayscontrol\n* collection_deadline_days\n* reminder_days\n* split_issued\n* cdc_primary\n* bu_primary\n* bu_second\n* cdc_second\n* cdc_third\n* cdc_fourth\n* cdc_fifth\n* cdc_sixth\n* fixedamountenti\n* fixedamountassistito\n* oldid\n* emessi_chb\n* emessigratis_chb\n* sending_control_issued\n* subsidy_convention\n* indice_statistico_uno\n* indice_statistico_due\n* indice_statistico_tre\n* indice_statistico_quatro\n* limiteapplicazionesu_baseeta\n* limitecontrollo_patologia\n* family_role\n* age_limit_child_memb\n* annual_check"
+  },
+  {
+    "title": "db/iwAccordo",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwaccordono\n* mutual_signatory\n* entity_signatory\n* agreement_date\n* effective_date\n* due_date\n* given_termination\n* reason_termination\n* priority_settlement\n* clearance_days\n* dayscontrol\n* collection_deadline_days\n* reminder_days\n* tacit_renewal\n* type_contribution\n* motivation_status\n* institution_position\n* maximum_subsidy_amount\n* contribution_deferral_type\n* daysdeferment\n* tolerance_days\n* daysdelivery\n* deductibility\n* exclusive\n* advance_percentage\n* allotment_completed\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwenticontabili_relation\n* iwenti_relation\n* idmutua_\n* competenza\n* sending_control_issued\n* months_minimum_coverage\n* oldid\n* datestatuschange\n* set_status_\n* agreement_typology\n* emailaccordo\n* description_iwaccordo\n* request_day\n* date_of_receipt\n* fda_typeagreement\n* number_of_years\n* entitygroup\n* subsidy_limit_amt\n* subsidy_used_amt\n* maxusage_reset_period\n* barcode_img\n* revoke_last_date\n* contactrelation"
+  },
+  {
+    "title": "db/iwEnticontabili",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwenticontabilino\n* accounting_type\n* accounting_code\n* bookkeeping_acc\n* idpayment\n* iban\n* bic\n* swift\n* bic_support\n* swift_support\n* isdefault\n* withholding\n* firstreminder_dd\n* secondreminder_dd\n* creditamount\n* amount_risklimit\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwenti_relation\n* iwtababicab_relation\n* iwtabvalute_relation\n* set_status_\n* oldid\n* iban_sussidi\n* contactrelation"
+  },
+  {
+    "title": "db/iwDipendentiContabili",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwdipendenticontabilino\n* accounting_code\n* iban\n* bic\n* swift\n* taxrate\n* dualsupport\n* swift_support\n* isdefault\n* withholdingtax\n* invoice_sending_type\n* ddfirstreminder\n* ddsecondreminder\n* credit_amount\n* risk_limit_amount\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwdipendenti_relation\n* iwtababicab_relation\n* iwtabvalute_relation\n* consignment_type_issued\n* employee_accountingtype\n* set_status_\n* datastato\n* idpayment\n* oldid\n* bookkeeping_acc\n* payment_third_part\n* iban_sussidi\n* contactrelation"
+  },
+  {
+    "title": "db/iwTabAbiCab",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwtababicabno\n* agency_branch_name\n* headquarters_name\n* via\n* cap\n* abi\n* cab\n* telephone\n* fax\n* e_mail\n* latitude\n* longitude\n* responsible_officer\n* responsible_office_start_date\n* number_employees\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwtablocalita_relation\n* iwtabprovince_relation\n* iwtabnazioni_relation\n* oldid"
+  },
+  {
+    "title": "db/iwDipendenti",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwdipendentino\n* honorarytitle\n* lastname\n* name\n* taxcode\n* partitaiva\n* gender\n* birthday\n* citizenship\n* deathdate\n* maritalstatus\n* qualification\n* activity_category\n* profession\n* assisted\n* portalenabled\n* uniquecode\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwtablocalita_relation\n* iwtabnazioni_relation\n* iwtablingue_relation\n* internalmutua\n* partner\n* mutua_registration\n* oldid\n* assumption_date\n* discharge_date\n* internalemployeetype\n* emaildipendenti\n* set_status_\n* datastato\n* relatedcontact\n* person_age\n* geographic_area_assistiti\n* namesurname\n* entityreference\n* mutualreference\n* numberofdays\n* coverage_percentage\n* identification_code\n* sia\n* related_mutualagency\n* related_agency\n* related_mutualsubagency\n* abandoned_agency\n* messenger_data_agency\n* internal_reference\n* internal_commercial\n* commercial_source\n* negotiation_start_date\n* commercial_notes\n* matricola_entityreference\n* primary_ltc_date\n* secondary_ltc_date\n* primary_ltc\n* primary_ltc_amount\n* secondary_ltc\n* secondary_ltc_amount\n* vision_test_done\n* left_eye_vision\n* right_eye_vision\n* enrolled_before_1998\n* regular_enrollment_2014\n* solidarity_subsidy\n* extra_subsidy_1\n* extra_subsidy_2\n* extra_subsidy_3\n* study_subsidy_1\n* study_subsidy_2\n* far_vision_sx\n* far_vision_dx\n* permanent_vis_sx\n* permanent_vis_dx\n* near_last_update\n* far_last_update\n* perm_last_update\n* proc_date1\n* proc_date2\n* proc_date3\n* date_solidarity\n* proc_date_study1\n* proc_date_study2\n* aid_amt1\n* aid_amt2\n* aid_amt3\n* solid_aid\n* study_aid1\n* study_aid2\n* seniority_years\n* province"
+  },
+  {
+    "title": "db/iwTabValute",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwtabvaluteno\n* currency_code\n* name\n* alphabetic_code\n* numerical_code\n* currency\n* symbol\n* customs_code\n* rounding_type\n* conversion_factor\n* codeania\n* isvap_code\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* decimali\n* oldid"
+  },
+  {
+    "title": "db/iwTabLocalita",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwtablocalitano\n* locationistat\n* localdenomination\n* cap\n* prefix\n* cadastralcode\n* locationtype\n* municipalitysurface\n* populationnum_2011\n* longitude\n* latitudine\n* altitude\n* region_capitalcity\n* province_capitalcity\n* multicap\n* residentsname\n* patronname\n* patrondate\n* municipalityaddress\n* badarea\n* sopressalocality\n* locode\n* iatacode\n* port\n* station\n* terminal\n* airport\n* mail_localita\n* different\n* pec\n* website_localita\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwtabprovince_relation\n* iwtabregioni_relation\n* iwtabnazioni_relation\n* iwripartizionegeografica_relation\n* mappa\n* oldid"
+  },
+  {
+    "title": "db/iwTabProvince",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwtabprovinceno\n* province_code\n* namesurname\n* sigla\n* istatprovince\n* istatheadtown\n* surface\n* inhabitants_number\n* municipalities_number\n* disadvantaged_area\n* pec\n* website\n* longitude\n* latitude\n* altitude\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwtabregioni_relation\n* iwtabnazioni_relation\n* iwripartizionegeografica_relation\n* mappa\n* oldid"
+  },
+  {
+    "title": "db/iwTabRegioni",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwtabregionino\n* codice_regione\n* regionistat\n* namesurname\n* capitalistat\n* surface\n* municipalitiesnumber\n* provincesnumber\n* president\n* taxidcode\n* vatnumber\n* pec\n* website\n* site\n* longitude\n* latitude\n* altitude\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwtabnazioni_relation\n* iwripartizionegeografica_relation\n* mappa\n* population\n* oldid"
+  },
+  {
+    "title": "db/iwEnti",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwentino\n* typeof\n* namesurname\n* reduced_denomination\n* taxidcode\n* vatnumber\n* uniquecode\n* pec\n* legal_representative\n* mobilephone\n* company_type\n* capital_social\n* date_of_constitution\n* court_number\n* court_location\n* ccnl\n* rae\n* sae\n* business_sector\n* activity_category\n* privacy\n* date_signature_privacy\n* privacy_expiration_date\n* enddate\n* number_of_employees\n* range_billed\n* exclude_arrears_calculation\n* amount_adjustment\n* regulation_type\n* assisted\n* partner\n* mutual\n* identification_code\n* sia\n* subscriptionfee\n* fee_rate\n* months_meeting_registration\n* months_assembly_arrears\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* iwtablingue_relation\n* iwtabateco_relation\n* related_mutual\n* related_group\n* related_mutualagency\n* related_mutualsubagency\n* related_agency\n* corporate_office\n* abandoned_agency\n* messenger_data_agency\n* reference_asl\n* cardnoasl\n* intramegna\n* agreement_start_date\n* agreement_end_date\n* hospitalization_only\n* oldid\n* suspensiondate\n* emailenti\n* relatedcontact\n* set_status_\n* area_geographic\n* business_register\n* internal_reference\n* commercial_source\n* negotiation_start_date\n* commercial_notes\n* affiliated_body\n* medical_specialty\n* internal_commercial\n* province\n* city_tab"
+  },
+  {
+    "title": "db/iwTabNazioni",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwtabnazionino\n* nationcode\n* nationistat\n* tabnation_name\n* nation_altitude\n* extended_countrycode\n* nationlatitude\n* nationlongitude\n* cultureid\n* nation_usezipcode\n* nationprefix\n* countryterritory\n* nationdecimal\n* roundingcountry\n* taxid_format\n* taxid_length\n* taxidregex\n* taxdecrease\n* zipcodeformat\n* zipcoderegex\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwtablingue_relation\n* iwtabcontinenti_relation\n* iwripartizionegeografica_relation\n* iwtabvalute_relation\n* mappa\n* oldid"
+  },
+  {
+    "title": "db/iwTabLingue",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwtablingueno\n* intlanguagecode\n* languagecode\n* languagename\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* oldid"
+  },
+  {
+    "title": "db/iwTabAteco",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwtabatecono\n* atecocode\n* namesurname\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* oldid"
+  },
+  {
+    "title": "db/iwTabContinenti",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwtabcontinentino\n* continentcode\n* istatcontinent\n* denomination\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* oldid"
+  },
+  {
+    "title": "db/iwRipartizioneGeografica",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwripartizionegeograficano\n* nome_ripartizione\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* oldid"
+  },
+  {
+    "title": "db/iwemessitestata",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwemessitestatano\n* movementdate\n* idmutua\n* groupleaderid\n* perioda\n* idagreement\n* idfda\n* movementcode\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* split_issued\n* emailemessi\n* agreement_typology\n* type_contribution\n* business_sector\n* activity_category\n* fda_typology\n* iwenti_relation\n* iwdipendenti_relation\n* oldid"
+  },
+  {
+    "title": "db/iwsussisiliquidatori",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwsussisiliquidatorino\n* iddi\n* idente\n* idagreement\n* idfda\n* vendorid\n* idgg\n* liquidatorid\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* oldid"
+  },
+  {
+    "title": "db/iwsussiditestata",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwsussiditestatano\n* movement_date\n* subsidy_type\n* mutua_registration\n* taxidcode\n* iddi\n* idfda\n* event_start_date\n* diagnosis_description\n* booking_confirmation_date\n* subsidy_transformation_date\n* stato\n* idsuli\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* idhealthcarefacility\n* familiar\n* applicant\n* oldid\n* prestazioni_a_relation\n* cd_accounting\n* email\n* sussidi_category\n* import_sanitaria\n* import_assistito\n* email_struttura_sanitaria\n* icdm_code\n* bookkeeping_acc\n* priority_settlement\n* settlement_expiration_date\n* accordo_related\n* fda_enti_relation\n* iwgaranzie_rel\n* event_start_time\n* barcode_img\n* mutual_chrg_amount\n* medico\n* liquidation_stat_testata\n* contactrelation"
+  },
+  {
+    "title": "db/iwsussididettaglio",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwsussididettagliono\n* subsidyid\n* grant_document_number\n* subsidy_document_date\n* healthcare_facility\n* doctor\n* subsidy_amount\n* deductible_amount\n* maximum_amount\n* amount_settled\n* accounting_reference\n* accounting_reference_date\n* progressive_accounting\n* payment_request_date\n* payment_date\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* date_performance\n* oldid\n* garanziefdaassistiti\n* pathology\n* period_startdate\n* period_enddate\n* calculation_validdate\n* iwdipendentifda_relation\n* total_liquidated_amount\n* stato\n* iwdipendenti_relation\n* familiar\n* applicant\n* warranty_validfor\n* disability_days_count\n* tipo_doc_sussidio\n* competenza_contabile\n* priority_settlement\n* settlement_expiration_date\n* iwaccordo_relation\n* movement_date\n* __mastergridid\n* calcolata_giorn\n* extra_subsidy_1\n* extra_subsidy_2\n* extra_subsidy_3\n* solidarity_subsidy\n* study_subsidy_1\n* study_subsidy_2\n* far_vision_sx\n* left_eye_vision\n* right_eye_vision\n* far_vision_dx\n* permanent_vis_sx\n* permanent_vis_dx\n* near_last_update\n* far_last_update\n* perm_last_update\n* proc_date1\n* proc_date2\n* proc_date3\n* date_solidarity\n* proc_date_study1\n* proc_date_study2\n* aid_amt1\n* aid_amt2\n* aid_amt3\n* solid_aid\n* study_aid1\n* study_aid2\n* email_t\n* assistiti_selected\n* paymentcalculation\n* richiestesussidi_relation\n* iban_sussidi\n* sussidi_category\n* import_sanitaria\n* import_assistito\n* fda_enti_relation\n* sup_doc_nr\n* sup_doc_date\n* sup_doc_amount\n* sup_invoice_flag_acc\n* iwgaranzie_rel\n* icdm_code\n* barcode_img\n* liquidation_stat_dettaglio\n* medico\n* bu_primary\n* cdc_sixth\n* cdc_second\n* bu_second\n* indice_statistico_u\n* indice_statistico_d\n* indice_statistico_t\n* indice_statistico_f\n* asse_macro_area\n* asse_regione\n* asse_unita_operativa\n* asse_ente\n* iwdipendenti_rel\n* vat_amount\n* tax_amount\n* stmp_duty_amount"
+  },
+  {
+    "title": "db/iwentifdagaranzia",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwentifdagaranziano\n* idfda\n* idga\n* deductibility\n* indirectmax\n* indirect_franchise\n* indirectcalc_percent\n* indirect_freq\n* indirectfreq_counting\n* indirect_maxnum\n* directmax\n* direct_franchise\n* directcalc_percent\n* directfreq\n* counting_directfreq\n* direct_maxnum\n* member_refundamount\n* family_refundamount\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iwentifda_relation\n* oldid\n* data_finevalidita\n* datainiziovalidita\n* drg_code\n* icdm_code\n* internal_code\n* compensation_on_event\n* visus\n* extra_healthcare\n* max_deductibles\n* sum_values_fda\n* split_values_fda\n* calculated_day\n* calculated_age\n* warranty_validfor\n* warranty_type\n* auto_liquidation_limit\n* auto_liquiditation\n* age_limit\n* total_import\n* direct_fam_remb\n* ind_member_remb\n* ind_member_remb_p\n* ind_fam_remb\n* ind_fam_remb_p\n* direct_member_remb\n* direct_member_remb_p\n* direct_fam_remb_a\n* subsidy_limit_amt\n* subsidy_used_amt\n* maxusage_reset_period\n* day_calc_type\n* natura\n* directmax_p\n* direct_franchise_p\n* indirectmax_p\n* indirect_franchise_p\n* member_remb_nps\n* family_remb_nps\n* amount_member_remb_nps\n* amount_family_remb_nps\n* solidarity_aid\n* extraordinary_aid_1\n* extraordinary_aid_2\n* extraordinary_aid_3\n* study_aid_1\n* study_aid_2\n* shortage_days\n* desc_prestazione"
+  },
+  {
+    "title": "db/iwemessidettaglioimportazione",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwemessidettaglioimportazioneno\n* idente\n* iddi\n* employeeregistration\n* issuedid\n* progressiveissuedid\n* idmutua\n* issuedamount\n* amountcollected\n* collectiondate\n* receiptaccountingreference\n* remainingamount\n* postalordernumber\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* oldid"
+  },
+  {
+    "title": "db/iwdipendentifdagaranzia",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwdipendentifdagaranziano\n* idga\n* deductibility\n* indirect_maximum\n* indirect_franchise\n* indirectcalc_percentage\n* max_indirectnum\n* direct_maximum\n* direct_franchise\n* directcalc_percentage\n* directfreq\n* counting_directfreq\n* directmax_num\n* member_reimbursement_amount\n* family_refundamount\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* iddifda\n* oldid\n* datafine_validita\n* datainiziovalidita\n* drg_code\n* icdm_code\n* internal_code\n* compensation_on_event\n* visus\n* extra_healthcare\n* max_deductibles\n* sum_values_fda\n* split_values_fda\n* calculated_day\n* calculated_age\n* warranty_validfor\n* warranty_type\n* auto_liquidation_limit\n* age_limit\n* total_import\n* direct_fam_remb\n* ind_member_remb\n* ind_member_remb_p\n* ind_fam_remb\n* ind_fam_remb_p\n* direct_member_remb\n* direct_member_remb_p\n* direct_fam_remb_a\n* subsidy_limit_amt\n* subsidy_used_amt\n* maxusage_reset_period\n* indirect_freq\n* indirectfreq_counting\n* stato\n* last_requested_date\n* day_calc_type\n* directmax_p\n* direct_franchise_p\n* indirectmax_p\n* indirect_franchise_p\n* member_remb_nps\n* family_remb_nps\n* amount_member_remb_nps\n* amount_family_remb_nps\n* natura\n* solidarity_aid\n* extraordinary_aid_1\n* extraordinary_aid_2\n* extraordinary_aid_3\n* study_aid_1\n* study_aid_2\n* shortage_days\n* assistiti_selected\n* iwdipendenti_relation\n* automatic_liquiditation\n* desc_prestazione"
+  },
+  {
+    "title": "db/iwdipendentifdacoperture",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwdipendentifdacopertureno\n* iddifda\n* idente\n* iddi\n* employee_registration\n* idagreement\n* idfda\n* accountantid\n* january\n* february\n* march\n* april\n* may\n* june\n* july\n* august\n* september\n* october\n* november\n* december\n* months_coverage\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* set_status_\n* bu_primary\n* cdc_second\n* cdc_fourth\n* cdc_sixth\n* cdc_primary\n* bu_second\n* cdc_third\n* cdc_fifth\n* oldid"
+  },
+  {
+    "title": "db/cbTasks",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* tasksno\n* title\n* due_date\n* priority\n* taskstatus\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* statustype"
+  },
+  {
+    "title": "db/cbPaymentRequest",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* cbpaymentrequestno\n* import_payment\n* importpayment_incassato\n* importpayment_residuo\n* date_scadence\n* ritardo_cb\n* incasso_date\n* acc_reference\n* fn_date\n* sn_date\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* paymentreq_date\n* description\n* idpayment\n* postal_number\n* accounting_date\n* incasso_accounting_date\n* accounting_reference\n* emailsoggeto\n* emailsent\n* postasent\n* holder_ente\n* holder_assistito\n* oldid\n* competence_date\n* type_ente_assistito\n* barcode_img\n* stateissued"
+  },
+  {
+    "title": "db/iwDipendentiDetails",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwdipendentidetailsno\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* assisted\n* iwenti_relation\n* start_date\n* end_date\n* number_of_days"
+  },
+  {
+    "title": "db/ConfigEditor",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* title\n* configeditor_no\n* assigned_user_id\n* category\n* access\n* path\n* abbreviation\n* icon\n* created_user_id\n* createdtime\n* modifiedtime\n* description"
+  },
+  {
+    "title": "db/iwGaranzieListinoTestata",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwgaranzielistinotestatano\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* nomelistino_garanzie\n* struttura_sanitaria\n* firmatariostruttura_sanitaria\n* firmatario_mutua_ganzie\n* datainizio_validita\n* datafine_validita\n* tacitorinnovo_garanzie\n* stato_garanzielistino\n* datastato_garanzie\n* notestato_garanzie"
+  },
+  {
+    "title": "db/iwAccordoConvenzioni",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* iwaccordoconvenzionino\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* codicea_ccordo\n* codicelistinotestata_acc"
+  },
+  {
+    "title": "db/PaymentRequestSussidi",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* paymentrequestsussidino\n* paymentreq_date\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description\n* date_scadence\n* iwdipendenti_relation\n* iwenti_relation\n* idpayment\n* emailsent\n* emailsoggeto\n* import_payment\n* importpayment_incassato\n* importpayment_residuo\n* accounting_reference\n* accounting_date\n* oldid\n* bu_primary\n* cdc_primary\n* cdc_third\n* cdc_sixth\n* cdc_second\n* cdc_fourth\n* cdc_fifth\n* bu_second\n* indice_statistico_u\n* indice_statistico_d\n* indice_statistico_t\n* indice_statistico_f"
+  },
+  {
+    "title": "db/MDI",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* title\n* folderid\n* duplicates\n* bmfoldername\n* bmrelation\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description"
+  },
+  {
+    "title": "db/PortalLoginInformations",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* portallogininformationsno\n* contactname\n* contactip\n* sessionname\n* actiontime\n* status\n* assigned_user_id\n* created_user_id\n* createdtime\n* modifiedtime\n* description"
+  },
+  {
+    "title": "db/MemberOf",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* accountname\n* account_no\n* phone\n* website\n* fax\n* tickersymbol\n* otherphone\n* account_id\n* email1\n* employees\n* email2\n* ownership\n* rating\n* industry\n* siccode\n* accounttype\n* annual_revenue\n* emailoptout\n* notify_owner\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* oldid",
+    "map-to": [
+      "db/Accounts"
+    ]
+  },
+  {
+    "title": "db/RelatedTo",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* salutationtype\n* firstname\n* contact_no\n* phone\n* lastname\n* mobile\n* account_id\n* homephone\n* leadsource\n* otherphone\n* title\n* fax\n* department\n* birthday\n* email\n* contact_id\n* assistant\n* secondaryemail\n* assistantphone\n* donotcall\n* emailoptout\n* assigned_user_id\n* reference\n* notify_owner\n* createdtime\n* modifiedtime\n* modifiedby\n* portal\n* support_start_date\n* support_end_date\n* mailingstreet\n* otherstreet\n* mailingcity\n* othercity\n* mailingstate\n* otherstate\n* mailingzip\n* otherzip\n* mailingcountry\n* othercountry\n* mailingpobox\n* otherpobox\n* imagename\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* template_language\n* portalpasswordtype\n* portalloginuser\n* oldid\n* accountname\n* account_no\n* phone\n* website\n* fax\n* tickersymbol\n* otherphone\n* account_id\n* email1\n* employees\n* email2\n* ownership\n* rating\n* industry\n* siccode\n* accounttype\n* annual_revenue\n* emailoptout\n* notify_owner\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* oldid",
+    "map-to": [
+      "db/Accounts",
+      "db/Contacts"
+    ]
+  },
+  {
+    "title": "db/Product",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* servicename\n* service_no\n* discontinued\n* sales_start_date\n* sales_end_date\n* start_date\n* expiry_date\n* website\n* createdtime\n* modifiedtime\n* modifiedby\n* service_usageunit\n* qty_per_unit\n* assigned_user_id\n* servicecategory\n* unit_price\n* taxclass\n* commissionrate\n* description\n* cost_price\n* divisible\n* created_user_id\n* productname\n* product_no\n* productcode\n* discontinued\n* manufacturer\n* productcategory\n* sales_start_date\n* sales_end_date\n* start_date\n* expiry_date\n* website\n* vendor_id\n* mfr_part_no\n* vendor_part_no\n* serial_no\n* productsheet\n* glacct\n* createdtime\n* modifiedtime\n* modifiedby\n* unit_price\n* commissionrate\n* taxclass\n* usageunit\n* qty_per_unit\n* qtyinstock\n* reorderlevel\n* assigned_user_id\n* qtyindemand\n* imagename\n* description\n* cost_price\n* divisible\n* created_user_id",
+    "map-to": [
+      "db/Vendors"
+    ]
+  },
+  {
+    "title": "db/MCRelatedTo",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* projectname\n* startdate\n* targetenddate\n* actualenddate\n* projectstatus\n* projecttype\n* linktoaccountscontacts\n* assigned_user_id\n* project_no\n* targetbudget\n* projecturl\n* projectpriority\n* progress\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* email\n* created_user_id\n* salutationtype\n* firstname\n* contact_no\n* phone\n* lastname\n* mobile\n* account_id\n* homephone\n* leadsource\n* otherphone\n* title\n* fax\n* department\n* birthday\n* email\n* contact_id\n* assistant\n* secondaryemail\n* assistantphone\n* donotcall\n* emailoptout\n* assigned_user_id\n* reference\n* notify_owner\n* createdtime\n* modifiedtime\n* modifiedby\n* portal\n* support_start_date\n* support_end_date\n* mailingstreet\n* otherstreet\n* mailingcity\n* othercity\n* mailingstate\n* otherstate\n* mailingzip\n* otherzip\n* mailingcountry\n* othercountry\n* mailingpobox\n* otherpobox\n* imagename\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* template_language\n* portalpasswordtype\n* portalloginuser\n* oldid\n* potentialname\n* potential_no\n* amount\n* related_to\n* closingdate\n* opportunity_type\n* nextstep\n* leadsource\n* sales_stage\n* assigned_user_id\n* probability\n* campaignid\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* forecast_amount\n* email\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* projecttaskname\n* projecttasktype\n* projecttaskpriority\n* projectid\n* assigned_user_id\n* projecttasknumber\n* projecttask_no\n* projecttaskprogress\n* projecttaskhours\n* startdate\n* enddate\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* email\n* projecttaskstatus\n* created_user_id\n* salutationtype\n* firstname\n* lead_no\n* phone\n* lastname\n* mobile\n* company\n* fax\n* designation\n* email\n* leadsource\n* website\n* industry\n* leadstatus\n* annualrevenue\n* rating\n* noofemployees\n* assigned_user_id\n* secondaryemail\n* createdtime\n* modifiedtime\n* modifiedby\n* lane\n* code\n* city\n* country\n* state\n* pobox\n* description\n* campaignrelstatus\n* emailoptout\n* created_user_id\n* accountname\n* account_no\n* phone\n* website\n* fax\n* tickersymbol\n* otherphone\n* account_id\n* email1\n* employees\n* email2\n* ownership\n* rating\n* industry\n* siccode\n* accounttype\n* annual_revenue\n* emailoptout\n* notify_owner\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* oldid",
+    "map-to": [
+      "db/Accounts",
+      "db/Contacts"
+    ]
+  },
+  {
+    "title": "db/TCRelatedTo",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* salesorder_no\n* subject\n* potential_id\n* customerno\n* quote_id\n* vtiger_purchaseorder\n* contact_id\n* duedate\n* carrier\n* pending\n* sostatus\n* txtAdjustment\n* salescommission\n* exciseduty\n* hdnGrandTotal\n* hdnSubTotal\n* hdnTaxType\n* hdnDiscountPercent\n* hdnDiscountAmount\n* hdnS_H_Amount\n* account_id\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* currency_id\n* conversion_rate\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* terms_conditions\n* enable_recurring\n* recurring_frequency\n* start_period\n* end_period\n* payment_duration\n* invoicestatus\n* created_user_id\n* tandc\n* pl_gross_total\n* pl_dto_line\n* pl_dto_global\n* pl_dto_total\n* pl_net_total\n* pl_sh_total\n* pl_sh_tax\n* pl_adjustment\n* pl_grand_total\n* sum_nettotal\n* sum_tax1\n* sum_tax2\n* sum_tax3\n* sum_taxtotal\n* sum_taxtotalretention\n* invoiced\n* ticket_no\n* assigned_user_id\n* parent_id\n* ticketpriorities\n* product_id\n* ticketseverities\n* ticketstatus\n* ticketcategories\n* update_log\n* hours\n* days\n* createdtime\n* modifiedtime\n* from_portal\n* modifiedby\n* ticket_title\n* description\n* solution\n* comments\n* email\n* from_mailscanner\n* commentadded\n* created_user_id\n* projectmilestonename\n* projectmilestonedate\n* projectid\n* projectmilestonetype\n* assigned_user_id\n* projectmilestone_no\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* created_user_id\n* asset_no\n* product\n* serialnumber\n* datesold\n* dateinservice\n* assetstatus\n* tagnumber\n* invoiceid\n* shippingmethod\n* shippingtrackingnumber\n* assigned_user_id\n* assetname\n* account\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* created_user_id\n* accountname\n* account_no\n* phone\n* website\n* fax\n* tickersymbol\n* otherphone\n* account_id\n* email1\n* employees\n* email2\n* ownership\n* rating\n* industry\n* siccode\n* accounttype\n* annual_revenue\n* emailoptout\n* notify_owner\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* oldid\n* vendorname\n* vendor_no\n* phone\n* email\n* website\n* glacct\n* category\n* createdtime\n* modifiedtime\n* modifiedby\n* street\n* pobox\n* city\n* state\n* postalcode\n* country\n* description\n* assigned_user_id\n* created_user_id\n* potentialname\n* potential_no\n* amount\n* related_to\n* closingdate\n* opportunity_type\n* nextstep\n* leadsource\n* sales_stage\n* assigned_user_id\n* probability\n* campaignid\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* forecast_amount\n* email\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* purchaseorder_no\n* subject\n* vendor_id\n* requisition_no\n* tracking_no\n* contact_id\n* duedate\n* carrier\n* txtAdjustment\n* salescommission\n* exciseduty\n* hdnGrandTotal\n* hdnSubTotal\n* hdnTaxType\n* hdnDiscountPercent\n* hdnDiscountAmount\n* hdnS_H_Amount\n* postatus\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* currency_id\n* conversion_rate\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* terms_conditions\n* created_user_id\n* tandc\n* pl_gross_total\n* pl_dto_line\n* pl_dto_global\n* pl_dto_total\n* pl_net_total\n* pl_sh_total\n* pl_sh_tax\n* pl_adjustment\n* pl_grand_total\n* sum_nettotal\n* sum_tax1\n* sum_tax2\n* sum_tax3\n* sum_taxtotal\n* sum_taxtotalretention\n* quote_no\n* subject\n* potential_id\n* quotestage\n* validtill\n* contact_id\n* carrier\n* hdnSubTotal\n* shipping\n* assigned_user_id1\n* txtAdjustment\n* hdnGrandTotal\n* hdnTaxType\n* hdnDiscountPercent\n* hdnDiscountAmount\n* hdnS_H_Amount\n* account_id\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* currency_id\n* conversion_rate\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* terms_conditions\n* created_user_id\n* tandc\n* pl_gross_total\n* pl_dto_line\n* pl_dto_global\n* pl_dto_total\n* pl_net_total\n* pl_sh_total\n* pl_sh_tax\n* pl_adjustment\n* pl_grand_total\n* sum_nettotal\n* sum_tax1\n* sum_tax2\n* sum_tax3\n* sum_taxtotal\n* sum_taxtotalretention\n* projectname\n* startdate\n* targetenddate\n* actualenddate\n* projectstatus\n* projecttype\n* linktoaccountscontacts\n* assigned_user_id\n* project_no\n* targetbudget\n* projecturl\n* projectpriority\n* progress\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* email\n* created_user_id\n* projecttaskname\n* projecttasktype\n* projecttaskpriority\n* projectid\n* assigned_user_id\n* projecttasknumber\n* projecttask_no\n* projecttaskprogress\n* projecttaskhours\n* startdate\n* enddate\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* email\n* projecttaskstatus\n* created_user_id\n* assigned_user_id\n* createdtime\n* modifiedtime\n* start_date\n* end_date\n* sc_related_to\n* tracking_unit\n* total_units\n* used_units\n* subject\n* due_date\n* planned_duration\n* actual_duration\n* contract_status\n* contract_priority\n* contract_type\n* progress\n* contract_no\n* modifiedby\n* created_user_id\n* salutationtype\n* firstname\n* lead_no\n* phone\n* lastname\n* mobile\n* company\n* fax\n* designation\n* email\n* leadsource\n* website\n* industry\n* leadstatus\n* annualrevenue\n* rating\n* noofemployees\n* assigned_user_id\n* secondaryemail\n* createdtime\n* modifiedtime\n* modifiedby\n* lane\n* code\n* city\n* country\n* state\n* pobox\n* description\n* campaignrelstatus\n* emailoptout\n* created_user_id\n* salutationtype\n* firstname\n* contact_no\n* phone\n* lastname\n* mobile\n* account_id\n* homephone\n* leadsource\n* otherphone\n* title\n* fax\n* department\n* birthday\n* email\n* contact_id\n* assistant\n* secondaryemail\n* assistantphone\n* donotcall\n* emailoptout\n* assigned_user_id\n* reference\n* notify_owner\n* createdtime\n* modifiedtime\n* modifiedby\n* portal\n* support_start_date\n* support_end_date\n* mailingstreet\n* otherstreet\n* mailingcity\n* othercity\n* mailingstate\n* otherstate\n* mailingzip\n* otherzip\n* mailingcountry\n* othercountry\n* mailingpobox\n* otherpobox\n* imagename\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* template_language\n* portalpasswordtype\n* portalloginuser\n* oldid\n* campaignname\n* campaign_no\n* campaigntype\n* product_id\n* campaignstatus\n* closingdate\n* assigned_user_id\n* numsent\n* sponsor\n* targetaudience\n* targetsize\n* createdtime\n* modifiedtime\n* modifiedby\n* expectedresponse\n* expectedrevenue\n* budgetcost\n* actualcost\n* expectedresponsecount\n* expectedsalescount\n* expectedroi\n* actualresponsecount\n* actualsalescount\n* actualroi\n* description\n* campaignrelstatus\n* created_user_id\n* subject\n* salesorder_id\n* customerno\n* contact_id\n* invoicedate\n* duedate\n* vtiger_purchaseorder\n* txtAdjustment\n* salescommission\n* exciseduty\n* hdnSubTotal\n* hdnGrandTotal\n* hdnTaxType\n* hdnDiscountPercent\n* hdnDiscountAmount\n* hdnS_H_Amount\n* account_id\n* invoicestatus\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* currency_id\n* conversion_rate\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* terms_conditions\n* invoice_no\n* created_user_id\n* tandc\n* pl_gross_total\n* pl_dto_line\n* pl_dto_global\n* pl_dto_total\n* pl_net_total\n* pl_sh_total\n* pl_sh_tax\n* pl_adjustment\n* pl_grand_total\n* sum_nettotal\n* sum_tax1\n* sum_tax2\n* sum_tax3\n* sum_taxtotal\n* sum_taxtotalretention",
+    "map-to": [
+      "db/Accounts",
+      "db/Contacts",
+      "db/Potentials",
+      "db/Products",
+      "db/Quotes",
+      "db/SalesOrder",
+      "db/Vendors"
+    ]
+  },
+  {
+    "title": "db/CPParent",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* accountname\n* account_no\n* phone\n* website\n* fax\n* tickersymbol\n* otherphone\n* account_id\n* email1\n* employees\n* email2\n* ownership\n* rating\n* industry\n* siccode\n* accounttype\n* annual_revenue\n* emailoptout\n* notify_owner\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* oldid\n* salutationtype\n* firstname\n* contact_no\n* phone\n* lastname\n* mobile\n* account_id\n* homephone\n* leadsource\n* otherphone\n* title\n* fax\n* department\n* birthday\n* email\n* contact_id\n* assistant\n* secondaryemail\n* assistantphone\n* donotcall\n* emailoptout\n* assigned_user_id\n* reference\n* notify_owner\n* createdtime\n* modifiedtime\n* modifiedby\n* portal\n* support_start_date\n* support_end_date\n* mailingstreet\n* otherstreet\n* mailingcity\n* othercity\n* mailingstate\n* otherstate\n* mailingzip\n* otherzip\n* mailingcountry\n* othercountry\n* mailingpobox\n* otherpobox\n* imagename\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* template_language\n* portalpasswordtype\n* portalloginuser\n* oldid\n* salutationtype\n* firstname\n* lead_no\n* phone\n* lastname\n* mobile\n* company\n* fax\n* designation\n* email\n* leadsource\n* website\n* industry\n* leadstatus\n* annualrevenue\n* rating\n* noofemployees\n* assigned_user_id\n* secondaryemail\n* createdtime\n* modifiedtime\n* modifiedby\n* lane\n* code\n* city\n* country\n* state\n* pobox\n* description\n* campaignrelstatus\n* emailoptout\n* created_user_id\n* vendorname\n* vendor_no\n* phone\n* email\n* website\n* glacct\n* category\n* createdtime\n* modifiedtime\n* modifiedby\n* street\n* pobox\n* city\n* state\n* postalcode\n* country\n* description\n* assigned_user_id\n* created_user_id",
+    "map-to": [
+      "db/Accounts",
+      "db/Contacts"
+    ]
+  },
+  {
+    "title": "db/CPRelatedTo",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* productname\n* product_no\n* productcode\n* discontinued\n* manufacturer\n* productcategory\n* sales_start_date\n* sales_end_date\n* start_date\n* expiry_date\n* website\n* vendor_id\n* mfr_part_no\n* vendor_part_no\n* serial_no\n* productsheet\n* glacct\n* createdtime\n* modifiedtime\n* modifiedby\n* unit_price\n* commissionrate\n* taxclass\n* usageunit\n* qty_per_unit\n* qtyinstock\n* reorderlevel\n* assigned_user_id\n* qtyindemand\n* imagename\n* description\n* cost_price\n* divisible\n* created_user_id\n* assigned_user_id\n* createdtime\n* modifiedtime\n* start_date\n* end_date\n* sc_related_to\n* tracking_unit\n* total_units\n* used_units\n* subject\n* due_date\n* planned_duration\n* actual_duration\n* contract_status\n* contract_priority\n* contract_type\n* progress\n* contract_no\n* modifiedby\n* created_user_id\n* subject\n* salesorder_id\n* customerno\n* contact_id\n* invoicedate\n* duedate\n* vtiger_purchaseorder\n* txtAdjustment\n* salescommission\n* exciseduty\n* hdnSubTotal\n* hdnGrandTotal\n* hdnTaxType\n* hdnDiscountPercent\n* hdnDiscountAmount\n* hdnS_H_Amount\n* account_id\n* invoicestatus\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* currency_id\n* conversion_rate\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* terms_conditions\n* invoice_no\n* created_user_id\n* tandc\n* pl_gross_total\n* pl_dto_line\n* pl_dto_global\n* pl_dto_total\n* pl_net_total\n* pl_sh_total\n* pl_sh_tax\n* pl_adjustment\n* pl_grand_total\n* sum_nettotal\n* sum_tax1\n* sum_tax2\n* sum_tax3\n* sum_taxtotal\n* sum_taxtotalretention\n* salesorder_no\n* subject\n* potential_id\n* customerno\n* quote_id\n* vtiger_purchaseorder\n* contact_id\n* duedate\n* carrier\n* pending\n* sostatus\n* txtAdjustment\n* salescommission\n* exciseduty\n* hdnGrandTotal\n* hdnSubTotal\n* hdnTaxType\n* hdnDiscountPercent\n* hdnDiscountAmount\n* hdnS_H_Amount\n* account_id\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* currency_id\n* conversion_rate\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* terms_conditions\n* enable_recurring\n* recurring_frequency\n* start_period\n* end_period\n* payment_duration\n* invoicestatus\n* created_user_id\n* tandc\n* pl_gross_total\n* pl_dto_line\n* pl_dto_global\n* pl_dto_total\n* pl_net_total\n* pl_sh_total\n* pl_sh_tax\n* pl_adjustment\n* pl_grand_total\n* sum_nettotal\n* sum_tax1\n* sum_tax2\n* sum_tax3\n* sum_taxtotal\n* sum_taxtotalretention\n* invoiced\n* campaignname\n* campaign_no\n* campaigntype\n* product_id\n* campaignstatus\n* closingdate\n* assigned_user_id\n* numsent\n* sponsor\n* targetaudience\n* targetsize\n* createdtime\n* modifiedtime\n* modifiedby\n* expectedresponse\n* expectedrevenue\n* budgetcost\n* actualcost\n* expectedresponsecount\n* expectedsalescount\n* expectedroi\n* actualresponsecount\n* actualsalescount\n* actualroi\n* description\n* campaignrelstatus\n* created_user_id\n* ticket_no\n* assigned_user_id\n* parent_id\n* ticketpriorities\n* product_id\n* ticketseverities\n* ticketstatus\n* ticketcategories\n* update_log\n* hours\n* days\n* createdtime\n* modifiedtime\n* from_portal\n* modifiedby\n* ticket_title\n* description\n* solution\n* comments\n* email\n* from_mailscanner\n* commentadded\n* created_user_id\n* projectmilestonename\n* projectmilestonedate\n* projectid\n* projectmilestonetype\n* assigned_user_id\n* projectmilestone_no\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* created_user_id\n* asset_no\n* product\n* serialnumber\n* datesold\n* dateinservice\n* assetstatus\n* tagnumber\n* invoiceid\n* shippingmethod\n* shippingtrackingnumber\n* assigned_user_id\n* assetname\n* account\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* created_user_id\n* servicename\n* service_no\n* discontinued\n* sales_start_date\n* sales_end_date\n* start_date\n* expiry_date\n* website\n* createdtime\n* modifiedtime\n* modifiedby\n* service_usageunit\n* qty_per_unit\n* assigned_user_id\n* servicecategory\n* unit_price\n* taxclass\n* commissionrate\n* description\n* cost_price\n* divisible\n* created_user_id\n* purchaseorder_no\n* subject\n* vendor_id\n* requisition_no\n* tracking_no\n* contact_id\n* duedate\n* carrier\n* txtAdjustment\n* salescommission\n* exciseduty\n* hdnGrandTotal\n* hdnSubTotal\n* hdnTaxType\n* hdnDiscountPercent\n* hdnDiscountAmount\n* hdnS_H_Amount\n* postatus\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* currency_id\n* conversion_rate\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* terms_conditions\n* created_user_id\n* tandc\n* pl_gross_total\n* pl_dto_line\n* pl_dto_global\n* pl_dto_total\n* pl_net_total\n* pl_sh_total\n* pl_sh_tax\n* pl_adjustment\n* pl_grand_total\n* sum_nettotal\n* sum_tax1\n* sum_tax2\n* sum_tax3\n* sum_taxtotal\n* sum_taxtotalretention\n* quote_no\n* subject\n* potential_id\n* quotestage\n* validtill\n* contact_id\n* carrier\n* hdnSubTotal\n* shipping\n* assigned_user_id1\n* txtAdjustment\n* hdnGrandTotal\n* hdnTaxType\n* hdnDiscountPercent\n* hdnDiscountAmount\n* hdnS_H_Amount\n* account_id\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* currency_id\n* conversion_rate\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* terms_conditions\n* created_user_id\n* tandc\n* pl_gross_total\n* pl_dto_line\n* pl_dto_global\n* pl_dto_total\n* pl_net_total\n* pl_sh_total\n* pl_sh_tax\n* pl_adjustment\n* pl_grand_total\n* sum_nettotal\n* sum_tax1\n* sum_tax2\n* sum_tax3\n* sum_taxtotal\n* sum_taxtotalretention\n* potentialname\n* potential_no\n* amount\n* related_to\n* closingdate\n* opportunity_type\n* nextstep\n* leadsource\n* sales_stage\n* assigned_user_id\n* probability\n* campaignid\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* forecast_amount\n* email\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* projectname\n* startdate\n* targetenddate\n* actualenddate\n* projectstatus\n* projecttype\n* linktoaccountscontacts\n* assigned_user_id\n* project_no\n* targetbudget\n* projecturl\n* projectpriority\n* progress\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* email\n* created_user_id\n* projecttaskname\n* projecttasktype\n* projecttaskpriority\n* projectid\n* assigned_user_id\n* projecttasknumber\n* projecttask_no\n* projecttaskprogress\n* projecttaskhours\n* startdate\n* enddate\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* email\n* projecttaskstatus\n* created_user_id",
+    "map-to": [
+      "db/Accounts",
+      "db/Contacts",
+      "db/Potentials",
+      "db/Products",
+      "db/Quotes",
+      "db/SalesOrder",
+      "db/Vendors"
+    ]
+  },
+  {
+    "title": "db/HDRelatedTo",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* accountname\n* account_no\n* phone\n* website\n* fax\n* tickersymbol\n* otherphone\n* account_id\n* email1\n* employees\n* email2\n* ownership\n* rating\n* industry\n* siccode\n* accounttype\n* annual_revenue\n* emailoptout\n* notify_owner\n* assigned_user_id\n* createdtime\n* modifiedtime\n* modifiedby\n* bill_street\n* ship_street\n* bill_city\n* ship_city\n* bill_state\n* ship_state\n* bill_code\n* ship_code\n* bill_country\n* ship_country\n* bill_pobox\n* ship_pobox\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* oldid\n* salutationtype\n* firstname\n* contact_no\n* phone\n* lastname\n* mobile\n* account_id\n* homephone\n* leadsource\n* otherphone\n* title\n* fax\n* department\n* birthday\n* email\n* contact_id\n* assistant\n* secondaryemail\n* assistantphone\n* donotcall\n* emailoptout\n* assigned_user_id\n* reference\n* notify_owner\n* createdtime\n* modifiedtime\n* modifiedby\n* portal\n* support_start_date\n* support_end_date\n* mailingstreet\n* otherstreet\n* mailingcity\n* othercity\n* mailingstate\n* otherstate\n* mailingzip\n* otherzip\n* mailingcountry\n* othercountry\n* mailingpobox\n* otherpobox\n* imagename\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* template_language\n* portalpasswordtype\n* portalloginuser\n* oldid",
+    "map-to": [
+      "db/Accounts",
+      "db/Contacts"
+    ]
+  },
+  {
+    "title": "db/HDProducts",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* productname\n* product_no\n* productcode\n* discontinued\n* manufacturer\n* productcategory\n* sales_start_date\n* sales_end_date\n* start_date\n* expiry_date\n* website\n* vendor_id\n* mfr_part_no\n* vendor_part_no\n* serial_no\n* productsheet\n* glacct\n* createdtime\n* modifiedtime\n* modifiedby\n* unit_price\n* commissionrate\n* taxclass\n* usageunit\n* qty_per_unit\n* qtyinstock\n* reorderlevel\n* assigned_user_id\n* qtyindemand\n* imagename\n* description\n* cost_price\n* divisible\n* created_user_id\n* servicename\n* service_no\n* discontinued\n* sales_start_date\n* sales_end_date\n* start_date\n* expiry_date\n* website\n* createdtime\n* modifiedtime\n* modifiedby\n* service_usageunit\n* qty_per_unit\n* assigned_user_id\n* servicecategory\n* unit_price\n* taxclass\n* commissionrate\n* description\n* cost_price\n* divisible\n* created_user_id",
+    "map-to": [
+      "db/Vendors"
+    ]
+  },
+  {
+    "title": "db/ProductFrom",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* productname\n* product_no\n* productcode\n* discontinued\n* manufacturer\n* productcategory\n* sales_start_date\n* sales_end_date\n* start_date\n* expiry_date\n* website\n* vendor_id\n* mfr_part_no\n* vendor_part_no\n* serial_no\n* productsheet\n* glacct\n* createdtime\n* modifiedtime\n* modifiedby\n* unit_price\n* commissionrate\n* taxclass\n* usageunit\n* qty_per_unit\n* qtyinstock\n* reorderlevel\n* assigned_user_id\n* qtyindemand\n* imagename\n* description\n* cost_price\n* divisible\n* created_user_id",
+    "map-to": [
+      "db/Vendors"
+    ]
+  },
+  {
+    "title": "db/ProductTo",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* productname\n* product_no\n* productcode\n* discontinued\n* manufacturer\n* productcategory\n* sales_start_date\n* sales_end_date\n* start_date\n* expiry_date\n* website\n* vendor_id\n* mfr_part_no\n* vendor_part_no\n* serial_no\n* productsheet\n* glacct\n* createdtime\n* modifiedtime\n* modifiedby\n* unit_price\n* commissionrate\n* taxclass\n* usageunit\n* qty_per_unit\n* qtyinstock\n* reorderlevel\n* assigned_user_id\n* qtyindemand\n* imagename\n* description\n* cost_price\n* divisible\n* created_user_id",
+    "map-to": [
+      "db/Vendors"
+    ]
+  },
+  {
+    "title": "db/Organization",
+    "tags": [
+      "map-node"
+    ],
+    "text": "* organizationname\n* address\n* city\n* state\n* code\n* country\n* phone\n* fax\n* website\n* campo"
+  }
+]
