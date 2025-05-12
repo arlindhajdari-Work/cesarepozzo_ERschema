@@ -1,8 +1,7 @@
 
 {
-    "tiddlers": [
-        {
-            "title": "Account",
+    "tiddlers": {
+        "Account": {
             "text": "Fields:\n- accountname\n- account_no\n- phone\n- website\n- fax\n- tickersymbol\n- otherphone\n-
 email1\n- employees\n- email2\n- ownership\n- rating\n- industry\n- siccode\n- accounttype\n- annual_revenue\n-
 emailoptout\n- notify_owner\n- assigned_user_id\n- createdtime\n- modifiedtime\n- modifiedby\n- bill_street\n-
@@ -187,5 +186,5 @@ enddate\n- createdtime\n- modifiedtime\n- modifiedby\n- description\n- email\n- 
 assigned_user_id\n- projectmilestone_no\n- createdtime\n- modifiedtime\n- modifiedby\n- description\n- created_user_id",
             "tags": ["Entity", "Schema", "RelatedTo:Project"]
         }
-    ]
+    }
 }
