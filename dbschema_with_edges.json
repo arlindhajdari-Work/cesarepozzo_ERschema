@@ -9,7 +9,21 @@
   {
     "title": "db/Contacts",
     "tags": [
-      "map-node"
+      "map-node",
+      "Accounts",
+      "Emails",
+      "iwEnti",
+      "iwDipendenti",
+      "iwDipendentiContabili",
+      "iwDipendentiFda",
+      "iwDipendentiIndirizzi",
+      "iwDipendentiFamigliari",
+      "iwEmessi",
+      "iwAccordo",
+      "iwEntifda",
+      "iwEnticontabili",
+      "iwEntiIndirizzi",
+      "Documents"
     ],
     "text": "* salutationtype\n* firstname\n* contact_no\n* phone\n* lastname\n* mobile\n* account_id\n* homephone\n* leadsource\n* otherphone\n* title\n* fax\n* department\n* birthday\n* email\n* contact_id\n* assistant\n* secondaryemail\n* assistantphone\n* donotcall\n* emailoptout\n* assigned_user_id\n* reference\n* notify_owner\n* createdtime\n* modifiedtime\n* modifiedby\n* portal\n* support_start_date\n* support_end_date\n* mailingstreet\n* otherstreet\n* mailingcity\n* othercity\n* mailingstate\n* otherstate\n* mailingzip\n* otherzip\n* mailingcountry\n* othercountry\n* mailingpobox\n* otherpobox\n* imagename\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* template_language\n* portalpasswordtype\n* portalloginuser\n* oldid",
     "map-to": [
