@@ -1,0 +1,36 @@
+{
+  "tiddlers": [
+    {
+      "title": "Opportunita",
+      "tags": "ENTITY CRM",
+      "text": "[[RelatedTo]] [[cbtranslation]] [[Contacts]] [[Products]] [[Documents]] [[Quotes]] [[SalesOrder]] [[Services]] [[CobroPago]] [[Emails]]",
+      "fields": {
+        "database_fields": "potential_no|Nr Opportunita, potentialname|Nome Opportunita, amount|Ammontare, related_to|Collegato a, closingdate|Data chiusura, opportunity_type|Tipo, nextstep|Prossimo Step, leadsource|Fonte Lead, sales_stage|Stadio vendita, assigned_user_id|Assegnato a, probability|Probabilita, campaignid|Fonte Campagna, createdtime|Orario creazione, modifiedtime|Orario modifica, modifiedby|Ultima Modifica, description|Descrizione, forecast_amount|Forecast Amount, email|Email, isconvertedfromlead|Viene convertito, convertedfromlead|Convertito, created_user_id|Creato da",
+        "con uno entita": "RelatedTo (1-to-1)",
+        "con varie entita": "Contacts (1-to-many), Products (many-to-many), Documents (many-to-many), Quotes (many-to-many), SalesOrder (many-to-many), Services (many-to-many), CobroPago (many-to-many), Emails (many-to-many), cbtranslation (many-to-many)"
+      }
+    },
+    {
+      "title": "Contatti",
+      "tags": "ENTITY CRM",
+      "text": "[[Accounts]] [[Emails]] [[iwEnti]] [[iwDipendenti]] [[iwDipendentiContabili]] [[iwDipendentiFda]] [[iwDipendentiIndirizzi]] [[iwDipendentiFamigliari]] [[iwEmessi]] [[iwAccordo]] [[iwEntifda]] [[iwEnticontabili]] [[iwEntiIndirizzi]] [[Documents]]",
+      "fields": {
+        "database_fields": "contact_no|Nr Contatto, salutationtype|Formula di saluto, firstname|Nome, lastname|Cognome, phone|Telefono Ufficio, mobile|Cellulare, account_id|Nome Azienda, homephone|Telefono Casa, leadsource|Fonte Lead, otherphone|Other Phone, title|Titolo, fax|Fax, department|Dipartimento, birthday|Compleanno, email|Email, contact_id|Riporta a, assistant|Assistente, secondaryemail|Email Secondaria, assistantphone|Telefono Assistente, donotcall|Non Chiamare, emailoptout|Blocca Email, assigned_user_id|Assegnato a, reference|Riferimento, notify_owner|Notifica al Proprietario, createdtime|Orario creazione, modifiedtime|Orario modifica, modifiedby|Ultima Modifica Di, portal|Utente Portale, support_start_date|Data Inizio Supporto, support_end_date|Data Fine Supporto, mailingstreet|Via (spedizione), otherstreet|Altra Via, mailingcity|Citta (spedizione), othercity|Altra Citta, mailingstate|Provincia (spedizione), otherstate|Altra Provincia, mailingzip|CAP (spedizione), otherzip|Altro CAP, mailingcountry|Paese (spedizione), othercountry|Altro Paese, mailingpobox|BOX (spedizione), otherpobox|Altro BOX (spedizione), imagename|Immagine Contatto, description|Descrizione, campaignrelstatus|Status, isconvertedfromlead|Viene Convertito, convertedfromlead|Convertito, created_user_id|Creato Da, template_language|Linguaggio Modello, portalpasswordtype|Codifica Password, portalloginuser|Utente Accesso Portale, oldid|Vecchio Id",
+        "con uno entita": "Accounts (1-to-1)",
+        "con varie entita": "Emails (many-to-many), iwEnti (many-to-many), iwDipendenti (many-to-many), iwDipendentiContabili (many-to-many), iwDipendentiFda (many-to-many), iwDipendentiIndirizzi (many-to-many), iwDipendentiFamigliari (many-to-many), iwEmessi (many-to-many), iwAccordo (many-to-many), iwEntifda (many-to-many), iwEnticontabili (many-to-many), iwEntiIndirizzi (many-to-many), Documents (many-to-many)"
+      }
+    },
+    {
+      "title": "Aziende",
+      "tags": "ENTITY CRM",
+      "text": "[[MemberOf]] [[Contacts]] [[Potentials]] [[Quotes]] [[SalesOrder]] [[Fatture]] [[cbtranslation]] [[Emails]] [[Documents]] [[HelpDesk]] [[Products]] [[Campaigns]] [[Services]] [[CobroPago]] [[Assets]] [[Project]] [[InventoryDetails]] [[cbSurveyDone]] [[cbSurveyAnswer]] [[cbCompany]] [[Messages]]",
+      "fields": {
+        "database_fields": "account_no|Nr Azienda, accountname|Nome Azienda, phone|Telefono, website|Sito Web, fax|Fax, tickersymbol|Simbolo Ticker, otherphone|Altro Telefono, account_id|Membro di, email1|Email, employees|Impiegati, email2|Altra Email, ownership|Proprieta, rating|Valutazione, industry|Industria, siccode|Codice SIC, accounttype|Tipo, annual_revenue|Fatturato Annuo, emailoptout|Blocca Email, notify_owner|Notifica Proprietario, assigned_user_id|Assegnato a, createdtime|Data Creazione, modifiedtime|Data Modifica, modifiedby|Last Modified By, bill_street|Indirizzo (Fatturazione), ship_street|Indirizzo (Spedizione), bill_city|Cittá (Fatturazione), ship_city|Cittá (Spedizione), bill_state|Provincia (Fatturazione), ship_state|Provincia (Spedizione), bill_code|Codice (Fatturazione), ship_code|Codice (Spedizione), bill_country|Paese (Fatturazione), ship_country|Paese (Spedizione), bill_pobox|BOX (fatturazione), ship_pobox|BOX (spedizione), description|Descrizione, campaignrelstatus|Stato, isconvertedfromlead|Viene convertito, convertedfromlead|Convertito, created_user_id|Creato da, oldid|Vecchio Id",
+        "con uno entita": "MemberOf (1-to-1)",
+        "con varie entita": "Contacts (many-to-many), Potentials (many-to-many), Quotes (many-to-many), SalesOrder (many-to-many), Fatture (many-to-many), cbtranslation (many-to-many), Emails (many-to-many), Documents (many-to-many), HelpDesk (many-to-many), Products (many-to-many), Campaigns (many-to-many), Services (many-to-many), CobroPago (many-to-many), Assets (many-to-many), Project (many-to-many), InventoryDetails (many-to-many), cbSurveyDone (many-to-many), cbSurveyAnswer (many-to-many), cbCompany (many-to-many), Messages (many-to-many)"
+      }
+    }
+    // Add more entities here following the same pattern for all tables from your CSV
+    // Each tiddler represents one database table with its fields and relationships
+  ]
+}
