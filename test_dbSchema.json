@@ -1,0 +1,191 @@
+
+{
+    "tiddlers": [
+        {
+            "title": "Account",
+            "text": "Fields:\n- accountname\n- account_no\n- phone\n- website\n- fax\n- tickersymbol\n- otherphone\n-
+email1\n- employees\n- email2\n- ownership\n- rating\n- industry\n- siccode\n- accounttype\n- annual_revenue\n-
+emailoptout\n- notify_owner\n- assigned_user_id\n- createdtime\n- modifiedtime\n- modifiedby\n- bill_street\n-
+ship_street\n- bill_city\n- ship_city\n- bill_state\n- ship_state\n- bill_code\n- ship_code\n- bill_country\n-
+ship_country\n- bill_pobox\n- ship_pobox\n- description\n- campaignrelstatus\n- isconvertedfromlead\n-
+convertedfromlead\n- created_user_id\n- oldid",
+            "tags": ["Entity", "Schema", "RelatedTo:MemberOf", "Junction:Contact", "Junction:Opportunity",
+"Junction:Document", "Junction:Quote", "Junction:SalesOrder", "Junction:Invoice", "Junction:HelpDesk",
+"Junction:Product", "Junction:Service", "Junction:Campaign"]
+        },
+        {
+            "title": "Contact",
+            "text": "Fields:\n- salutationtype\n- firstname\n- lastname\n- contact_no\n- phone\n- mobile\n-
+account_id\n- homephone\n- leadsource\n- otherphone\n- title\n- fax\n- department\n- birthday\n- email\n- contact_id\n-
+assistant\n- secondaryemail\n- assistantphone\n- donotcall\n- emailoptout\n- assigned_user_id\n- reference\n-
+notify_owner\n- createdtime\n- modifiedtime\n- modifiedby\n- portal\n- support_start_date\n- support_end_date\n-
+mailingstreet\n- otherstreet\n- mailingcity\n- othercity\n- mailingstate\n- otherstate\n- mailingzip\n- otherzip\n-
+mailingcountry\n- othercountry\n- mailingpobox\n- otherpobox\n- imagename\n- description\n- campaignrelstatus\n-
+isconvertedfromlead\n- convertedfromlead\n- created_user_id\n- template_language\n- portalpasswordtype\n-
+portalloginuser\n- oldid",
+            "tags": ["Entity", "Schema", "RelatedTo:Account", "RelatedTo:ReportsTo", "Junction:Opportunity",
+"Junction:Document", "Junction:Quote", "Junction:SalesOrder", "Junction:Email"]
+        },
+        {
+            "title": "Opportunity",
+            "text": "Fields:\n- potentialname\n- potential_no\n- amount\n- related_to\n- closingdate\n-
+opportunity_type\n- nextstep\n- leadsource\n- sales_stage\n- assigned_user_id\n- probability\n- campaignid\n-
+createdtime\n- modifiedtime\n- modifiedby\n- description\n- forecast_amount\n- email\n- isconvertedfromlead\n-
+convertedfromlead\n- created_user_id",
+            "tags": ["Entity", "Schema", "RelatedTo:Account", "RelatedTo:Contact", "RelatedTo:Campaign",
+"Junction:Quote", "Junction:Product"]
+        },
+        {
+            "title": "Document",
+            "text": "Fields:\n- notes_title\n- createdtime\n- modifiedtime\n- filename\n- assigned_user_id\n-
+notecontent\n- filetype\n- filesize\n- filelocationtype\n- fileversion\n- filestatus\n- filedownloadcount\n- folderid\n-
+note_no\n- modifiedby\n- created_user_id\n- template\n- template_for\n- mergetemplate\n- document_number\n-
+document_category\n- document_date",
+            "tags": ["Entity", "Schema", "Junction:Account", "Junction:Contact", "Junction:Opportunity",
+"Junction:Product", "Junction:Service"]
+        },
+        {
+            "title": "Product",
+            "text": "Fields:\n- productname\n- product_no\n- productcode\n- discontinued\n- manufacturer\n-
+productcategory\n- sales_start_date\n- sales_end_date\n- start_date\n- expiry_date\n- website\n- vendor_id\n-
+mfr_part_no\n- vendor_part_no\n- serial_no\n- productsheet\n- glacct\n- createdtime\n- modifiedtime\n- modifiedby\n-
+unit_price\n- commissionrate\n- taxclass\n- usageunit\n- qty_per_unit\n- qtyinstock\n- reorderlevel\n-
+assigned_user_id\n- qtyindemand\n- imagename\n- description\n- cost_price\n- divisible\n- created_user_id",
+            "tags": ["Entity", "Schema", "RelatedTo:Vendor", "Junction:Account", "Junction:Opportunity",
+"Junction:Quote", "Junction:SalesOrder", "Junction:Invoice", "Junction:HelpDesk"]
+        },
+        {
+            "title": "Service",
+            "text": "Fields:\n- servicename\n- service_no\n- discontinued\n- sales_start_date\n- sales_end_date\n-
+start_date\n- expiry_date\n- website\n- createdtime\n- modifiedtime\n- modifiedby\n- service_usageunit\n-
+qty_per_unit\n- assigned_user_id\n- servicecategory\n- unit_price\n- taxclass\n- commissionrate\n- description\n-
+cost_price\n- divisible\n- created_user_id",
+            "tags": ["Entity", "Schema", "Junction:Account", "Junction:Opportunity", "Junction:Quote",
+"Junction:SalesOrder", "Junction:Invoice", "Junction:HelpDesk"]
+        },
+        {
+            "title": "Vendor",
+            "text": "Fields:\n- vendorname\n- vendor_no\n- phone\n- email\n- website\n- glacct\n- category\n-
+createdtime\n- modifiedtime\n- modifiedby\n- street\n- pobox\n- city\n- state\n- postalcode\n- country\n- description\n-
+assigned_user_id\n- created_user_id",
+            "tags": ["Entity", "Schema", "Junction:Product", "Junction:PurchaseOrder"]
+        },
+        {
+            "title": "Quote",
+            "text": "Fields:\n- quote_no\n- subject\n- potential_id\n- quotestage\n- validtill\n- contact_id\n-
+carrier\n- hdnSubTotal\n- shipping\n- assigned_user_id1\n- txtAdjustment\n- hdnGrandTotal\n- hdnTaxType\n-
+hdnDiscountPercent\n- hdnDiscountAmount\n- hdnS_H_Amount\n- account_id\n- assigned_user_id\n- createdtime\n-
+modifiedtime\n- modifiedby\n- currency_id\n- conversion_rate\n- bill_street\n- ship_street\n- bill_city\n- ship_city\n-
+bill_state\n- ship_state\n- bill_code\n- ship_code\n- bill_country\n- ship_country\n- bill_pobox\n- ship_pobox\n-
+description\n- terms_conditions\n- created_user_id\n- tandc\n- pl_gross_total\n- pl_dto_line\n- pl_dto_global\n-
+pl_dto_total\n- pl_net_total\n- pl_sh_total\n- pl_sh_tax\n- pl_adjustment\n- pl_grand_total\n- sum_nettotal\n-
+sum_tax1\n- sum_tax2\n- sum_tax3\n- sum_taxtotal\n- sum_taxtotalretention",
+            "tags": ["Entity", "Schema", "RelatedTo:Account", "RelatedTo:Contact", "RelatedTo:Opportunity",
+"Junction:Product", "Junction:Service"]
+        },
+        {
+            "title": "SalesOrder",
+            "text": "Fields:\n- salesorder_no\n- subject\n- potential_id\n- customerno\n- quote_id\n-
+vtiger_purchaseorder\n- contact_id\n- duedate\n- carrier\n- pending\n- sostatus\n- txtAdjustment\n- salescommission\n-
+exciseduty\n- hdnGrandTotal\n- hdnSubTotal\n- hdnTaxType\n- hdnDiscountPercent\n- hdnDiscountAmount\n- hdnS_H_Amount\n-
+account_id\n- assigned_user_id\n- createdtime\n- modifiedtime\n- modifiedby\n- currency_id\n- conversion_rate\n-
+bill_street\n- ship_street\n- bill_city\n- ship_city\n- bill_state\n- ship_state\n- bill_code\n- ship_code\n-
+bill_country\n- ship_country\n- bill_pobox\n- ship_pobox\n- description\n- terms_conditions\n- enable_recurring\n-
+recurring_frequency\n- start_period\n- end_period\n- payment_duration\n- invoicestatus\n- created_user_id\n- tandc\n-
+pl_gross_total\n- pl_dto_line\n- pl_dto_global\n- pl_dto_total\n- pl_net_total\n- pl_sh_total\n- pl_sh_tax\n-
+pl_adjustment\n- pl_grand_total\n- sum_nettotal\n- sum_tax1\n- sum_tax2\n- sum_tax3\n- sum_taxtotal\n-
+sum_taxtotalretention\n- invoiced",
+            "tags": ["Entity", "Schema", "RelatedTo:Account", "RelatedTo:Contact", "RelatedTo:Quote",
+"Junction:Product", "Junction:Service"]
+        },
+        {
+            "title": "Invoice",
+            "text": "Fields:\n- subject\n- salesorder_id\n- customerno\n- contact_id\n- invoicedate\n- duedate\n-
+vtiger_purchaseorder\n- txtAdjustment\n- salescommission\n- exciseduty\n- hdnSubTotal\n- hdnGrandTotal\n- hdnTaxType\n-
+hdnDiscountPercent\n- hdnDiscountAmount\n- hdnS_H_Amount\n- account_id\n- invoicestatus\n- assigned_user_id\n-
+createdtime\n- modifiedtime\n- modifiedby\n- currency_id\n- conversion_rate\n- bill_street\n- ship_street\n-
+bill_city\n- ship_city\n- bill_state\n- ship_state\n- bill_code\n- ship_code\n- bill_country\n- ship_country\n-
+bill_pobox\n- ship_pobox\n- description\n- terms_conditions\n- invoice_no\n- created_user_id\n- tandc\n-
+pl_gross_total\n- pl_dto_line\n- pl_dto_global\n- pl_dto_total\n- pl_net_total\n- pl_sh_total\n- pl_sh_tax\n-
+pl_adjustment\n- pl_grand_total\n- sum_nettotal\n- sum_tax1\n- sum_tax2\n- sum_tax3\n- sum_taxtotal\n-
+sum_taxtotalretention",
+            "tags": ["Entity", "Schema", "RelatedTo:Account", "RelatedTo:Contact", "RelatedTo:SalesOrder",
+"Junction:Product", "Junction:Service"]
+        },
+        {
+            "title": "PurchaseOrder",
+            "text": "Fields:\n- purchaseorder_no\n- subject\n- vendor_id\n- requisition_no\n- tracking_no\n-
+contact_id\n- duedate\n- carrier\n- txtAdjustment\n- salescommission\n- exciseduty\n- hdnGrandTotal\n- hdnSubTotal\n-
+hdnTaxType\n- hdnDiscountPercent\n- hdnDiscountAmount\n- hdnS_H_Amount\n- postatus\n- assigned_user_id\n- createdtime\n-
+modifiedtime\n- modifiedby\n- currency_id\n- conversion_rate\n- bill_street\n- ship_street\n- bill_city\n- ship_city\n-
+bill_state\n- ship_state\n- bill_code\n- ship_code\n- bill_country\n- ship_country\n- bill_pobox\n- ship_pobox\n-
+description\n- terms_conditions\n- created_user_id\n- tandc\n- pl_gross_total\n- pl_dto_line\n- pl_dto_global\n-
+pl_dto_total\n- pl_net_total\n- pl_sh_total\n- pl_sh_tax\n- pl_adjustment\n- pl_grand_total\n- sum_nettotal\n-
+sum_tax1\n- sum_tax2\n- sum_tax3\n- sum_taxtotal\n- sum_taxtotalretention",
+            "tags": ["Entity", "Schema", "RelatedTo:Vendor", "RelatedTo:Contact", "Junction:Product"]
+        },
+        {
+            "title": "Campaign",
+            "text": "Fields:\n- campaignname\n- campaign_no\n- campaigntype\n- product_id\n- campaignstatus\n-
+closingdate\n- assigned_user_id\n- numsent\n- sponsor\n- targetaudience\n- targetsize\n- createdtime\n- modifiedtime\n-
+modifiedby\n- expectedresponse\n- expectedrevenue\n- budgetcost\n- actualcost\n- expectedresponsecount\n-
+expectedsalescount\n- expectedroi\n- actualresponsecount\n- actualsalescount\n- actualroi\n- description\n-
+campaignrelstatus\n- created_user_id",
+            "tags": ["Entity", "Schema", "RelatedTo:Product", "Junction:Account", "Junction:Contact", "Junction:Lead"]
+        },
+        {
+            "title": "Lead",
+            "text": "Fields:\n- salutationtype\n- firstname\n- lastname\n- lead_no\n- phone\n- mobile\n- company\n-
+fax\n- designation\n- email\n- leadsource\n- website\n- industry\n- leadstatus\n- annualrevenue\n- rating\n-
+noofemployees\n- assigned_user_id\n- secondaryemail\n- createdtime\n- modifiedtime\n- modifiedby\n- lane\n- code\n-
+city\n- country\n- state\n- pobox\n- description\n- campaignrelstatus\n- emailoptout\n- created_user_id",
+            "tags": ["Entity", "Schema", "Junction:Campaign", "Junction:Product", "Junction:Document"]
+        },
+        {
+            "title": "HelpDesk",
+            "text": "Fields:\n- ticket_no\n- assigned_user_id\n- parent_id\n- ticketpriorities\n- product_id\n-
+ticketseverities\n- ticketstatus\n- ticketcategories\n- update_log\n- hours\n- days\n- createdtime\n- modifiedtime\n-
+from_portal\n- modifiedby\n- ticket_title\n- description\n- solution\n- comments\n- email\n- from_mailscanner\n-
+commentadded\n- created_user_id",
+            "tags": ["Entity", "Schema", "RelatedTo:Account", "RelatedTo:Contact", "RelatedTo:Product",
+"Junction:Service"]
+        },
+        {
+            "title": "Email",
+            "text": "Fields:\n- date_start\n- parent_type\n- activitytype\n- assigned_user_id\n- subject\n- filename\n-
+description\n- time_start\n- createdtime\n- modifiedtime\n- access_count\n- modifiedby\n- from_email\n- saved_toid\n-
+ccmail\n- bccmail\n- parent_id\n- email_flag\n- bounce\n- clicked\n- spamreport\n- delivered\n- dropped\n- open\n-
+unsubscribe\n- replyto",
+            "tags": ["Entity", "Schema", "RelatedTo:Contact", "Junction:Document"]
+        },
+        {
+            "title": "ServiceContract",
+            "text": "Fields:\n- assigned_user_id\n- createdtime\n- modifiedtime\n- start_date\n- end_date\n-
+sc_related_to\n- tracking_unit\n- total_units\n- used_units\n- subject\n- due_date\n- planned_duration\n-
+actual_duration\n- contract_status\n- contract_priority\n- contract_type\n- progress\n- contract_no\n- modifiedby\n-
+created_user_id",
+            "tags": ["Entity", "Schema", "RelatedTo:Account", "RelatedTo:Contact"]
+        },
+        {
+            "title": "Project",
+            "text": "Fields:\n- projectname\n- startdate\n- targetenddate\n- actualenddate\n- projectstatus\n-
+projecttype\n- linktoaccountscontacts\n- assigned_user_id\n- project_no\n- targetbudget\n- projecturl\n-
+projectpriority\n- progress\n- createdtime\n- modifiedtime\n- modifiedby\n- description\n- email\n- created_user_id",
+            "tags": ["Entity", "Schema", "RelatedTo:Account", "RelatedTo:Contact", "Junction:Task",
+"Junction:Milestone"]
+        },
+        {
+            "title": "ProjectTask",
+            "text": "Fields:\n- projecttaskname\n- projecttasktype\n- projecttaskpriority\n- projectid\n-
+assigned_user_id\n- projecttasknumber\n- projecttask_no\n- projecttaskprogress\n- projecttaskhours\n- startdate\n-
+enddate\n- createdtime\n- modifiedtime\n- modifiedby\n- description\n- email\n- projecttaskstatus\n- created_user_id",
+            "tags": ["Entity", "Schema", "RelatedTo:Project"]
+        },
+        {
+            "title": "ProjectMilestone",
+            "text": "Fields:\n- projectmilestonename\n- projectmilestonedate\n- projectid\n- projectmilestonetype\n-
+assigned_user_id\n- projectmilestone_no\n- createdtime\n- modifiedtime\n- modifiedby\n- description\n- created_user_id",
+            "tags": ["Entity", "Schema", "RelatedTo:Project"]
+        }
+    ]
+}
