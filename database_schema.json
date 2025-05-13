@@ -1,5 +1,4 @@
-{
-  "tiddlers": [
+[
     {
       "title": "Opportunita",
       "tags": "ENTITY CRM",
@@ -33,8 +32,7 @@
      {
       "title": "Leads",
       "tags": "ENTITY CRM",
-      "text": "[[cbtranslation]] [[Emails]] [[Documents]] [[Products]] [[Campaigns]] [[Services]] [[cbSurveyDone]] [[cbSurveyAnswer]]
-[[Messages]]",
+      "text": "[[cbtranslation]] [[Emails]] [[Documents]] [[Products]] [[Campaigns]] [[Services]] [[cbSurveyDone]] [[cbSurveyAnswer]],[[Messages]]",
       "fields": {
         "database_fields": "lead_no|Nr Lead, salutationtype|Formula saluti, firstname|Nome, lastname|Cognome, company|Societa, phone|Telefono,
 mobile|Cellulare, fax|Fax, designation|Designazione, email|Email, leadsource|Fonte Lead, website|Sito Web, industry|Settore, leadstatus|Stato
@@ -278,9 +276,221 @@ no_of_currency_decimals|Numero di decimali in Valuta, failed_login_attempts|Tent
         "con varie entita": ""
       }
     },
+     {
+      "title": "Servizi_a_Contratto",
+      "tags": "ENTITY CRM",
+      "text": "[[RelatedTo]] [[HelpDesk]] [[Documents]]",
+      "fields": {
+        "database_fields": "contract_no|Nr Contratto, assigned_user_id|Assegnato a, createdtime|Periodo Creazione, modifiedtime|Periodo
+Modifica, start_date|Data Partenza, end_date|Data Chiusura, sc_related_to|Relazionato a, tracking_unit|Unita di monitoraggio, total_units|Unita
+Totali, used_units|Unita Usate, subject|Soggetto, due_date|Data Scadenza, planned_duration|Durata Prevista, actual_duration|Durata Effettiva,
+contract_status|Stato, contract_priority|Priorita, contract_type|Tipo, progress|Progresso, modifiedby|Ultima Modifica di, created_user_id|Creato
+da",
+        "con uno entita": "RelatedTo (1-to-1)",
+        "con varie entita": "HelpDesk (many-to-many), Documents (many-to-many)"
+      }
+    },
+    {
+      "title": "Servizi",
+      "tags": "ENTITY CRM",
+      "text": "[[HelpDesk]] [[Quotes]] [[PurchaseOrder]] [[SalesOrder]] [[Invoice]] [[pricebookproductrel]] [[Leads]] [[Accounts]] [[Contacts]]
+[[Potentials]] [[Documents]] [[Vendors]] [[InventoryDetails]]",
+      "fields": {
+        "database_fields": "service_no|Nr Servizio, servicename|Nome Servizio, discontinued|Attivo, sales_start_date|Data Inizio Vendita,
+sales_end_date|Data Fine Vendita, start_date|Data Inizio Supporto, expiry_date|Data Fine Supporto, website|Sito Web, createdtime|Periodo
+Creazione, modifiedtime|Periodo Modifica, modifiedby|Ultima Modifica di, service_usageunit|Unita di Misura, qty_per_unit|N. di Unita,
+assigned_user_id|Proprietario, servicecategory|Categoria, unit_price|Prezzo, taxclass|Tipologia Tassa, commissionrate|Tasso Commissione (%),
+description|Descrizione, cost_price|Costo Prezzo, divisible|Divisibile, created_user_id|Creato da",
+        "con uno entita": "",
+        "con varie entita": "HelpDesk (many-to-many), Quotes (many-to-many), PurchaseOrder (many-to-many), SalesOrder (many-to-many), Invoice
+(many-to-many), pricebookproductrel (many-to-many), Leads (many-to-many), Accounts (many-to-many), Contacts (many-to-many), Potentials
+(many-to-many), Documents (many-to-many), Vendors (many-to-many), InventoryDetails (many-to-many)"
+      }
+    },
+    {
+      "title": "CobroPago",
+      "tags": "ENTITY CRM",
+      "text": "[[CPParent]] [[CPRelatedTo]] [[cbtranslation]] [[Documents]] [[CobroPago]]",
+      "fields": {
+        "database_fields": "cyp_no|Pagamento No, assigned_user_id|Assegnato a, reference|Rif Pagamento, parent_id|Aziende/Contatto,
+related_id|Entita relazionata, register|Data Registrazione, duedate|Da Pagare entro il, paid|Pagato, credit|Credito, paymentmode|Tipo di
+pagamento, paymentcategory|Categoria Pagamento, amount|Quantita, cost|Costo, benefit|Beneficiare, createdtime|Tempo Creato, modifiedtime|Tempo
+Modificato, reports_to_id|Utente Relazionato, description|Descrizione, paymentdate|Data di Pagamento, created_user_id|Creato da",
+        "con uno entita": "CPParent (1-to-1), CPRelatedTo (1-to-1)",
+        "con varie entita": "cbtranslation (many-to-many), Documents (many-to-many), CobroPago (many-to-many)"
+      }
+    },
+    {
+      "title": "Assets",
+      "tags": "ENTITY CRM",
+      "text": "[[HelpDesk]] [[Documents]]",
+      "fields": {
+        "database_fields": "asset_no|Numero Installazione, product|Prodotto, serialnumber|Numero di Serie, datesold|Data di vendita,
+dateinservice|Data a Servizio, assetstatus|Stato, tagnumber|Numero Tag, invoiceid|Fattura, shippingmethod|Metodo di Spedizione,
+shippingtrackingnumber|Numero di Spedizione, assigned_user_id|Assegnato a, assetname|Nome Installazione, account|Nome del cliente,
+createdtime|Tempo Creato, modifiedtime|Tempo Modificato, modifiedby|Ultima Modifica Di, description|Nota, created_user_id|Creato Da",
+        "con uno entita": "",
+        "con varie entita": "HelpDesk (many-to-many), Documents (many-to-many)"
+      }
+    },
 
-    
+        {
+      "title": "Customer",
+      "tags": "ENTITY CRM",
+      "text": "[[Order]] [[Invoice]] Customer attributes: customer_id|ID, name|Name, email|Email, phone|Phone, address|Address"
+    },
+    {
+      "title": "Order",
+      "tags": "ENTITY CRM",
+      "text": "[[Customer]] [[Product]] Order attributes: order_id|ID, customer_id|Customer, product_id|Product, order_date|Date, amount|Amount,
+status|Status"
+    },
+    {
+      "title": "Product",
+      "tags": "ENTITY CRM",
+      "text": "[[Order]] [[Category]] Product attributes: product_id|ID, name|Name, description|Description, price|Price, stock|Stock"
+    },
+    {
+      "title": "Invoice",
+      "tags": "ENTITY CRM",
+      "text": "[[Customer]] [[Order]] Invoice attributes: invoice_id|ID, order_id|Order, invoice_date|Date, due_date|Due, amount|Amount,
+status|Status"
+    },
+    {
+      "title": "Category",
+      "tags": "ENTITY CRM",
+      "text": "[[Product]] Category attributes: category_id|ID, name|Name, description|Description"
+    },
 
-
-  ]
+    {
+  "title": "OrderStatus",
+  "tags": "ENTITY CRM",
+  "text": "[[Order]] OrderStatus attributes: status_id|ID, name|Status Name, description|Description"
 }
+
+
+
+{
+  "title": "PaymentMethod",
+  "tags": "ENTITY CRM",
+  "text": "[[Order]] [[Invoice]] PaymentMethod attributes: method_id|ID, name|Method Name, description|Description, is_active|Active"
+}
+
+
+
+{
+  "title": "Shipment",
+  "tags": "ENTITY CRM",
+  "text": "[[Order]] [[Customer]] Shipment attributes: shipment_id|ID, order_id|Order, carrier|Carrier, tracking_no|Tracking#, status|Status,
+ship_date|Date, estimated_arrival|ETA"
+}
+
+
+
+{
+  "title": "Inventory",
+  "tags": "ENTITY CRM",
+  "text": "[[Product]] [[Warehouse]] Inventory attributes: inventory_id|ID, product_id|Product, warehouse_id|Warehouse, quantity|Quantity,
+reorder_level|Reorder Level"
+}
+
+
+
+{
+  "title": "Warehouse",
+  "tags": "ENTITY CRM",
+  "text": "[[Inventory]] Warehouse attributes: warehouse_id|ID, name|Name, location|Location, contact_person|Manager, phone|Phone"
+},
+
+{
+  "title": "Supplier",
+  "tags": "ENTITY CRM",
+  "text": "[[Product]] Supplier attributes: supplier_id|ID, name|Supplier Name, contact_person|Contact, email|Email, phone|Phone,
+address|Address"
+}
+
+
+
+{
+  "title": "PurchaseOrder",
+  "tags": "ENTITY CRM",
+  "text": "[[Supplier]] [[Product]] PurchaseOrder attributes: po_id|ID, supplier_id|Supplier, po_date|Date, status|Status, total_amount|Total,
+expected_delivery|Delivery Date"
+}
+
+
+
+{
+  "title": "Invoice",
+  "tags": "ENTITY CRM",
+  "text": "[[PurchaseOrder]] [[Supplier]] Invoice attributes: invoice_id|ID, po_id|PO, invoice_date|Date, due_date|Due, amount|Amount,
+status|Status, payment_date|Payment Date"
+}
+
+
+
+{
+  "title": "Employee",
+  "tags": "ENTITY CRM",
+  "text": "[[Department]] Employee attributes: employee_id|ID, first_name|First, last_name|Last, email|Email, phone|Phone, hire_date|Hire Date,
+department_id|Department"
+}
+
+
+
+{
+  "title": "Department",
+  "tags": "ENTITY CRM",
+  "text": "[[Employee]] Department attributes: department_id|ID, name|Department, manager_id|Manager, location|Location"
+},
+
+{
+  "title": "Project",
+  "tags": "ENTITY CRM",
+  "text": "[[Department]] [[Employee]] Project attributes: project_id|ID, name|Project Name, start_date|Start, end_date|End, budget|Budget,
+status|Status, manager_id|Manager"
+}
+
+
+
+{
+  "title": "Task",
+  "tags": "ENTITY CRM",
+  "text": "[[Project]] [[Employee]] Task attributes: task_id|ID, project_id|Project, title|Title, description|Description, due_date|Due,
+status|Status, assignee_id|Assignee"
+}
+
+
+
+{
+  "title": "TimeEntry",
+  "tags": "ENTITY CRM",
+  "text": "[[Task]] [[Employee]] TimeEntry attributes: entry_id|ID, task_id|Task, employee_id|Employee, date|Date, hours|Hours, notes|Notes"
+}
+
+
+
+{
+  "title": "Expense",
+  "tags": "ENTITY CRM",
+  "text": "[[Project]] [[Employee]] Expense attributes: expense_id|ID, project_id|Project, employee_id|Employee, date|Date, amount|Amount,
+category|Category, description|Description, status|Status"
+}
+
+
+
+{
+  "title": "Client",
+  "tags": "ENTITY CRM",
+  "text": "[[Project]] Client attributes: client_id|ID, name|Client Name, industry|Industry, contact_person|Contact, email|Email, phone|Phone,
+address|Address"
+},
+
+
+
+
+
+
+
+]
+
