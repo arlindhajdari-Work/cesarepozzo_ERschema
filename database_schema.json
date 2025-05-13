@@ -29,8 +29,258 @@
         "con uno entita": "MemberOf (1-to-1)",
         "con varie entita": "Contacts (many-to-many), Potentials (many-to-many), Quotes (many-to-many), SalesOrder (many-to-many), Fatture (many-to-many), cbtranslation (many-to-many), Emails (many-to-many), Documents (many-to-many), HelpDesk (many-to-many), Products (many-to-many), Campaigns (many-to-many), Services (many-to-many), CobroPago (many-to-many), Assets (many-to-many), Project (many-to-many), InventoryDetails (many-to-many), cbSurveyDone (many-to-many), cbSurveyAnswer (many-to-many), cbCompany (many-to-many), Messages (many-to-many)"
       }
-    }
-    // Add more entities here following the same pattern for all tables from your CSV
-    // Each tiddler represents one database table with its fields and relationships
+    },
+     {
+      "title": "Leads",
+      "tags": "ENTITY CRM",
+      "text": "[[cbtranslation]] [[Emails]] [[Documents]] [[Products]] [[Campaigns]] [[Services]] [[cbSurveyDone]] [[cbSurveyAnswer]]
+[[Messages]]",
+      "fields": {
+        "database_fields": "lead_no|Nr Lead, salutationtype|Formula saluti, firstname|Nome, lastname|Cognome, company|Societa, phone|Telefono,
+mobile|Cellulare, fax|Fax, designation|Designazione, email|Email, leadsource|Fonte Lead, website|Sito Web, industry|Settore, leadstatus|Stato
+Lead, annualrevenue|Fatturato, rating|Valutazione, noofemployees|Numero Impiegati, assigned_user_id|Assegnato a, secondaryemail|Mail Secondaria,
+createdtime|Periodo Creato, modifiedtime|Periodo Modificato, modifiedby|Ultima Modifica di, lane|Via, code|CAP, city|Citta, country|Stato,
+state|Provincia, pobox|BOX, description|Descrizione, campaignrelstatus|Status, emailoptout|Fuori Opt Email, created_user_id|Creato da",
+        "con uno entita": "",
+        "con varie entita": "cbtranslation (many-to-many), Emails (many-to-many), Documents (many-to-many), Products (many-to-many), Campaigns
+(many-to-many), Services (many-to-many), cbSurveyDone (many-to-many), cbSurveyAnswer (many-to-many), Messages (many-to-many)"
+      }
+    },
+    {
+      "title": "Documenti",
+      "tags": "ENTITY CRM",
+      "text": "[[DocumentFolders]]",
+      "fields": {
+        "database_fields": "note_no|Nr Documento, notes_title|Titolo, createdtime|Data Creazione, modifiedtime|Data Modifica, filename|Nome
+File, assigned_user_id|Assegnato a, notecontent|Note, filetype|Tipo File, filesize|Dimensione, filelocationtype|Tipo Scarica,
+fileversion|Versione, filestatus|Attvo, filedownloadcount|Scarica Contatore, folderid|Document Group, modifiedby|Ultima Modifica di,
+created_user_id|Creato da, template|Modello, template_for|Modello per, mergetemplate|Unisci Modello, document_number|Numero Documento,
+document_category|Categoria Documoneto, document_date|Data Documento",
+        "con uno entita": "",
+        "con varie entita": "DocumentFolders (many-to-many)"
+      }
+    },
+    {
+      "title": "Email",
+      "tags": "ENTITY CRM",
+      "text": "[[Contacts]] [[Documents]]",
+      "fields": {
+        "database_fields": "emailid|ID, parent_type|Modulo Entita Vendite, activitytype|Tipo Attivita, assigned_user_id|Assegnato a,
+subject|Soggetto, filename|Allegato, description|Descrizione, time_start|Orario Inizio, createdtime|Orario Creazione, modifiedtime|Orario
+Modifica, access_count|Conteggio Accessi, modifiedby|Ultima Modifica di, from_email|Da, saved_toid|To, ccmail|CC, bccmail|BCC, parent_id|ID
+Genitore, email_flag|Bandiera Email, bounce|Rimbalzare, clicked|Cliccato, spamreport|Spam, delivered|Consegnato, dropped|Droppato, open|Aperto,
+unsubscribe|Annulla iscrizione, replyto|Rispondi a",
+        "con uno entita": "",
+        "con varie entita": "Contacts (many-to-many), Documents (many-to-many)"
+      }
+    },
+    {
+      "title": "Assistenza_Clienti",
+      "tags": "ENTITY CRM",
+      "text": "[[HDRelatedTo]] [[HDProducts]] [[cbtranslation]] [[Documents]] [[Services]] [[CobroPago]] [[Project]] [[Emails]]",
+      "fields": {
+        "database_fields": "ticket_no|Nr Ticket, assigned_user_id|Assegnato a, parent_id|Collegato a, ticketpriorities|Priorita, product_id|Nome
+Prodotto, ticketseverities|Importanza, ticketstatus|Stato, ticketcategories|Categoria, update_log|Storico Aggiornamenti, hours|Ore, days|Giorni,
+createdtime|Orario Creazione, modifiedtime|Orario Modifica, from_portal|Dal Portale, modifiedby|Ultima Modifica di, ticket_title|Titolo,
+description|Descrizione, solution|Soluzione, comments|Aggiungi commento, email|Email, from_mailscanner|Dal Convertitore Mail,
+created_user_id|Creato da, commentadded|Commento Aggiunto",
+        "con uno entita": "HDRelatedTo (1-to-1), HDProducts (1-to-1)",
+        "con varie entita": "cbtranslation (many-to-many), Documents (many-to-many), Services (many-to-many), CobroPago (many-to-many), Project
+(many-to-many), Emails (many-to-many)"
+      }
+    },
+    {
+      "title": "Prodotti",
+      "tags": "ENTITY CRM",
+      "text": "[[HelpDesk]] [[Documents]] [[Quotes]] [[PurchaseOrder]] [[SalesOrder]] [[Invoice]] [[pricebookproductrel]] [[Leads]] [[Accounts]]
+[[Contacts]] [[Potentials]] [[Assets]] [[InventoryDetails]]",
+      "fields": {
+        "database_fields": "product_no|Nr Prodotto, productname|Nome Prodotto, productcode|Numero di serie, discontinued|Prodotto Attivo,
+manufacturer|Produttore, productcategory|Categoria Prodotto, sales_start_date|Data Inizio Vendite, sales_end_date|Data Fine Vendite,
+start_date|Data Inizio Supporto, expiry_date|Data Termine Supporto, website|Sito Web, vendor_id|Nome Fornitore, mfr_part_no|Numero di Serie
+Produttore, vendor_part_no|Numero di Serie Fornitore, serial_no|Numero di Serie, productsheet|Specifiche Prodotto, glacct|Codice Contabile,
+createdtime|Orario creazione, modifiedtime|Orario modifica, modifiedby|Ultima Modifica di, unit_price|Prezzo Unitario, commissionrate|Tasso
+commissione (%), taxclass|Classe di Tasse, usageunit|Unita Utilizzo, qty_per_unit|Quantita/Unita, qtyinstock|Quantita in Stock,
+reorderlevel|Livello Riordino, assigned_user_id|Responsabile, qtyindemand|Quantita in richiesta, imagename|Immagine Prodotto,
+description|Descrizione, cost_price|Costo Prezzo, divisible|Divisible, created_user_id|Creato da",
+        "con uno entita": "",
+        "con varie entita": "HelpDesk (many-to-many), Documents (many-to-many), Quotes (many-to-many), PurchaseOrder (many-to-many), SalesOrder
+(many-to-many), Invoice (many-to-many), pricebookproductrel (many-to-many), Leads (many-to-many), Accounts (many-to-many), Contacts
+(many-to-many), Potentials (many-to-many), Assets (many-to-many), InventoryDetails (many-to-many)"
+      }
+    },
+
+        {
+      "title": "FAQ",
+      "tags": "ENTITY CRM",
+      "text": "[[Documents]]",
+      "fields": {
+        "database_fields": "faq_no|Nr Faq, product_id|Nome Prodotto, faqcategories|Categoria, faqstatus|Stato, question|Domanda,
+faq_answer|Risposta, comments|Aggiungi commento, createdtime|Orario creazione, modifiedtime|Orario modifica, modifiedby|Last Modified By,
+created_user_id|Creato da",
+        "con uno entita": "",
+        "con varie entita": "Documents (many-to-many)"
+      }
+    },
+    {
+      "title": "Fornitori",
+      "tags": "ENTITY CRM",
+      "text": "[[Products]] [[PurchaseOrder]] [[Contacts]] [[Emails]] [[CobroPago]] [[Services]] [[cbtranslation]] [[InventoryDetails]]
+[[Documents]]",
+      "fields": {
+        "database_fields": "vendor_no|Nr Fornitore, vendorname|Nome Fornitore, phone|Telefono, email|Email, website|Sito Web, glacct|Codice
+Contabile, category|Categoria, createdtime|Orario creazione, modifiedtime|Orario modifica, modifiedby|Ultima Modifica di, street|Via, pobox|BOX,
+city|Citta, state|Provincia, postalcode|CAP, country|Stato, description|Descrizione, assigned_user_id|Assegnato a, created_user_id|Creato da",
+        "con uno entita": "",
+        "con varie entita": "Products (many-to-many), PurchaseOrder (many-to-many), Contacts (many-to-many), Emails (many-to-many), CobroPago
+(many-to-many), Services (many-to-many), cbtranslation (many-to-many), InventoryDetails (many-to-many), Documents (many-to-many)"
+      }
+    },
+    {
+      "title": "Listini",
+      "tags": "ENTITY CRM",
+      "text": "[[pricebookproductrel]]",
+      "fields": {
+        "database_fields": "pricebook_no|Nr Listino Prezzi, bookname|Nome Listino, active|Attivo, createdtime|Orario creazione,
+modifiedtime|Orario modifica, currency_id|Valuta, modifiedby|Ultima Modifica di, description|Descrizione, created_user_id|Creato da",
+        "con uno entita": "",
+        "con varie entita": "pricebookproductrel (many-to-many)"
+      }
+    },
+    {
+      "title": "Preventivi",
+      "tags": "ENTITY CRM",
+      "text": "[[Accounts]] [[Contacts]] [[Potentials]] [[Users]] [[SalesOrder]] [[cbtranslation]] [[Documents]] [[CobroPago]]
+[[InventoryDetails]]",
+      "fields": {
+        "database_fields": "quote_no|Nr Preventivo, subject|Soggetto, potential_id|Nome Opportunita, quotestage|Stadio Preventivo,
+validtill|Valido fino a, contact_id|Nome Contatto, carrier|Trasportatore, hdnSubTotal|Sub totale, shipping|Spedizione,
+assigned_user_id1|Responsabile inventario, txtAdjustment|Arrotondamento, hdnGrandTotal|Totale, hdnTaxType|Tipo Tassa, hdnDiscountPercent|Sconto
+Percentuale, hdnDiscountAmount|Ammontare Sconto, hdnS_H_Amount|S&H Amount, account_id|Nome Azienda, assigned_user_id|Assegnato a,
+createdtime|Data Creazione, modifiedtime|Data Modifica, modifiedby|Ultima Modifica di, currency_id|Valuta, conversion_rate|Tasso Conversione,
+bill_street|Indirizzo (fatturazione), ship_street|Indirizzo (spedizione), bill_city|Citta (fatturazione), ship_city|Citta (spedizione),
+bill_state|Provincia (fatturazione), ship_state|Provincia (spedizione), bill_code|Codice Fatturazione, ship_code|Codice Spedizione,
+bill_country|Stato (fatturazione), ship_country|Stato (spedizione), bill_pobox|BOX (fatturazione), ship_pobox|BOX (spedizione),
+description|Descrizione, terms_conditions|Terms & Conditions, created_user_id|Creato da, tandc|Termini e Condizioni, pl_gross_total|Totale
+Lordo, pl_dto_line|Sconto Linea, pl_dto_global|Sconto Globale, pl_dto_total|Sconto Totale, pl_net_total|Net Totale (aGD), pl_sh_total|SH Totale,
+pl_sh_tax|SH Imposta, pl_adjustment|Adeguamento Finale, pl_grand_total|Somma Totale, sum_nettotal|Net Totale (bGD), sum_tax1|VAT,
+sum_tax2|Vendite, sum_tax3|Servizio, sum_taxtotal|Tassare Totale, sum_taxtotalretention|Ritenzione Tassare Totale",
+        "con uno entita": "Accounts (1-to-1), Contacts (1-to-1), Potentials (1-to-1), Users (1-to-1)",
+        "con varie entita": "SalesOrder (many-to-many), cbtranslation (many-to-many), Documents (many-to-many), CobroPago (many-to-many),
+InventoryDetails (many-to-many)"
+      }
+    },
+    {
+      "title": "Ordini_di_Acquisto",
+      "tags": "ENTITY CRM",
+      "text": "[[cbtranslation]] [[Documents]] [[CobroPago]] [[InventoryDetails]]",
+      "fields": {
+        "database_fields": "purchaseorder_no|Nr Ordine di Acquisto, subject|Soggetto, vendor_id|Nome Fornitore, requisition_no|Numero Richiesta,
+tracking_no|Numero Tracciamento, contact_id|Nome Contatto, duedate|Data chiusura, carrier|Trasportatore, txtAdjustment|Arrotondamento,
+salescommission|Commissioni Vendita, exciseduty|Imposta di fabbricazione, hdnGrandTotal|Totale, hdnSubTotal|Sub totale, hdnTaxType|Tipo Tassa,
+hdnDiscountPercent|Sconto Percentuale, hdnDiscountAmount|Ammontare Sconto, hdnS_H_Amount|S&H Amount, postatus|Stato, assigned_user_id|Assegnato
+a, createdtime|Orario creazione, modifiedtime|Orario modifica, modifiedby|Ultima Modifica di, currency_id|Valuta, conversion_rate|Tasso
+Conversione, bill_street|Indirizzo Fatturazione, ship_street|Indirizzo Spedizione, bill_city|Citta (fatturazione), ship_city|Citta (spedizione),
+bill_state|Provincia (fatturazione), ship_state|Provincia (spedizione), bill_code|Codice (fatturazione), ship_code|Codice (spedizione),
+bill_country|Stato (fatturazione), ship_country|Stato (spedizione), bill_pobox|BOX (fatturazione), ship_pobox|BOX (spedizione),
+description|Descrizione, terms_conditions|Terms & Conditions, created_user_id|Creato da, tandc|Termini e Condizioni, pl_gross_total|Totale
+Lordo, pl_dto_line|Sconto Linea, pl_dto_global|Sconto Globale, pl_dto_total|Sconto Totale, pl_net_total|Net Totale (aGD), pl_sh_total|SH Totale,
+pl_sh_tax|SH Imposta, pl_adjustment|Adeguamento Finale, pl_grand_total|Somma Totale, sum_nettotal|Net Totale (bGD), sum_tax1|VAT,
+sum_tax2|Vendite, sum_tax3|Servizio, sum_taxtotal|Imposta totale, sum_taxtotalretention|Ritenzione Tassare Totale",
+        "con uno entita": "",
+        "con varie entita": "cbtranslation (many-to-many), Documents (many-to-many), CobroPago (many-to-many), InventoryDetails (many-to-many)"
+      }
+    },
+
+        {
+      "title": "Ordini_di_Vendita",
+      "tags": "ENTITY CRM",
+      "text": "[[Accounts]] [[Contacts]] [[Quotes]] [[Potentials]] [[Users]] [[cbtranslation]] [[Documents]] [[Invoice]] [[CobroPago]]
+[[InventoryDetails]]",
+      "fields": {
+        "database_fields": "salesorder_no|Nr Ordine di Vendita, subject|Soggetto, potential_id|Nome Opportunita, customerno|Numero cliente,
+quote_id|Nome Preventivo, vtiger_purchaseorder|Ordine di acquisto, contact_id|Nome Contatto, duedate|Data chiusura, carrier|Trasportatore,
+pending|Pendente, sostatus|Stato, txtAdjustment|Arrotondamento, salescommission|Commissione Vendita, exciseduty|Imposta Fabbricazione,
+hdnGrandTotal|Totale, hdnSubTotal|Sub totale, hdnTaxType|Tipo Tassa, hdnDiscountPercent|Sconto Percentuale, hdnDiscountAmount|Ammontare Sconto,
+hdnS_H_Amount|S&H Amount, account_id|Nome Azienda, assigned_user_id|Assegnato a, createdtime|Orario creazione, modifiedtime|Orario modifica,
+modifiedby|Ultima Modifica di, currency_id|Valuta, conversion_rate|Tasso Conversione, bill_street|Indirizzo (fatturazione),
+ship_street|Indirizzo (spedizione), bill_city|Citta (fatturazione), ship_city|Citta (spedizione), bill_state|Provincia (fatturazione),
+ship_state|Provincia (spedizione), bill_code|Codice (fatturazione), ship_code|Codice (spedizione), bill_country|Stato (fatturazione),
+ship_country|Stato (spedizione), bill_pobox|BOX (fatturazione), ship_pobox|BOX (fatturazione), description|Descrizione, terms_conditions|Terms &
+Conditions, enable_recurring|Abilita Periodicita, recurring_frequency|Frequenza, start_period|Periodo Inizio, end_period|Periodo Fine,
+payment_duration|Durata Pagamento, invoicestatus|Stato Fattura, created_user_id|Creato da, tandc|Termini e Condizioni, pl_gross_total|Totale
+Lordo, pl_dto_line|Sconto Linea, pl_dto_global|Sconto Globale, pl_dto_total|Sconto Totale, pl_net_total|Net Totale (aGD), pl_sh_total|SH Total,
+pl_sh_tax|SH Imposta, pl_adjustment|Adeguamento Finale, pl_grand_total|Somma Totale, sum_nettotal|Net Totale (bGD), sum_tax1|VAT,
+sum_tax2|Vendite, sum_tax3|Servizio, sum_taxtotal|Imposta Totale, sum_taxtotalretention|Ritenzione Imposta Totale, invoiced|Fatturata",
+        "con uno entita": "Accounts (1-to-1), Contacts (1-to-1), Quotes (1-to-1), Potentials (1-to-1), Users (1-to-1)",
+        "con varie entita": "cbtranslation (many-to-many), Documents (many-to-many), Invoice (many-to-many), CobroPago (many-to-many),
+InventoryDetails (many-to-many)"
+      }
+    },
+    {
+      "title": "Fatture",
+      "tags": "ENTITY CRM",
+      "text": "[[Accounts]] [[Contacts]] [[SalesOrder]] [[Users]] [[cbtranslation]] [[Documents]] [[CobroPago]] [[Assets]]
+[[InventoryDetails]]",
+      "fields": {
+        "database_fields": "invoice_no|Nr Fattura, subject|Soggetto, salesorder_id|Ordine di Vendita, customerno|Numero cliente, contact_id|Nome
+Contatto, invoicedate|Data Fattura, duedate|Due Date, vtiger_purchaseorder|Ordini di Acquisto, txtAdjustment|Arrotondamento,
+salescommission|Commissioni Vendita, exciseduty|Imposta di fabbricazione, hdnSubTotal|Sub Totale, hdnGrandTotal|Totale, hdnTaxType|Tipo Tassa,
+hdnDiscountPercent|Sconto Percentuale, hdnDiscountAmount|Ammontare Sconto, hdnS_H_Amount|S&H Amount, account_id|Nome Azienda,
+invoicestatus|Stato, assigned_user_id|Assegnato a, createdtime|Orario creazione, modifiedtime|Orario modifica, modifiedby|Ultima Modifica di,
+currency_id|Valuta, conversion_rate|Tasso Conversione, bill_street|Indirizzo Fatturazione, ship_street|Indirizzo Spedizione, bill_city|Citta
+(fatturazione), ship_city|Citta (spedizione), bill_state|Provincia (fatturazione), ship_state|Provincia (spedizione), bill_code|Codice
+(fatturazione), ship_code|Codice (spedizione), bill_country|Stato (fatturazione), ship_country|Stato (spedizione), bill_pobox|BOX
+(fatturazione), ship_pobox|BOX (spedizione), description|Descrizione, terms_conditions|Terms & Conditions, created_user_id|Creato da,
+tandc|Termini e Condizioni, pl_gross_total|Totale Lordo, pl_dto_line|Sconto Linea, pl_dto_global|Sconto Globale, pl_dto_total|Sconto Totale,
+pl_net_total|Totale Net (aGD), pl_sh_total|SH Totale, pl_sh_tax|SH Imposta, pl_adjustment|Final Adjustment, pl_grand_total|Grande totale,
+sum_nettotal|Totale Net (bGD), sum_tax1|VAT, sum_tax2|Vendite, sum_tax3|Servizio, sum_taxtotal|Imposta Totale, sum_taxtotalretention|Ritenzione
+Imposta Totale",
+        "con uno entita": "Accounts (1-to-1), Contacts (1-to-1), SalesOrder (1-to-1), Users (1-to-1)",
+        "con varie entita": "cbtranslation (many-to-many), Documents (many-to-many), CobroPago (many-to-many), Assets (many-to-many),
+InventoryDetails (many-to-many)"
+      }
+    },
+    {
+      "title": "Campagna",
+      "tags": "ENTITY CRM",
+      "text": "[[Contacts]] [[Leads]] [[Potentials]] [[cbtranslation]] [[Accounts]] [[CobroPago]] [[Messages]]",
+      "fields": {
+        "database_fields": "campaign_no|Nr Campagna, campaignname|Nome Campagna, campaigntype|Tipo di Campagna, product_id|Prodotto,
+campaignstatus|Stato della Campagna, closingdate|Data di chiusura attesa, assigned_user_id|Assegnato a, numsent|Numero Spediti, sponsor|Sponsor,
+targetaudience|Target Destinatari, targetsize|Dimensioni Target, createdtime|Orario creazione, modifiedtime|Orario modifica, modifiedby|Ultima
+Modifica Di, expectedresponse|Risposta Attesa, expectedrevenue|Rendimento Atteso, budgetcost|Costo a Budget, actualcost|Costo Effettivo,
+expectedresponsecount|Conteggio Risposte Attese, expectedsalescount|Conteggio Vendite Attese, expectedroi|ROI Atteso,
+actualresponsecount|Conteggio Risposte Effettive, actualsalescount|Conteggio Vendite Effettive, actualroi|ROI Effettivo,
+description|Descrizione, campaignrelstatus|Status, created_user_id|Creato Da",
+        "con uno entita": "",
+        "con varie entita": "Contacts (many-to-many), Leads (many-to-many), Potentials (many-to-many), cbtranslation (many-to-many), Accounts
+(many-to-many), CobroPago (many-to-many), Messages (many-to-many)"
+      }
+    },
+    {
+      "title": "Utenti",
+      "tags": "ENTITY CRM",
+      "text": "",
+      "fields": {
+        "database_fields": "user_name|Nome Utente, is_admin|Amministratore, user_password|Password, confirm_password|Conferma Password,
+first_name|Nome, last_name|Cognome, roleid|Ruolo, email1|Email, status|Stato, activity_view|Vista Calendario di Default, lead_view|Vista Lead di
+Default, hour_format|Calendario Formato Ore, end_hour|Giorno finisce alle, start_hour|Giorno inizia alle, title|Titolo, phone_work|Telefono
+Ufficio, department|Reparto, phone_mobile|Cellulare, reports_to_id|Riporta a, phone_other|Altro Telefono, email2|Altra Email, phone_fax|Fax,
+secondaryemail|Mail Secondaria, phone_home|Telefono Casa, date_format|Formato Data, signature|Firma, description|Documenti, address_street|Via,
+address_city|Citta, address_state|Provincia, address_postalcode|Codice Postale, address_country|Stato, accesskey|Chiave Accesso, time_zone|Fuso
+Orario, currency_id|Valuta, currency_grouping_pattern|Modello Raggruppamento delle Migliaia, currency_decimal_separator|Separatore Cifre
+Decimali, currency_grouping_separator|Separatore delle Migliaia, currency_symbol_placement|Posizione Simbolo Valuta, imagename|Carica
+Fotografia, internal_mailer|Compositore Email interno, theme|Tema Grafico, language|Lingua, reminder_interval|Intervallo Promemoria,
+asterisk_extension|Estensione Asterisk, use_asterisk|Ricevi chiamate in entrata, send_email_to_sender|Invia copia di email,
+no_of_currency_decimals|Numero di decimali in Valuta, failed_login_attempts|Tentativi Accesso Falliti, ename|Nome Entita",
+        "con uno entita": "",
+        "con varie entita": ""
+      }
+    },
+
+    
+
+
   ]
 }

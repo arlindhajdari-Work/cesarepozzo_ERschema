@@ -6,6 +6,7 @@
     ],
     "text": "* potentialname\n* potential_no\n* amount\n* related_to\n* closingdate\n* opportunity_type\n* nextstep\n* leadsource\n* sales_stage\n* assigned_user_id\n* probability\n* campaignid\n* createdtime\n* modifiedtime\n* modifiedby\n* description\n* forecast_amount\n* email\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id"
   },
+  
   {
     "title": "db/Contacts",
     "tags": [
@@ -23,7 +24,7 @@
       "iwEntifda",
       "iwEnticontabili",
       "iwEntiIndirizzi",
-      "Documents"
+    "Documents"
     ],
     "text": "* salutationtype\n* firstname\n* contact_no\n* phone\n* lastname\n* mobile\n* account_id\n* homephone\n* leadsource\n* otherphone\n* title\n* fax\n* department\n* birthday\n* email\n* contact_id\n* assistant\n* secondaryemail\n* assistantphone\n* donotcall\n* emailoptout\n* assigned_user_id\n* reference\n* notify_owner\n* createdtime\n* modifiedtime\n* modifiedby\n* portal\n* support_start_date\n* support_end_date\n* mailingstreet\n* otherstreet\n* mailingcity\n* othercity\n* mailingstate\n* otherstate\n* mailingzip\n* otherzip\n* mailingcountry\n* othercountry\n* mailingpobox\n* otherpobox\n* imagename\n* description\n* campaignrelstatus\n* isconvertedfromlead\n* convertedfromlead\n* created_user_id\n* template_language\n* portalpasswordtype\n* portalloginuser\n* oldid",
     "map-to": [

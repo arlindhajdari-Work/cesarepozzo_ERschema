@@ -1,0 +1,39 @@
+
+   [
+    {
+      "title": "Project Alpha",
+      "text": "This is the main project node.",
+      "tags": ["Project"],
+      "fields": {
+        "tmap.edges": "[{\"to\":\"Task 1\",\"type\":\"has task\"}, {\"to\":\"Team\",\"type\":\"assigned to\"}]"
+      }
+    },
+
+    {
+      "title": "Task 1",
+      "text": "This is a subtask of Project Alpha.",
+      "tags": ["Task"],
+      "fields": {
+        "tmap.edges": "[{\"to\":\"Developer\",\"type\":\"assigned to\"}]"
+      }
+    },
+    {
+      "title": "Team",
+      "text": "The team responsible for the project.",
+      "tags": ["Group"]
+    },
+    {
+      "title": "Developer",
+      "text": "Individual responsible for Task 1.",
+      "tags": ["Person"]
+    },
+    {
+      "title": "Review",
+      "text": "Quality assurance step.",
+      "tags": ["Task"],
+      "fields": {
+        "tmap.edges": "[{\"to\":\"Task 1\",\"type\":\"follows\"}]"
+      }
+    }
+  ]
+
