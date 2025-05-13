@@ -1,1 +1,29 @@
-[]
+{
+  "tiddlers": [
+    {
+      "title": "Customer", 
+      "tags": "ENTITY CRM",
+      "text": "[[Order]] [[Invoice]] Customer attributes: customer_id|ID, name|Name, email|Email, phone|Phone, address|Address"
+    },
+    {
+      "title": "Order",
+      "tags": "ENTITY CRM",
+      "text": "[[Customer]] [[Product]] Order attributes: order_id|ID, customer_id|Customer, product_id|Product, order_date|Date, amount|Amount, status|Status" 
+    },
+    {
+      "title": "Product",
+      "tags": "ENTITY CRM",
+      "text": "[[Order]] [[Category]] Product attributes: product_id|ID, name|Name, description|Description, price|Price, stock|Stock"
+    },
+    {
+      "title": "Invoice", 
+      "tags": "ENTITY CRM",
+      "text": "[[Customer]] [[Order]] Invoice attributes: invoice_id|ID, order_id|Order, invoice_date|Date, due_date|Due, amount|Amount, status|Status"
+    },
+    {
+      "title": "Category",
+      "tags": "ENTITY CRM",
+      "text": "[[Product]] Category attributes: category_id|ID, name|Name, description|Description"
+    }
+  ]
+}
