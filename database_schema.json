@@ -487,6 +487,211 @@ address|Address"
 },
 
 
+{
+  "title": "Contract",
+  "tags": "ENTITY CRM",
+  "text": "[[Client]] Contract attributes: contract_id|ID, client_id|Client, start_date|Start, end_date|End, value|Value, status|Status,
+terms|Terms"
+}
+
+
+
+{
+  "title": "Service",
+  "tags": "ENTITY CRM",
+  "text": "[[Contract]] Service attributes: service_id|ID, contract_id|Contract, name|Service Name, description|Description, rate|Rate,
+unit|Unit"
+}
+
+
+
+{
+  "title": "Invoice",
+  "tags": "ENTITY CRM",
+  "text": "[[Client]] [[Contract]] Invoice attributes: invoice_id|ID, client_id|Client, contract_id|Contract, date|Date, due_date|Due,
+amount|Amount, status|Status"
+}
+
+
+
+{
+  "title": "Payment",
+  "tags": "ENTITY CRM",
+  "text": "[[Invoice]] Payment attributes: payment_id|ID, invoice_id|Invoice, date|Date, amount|Amount, method|Method, reference|Reference"
+}
+
+
+
+{
+  "title": "Product",
+  "tags": "ENTITY CRM",
+  "text": "[[Service]] Product attributes: product_id|ID, service_id|Service, name|Product Name, description|Description, price|Price,
+stock|Stock"
+},{
+  "title": "Campaign",
+  "tags": "ENTITY CRM",
+  "text": "[[Lead]] [[Opportunity]] Campaign attributes: campaign_id|ID, name|Campaign Name, type|Type, start_date|Start, end_date|End,
+budget|Budget, status|Status"
+}
+
+
+
+{
+  "title": "LeadSource",
+  "tags": "ENTITY CRM",
+  "text": "[[Lead]] LeadSource attributes: source_id|ID, name|Source Name, description|Description, cost_per_lead|Cost,
+conversion_rate|Conversion %"
+}
+
+
+
+{
+  "title": "Document",
+  "tags": "ENTITY CRM",
+  "text": "[[Opportunity]] [[Account]] Document attributes: doc_id|ID, title|Title, type|Type, file_name|Filename, size|Size,
+created_date|Created, modified_date|Modified"
+}
+
+
+
+{
+  "title": "Activity",
+  "tags": "ENTITY CRM",
+  "text": "[[Contact]] [[Opportunity]] Activity attributes: activity_id|ID, type|Type, subject|Subject, due_date|Due, status|Status,
+priority|Priority, description|Description"
+}
+
+
+
+{
+  "title": "Note",
+  "tags": "ENTITY CRM",
+  "text": "[[Contact]] [[Account]] Note attributes: note_id|ID, title|Title, content|Content, created_date|Created, modified_date|Modified,
+created_by|Author"
+},
+
+
+
+{
+  "title": "ServiceContract",
+  "tags": "ENTITY CRM",
+  "text": "[[Account]] [[Contact]] ServiceContract attributes: contract_id|ID, account_id|Account, contact_id|Contact, start_date|Start,
+end_date|End, service_level|Level, terms|Terms, status|Status"
+}
+
+
+
+{
+  "title": "Case",
+  "tags": "ENTITY CRM",
+  "text": "[[Account]] [[Contact]] Case attributes: case_id|ID, account_id|Account, contact_id|Contact, subject|Subject, priority|Priority,
+status|Status, origin|Origin, description|Description"
+}
+
+
+
+{
+  "title": "Solution",
+  "tags": "ENTITY CRM",
+  "text": "[[Case]] Solution attributes: solution_id|ID, case_id|Case, title|Title, description|Description, status|Status,
+created_date|Created, modified_date|Modified"
+}
+
+
+
+{
+  "title": "Asset",
+  "tags": "ENTITY CRM",
+  "text": "[[Account]] [[Product]] Asset attributes: asset_id|ID, account_id|Account, product_id|Product, serial_number|Serial,
+purchase_date|Purchased, status|Status, warranty_end|Warranty"
+}
+
+
+
+{
+  "title": "Partner",
+  "tags": "ENTITY CRM",
+  "text": "[[Account]] Partner attributes: partner_id|ID, account_id|Account, type|Type, since_date|Since, status|Status,
+agreement_details|Agreement"
+},
+
+{
+  "title": "PriceBook",
+  "tags": "ENTITY CRM",
+  "text": "[[Product]] PriceBook attributes: pricebook_id|ID, name|Name, description|Description, active|Is Active, currency|Currency"
+}
+
+
+
+{
+  "title": "Quote",
+  "tags": "ENTITY CRM",
+  "text": "[[Opportunity]] [[Account]] Quote attributes: quote_id|ID, opportunity_id|Opportunity, account_id|Account, quote_date|Date,
+expiration_date|Expires, status|Status, total_amount|Total"
+}
+
+
+
+{
+  "title": "Order",
+  "tags": "ENTITY CRM",
+  "text": "[[Account]] [[Quote]] Order attributes: order_id|ID, account_id|Account, quote_id|Quote, order_date|Date, status|Status,
+total_amount|Total, shipping_address|Ship To"
+}
+
+
+
+{
+  "title": "Entitlement",
+  "tags": "ENTITY CRM",
+  "text": "[[Account]] Entitlement attributes: entitlement_id|ID, account_id|Account, name|Name, start_date|Start, end_date|End,
+remaining_cases|Remaining Cases, status|Status"
+}
+
+
+
+{
+  "title": "Milestone",
+  "tags": "ENTITY CRM",
+  "text": "[[Case]] Milestone attributes: milestone_id|ID, case_id|Case, name|Name, target_date|Target, completion_date|Completed,
+status|Status, description|Description"
+}
+
+
+
+{
+  "title": "SocialPost",
+  "tags": "ENTITY CRM",
+  "text": "[[Account]] [[Contact]] SocialPost attributes: post_id|ID, account_id|Account, contact_id|Contact, post_date|Date, content|Content,
+status|Status, engagement|Engagement"
+}
+
+
+
+{
+  "title": "KnowledgeArticle",
+  "tags": "ENTITY CRM",
+  "text": "[[Solution]] KnowledgeArticle attributes: article_id|ID, solution_id|Solution, title|Title, content|Content, publish_date|Published,
+views|Views, rating|Rating"
+}
+
+
+
+{
+  "title": "DataCategory",
+  "tags": "ENTITY CRM",
+  "text": "[[KnowledgeArticle]] DataCategory attributes: category_id|ID, article_id|Knowledge Article, name|Category, label|Label,
+description|Description"
+},
+
+{
+  "title": "Event",
+  "tags": "ENTITY CRM",
+  "text": "[[Account]] [[Contact]] Event attributes: event_id|ID, account_id|Account, contact_id|Contact, subject|Subject, start_date|Start,
+end_date|End, location|Location, description|Description"
+},
+
+
 
 
 

@@ -1,0 +1,729 @@
+[{
+  "title": "Opportunita",
+  "tags": "ENTITY CRM",
+  "text": "[[RelatedTo]] [[cbtranslation]] [[Contacts]] [[Products]] [[Documents]] [[Quotes]] [[SalesOrder]] [[Services]] [[CobroPago]] [[Emails]] Opportunita attributes:potential_no|Nr Opportunita, potentialname|Nome Opportunita, amount|Ammontare, related_to|Collegato a, closingdate|Data di chiusura, opportunity_type|Tipo, nextstep|Prossimo Step, leadsource|Fonte Lead, sales_stage|Stadio vendita, assigned_user_id|Assegnato a, probability|Probabilita, campaignid|Fonte Campagna, createdtime|Orario creazione, modifiedtime|Orario modifica, modifiedby|Ultima Modifica di, description|Descrizione, forecast_amount|Forecast Amount, email|Email,isconvertedfromlead|Viene convertito, convertedfromlead|Convertito, created_user_id|Creato da"
+},
+
+
+
+{
+  "title": "Contatti",
+  "tags": "ENTITY CRM",
+  "text": "[[Aziende]]  [[Email]] [[iwEnti]] [[iwDipendenti]] [[iwDipendentiContabili]] [[iwDipendentiFda]] [[iwDipendentiIndirizzi]] [[iwDipendentiFamigliari]] [[iwEmessi]][[iwAccordo]] [[iwEntifda]] [[iwEnticontabili]] [[iwEntiIndirizzi]] [[Documenti]], Contatti attributes: contact_no|Nr Contatto, salutationtype|Formula di saluto, firstname|Nome, lastname|Cognome, phone|Telefono Ufficio, mobile|Cellulare, account_id|Nome Azienda, homephone|Telefono Casa, leadsource|Fonte Lead, otherphone|Other Phone, title|Titolo, fax|Fax, department|Dipartimento, birthday|Compleanno, email|Email, contact_id|Riporta a, assistant|Assistente, secondaryemail|Email Secondaria, assistantphone|Telefono Assistente, donotcall|Non Chiamare, emailoptout|Blocca Email, assigned_user_id|Assegnato a, reference|Riferimento, notify_owner|Notifica al Proprietario, createdtime|Orario creazione, modifiedtime|Orario modifica, modifiedby|Ultima Modifica Di, portal|Utente Portale, support_start_date|Data Inizio Supporto, support_end_date|Data Fine Supporto, mailingstreet|Via (spedizione), otherstreet|Altra Via, mailingcity|Citta (spedizione), othercity|Altra Citta, mailingstate|Provincia (spedizione), otherstate|Altra Provincia, mailingzip|CAP (spedizione), otherzip|Altro CAP, mailingcountry|Paese (spedizione), othercountry|Altro Paese, mailingpobox|BOX (spedizione), otherpobox|Altro BOX (spedizione), imagename|Immagine Contatto, description|Descrizione, campaignrelstatus|Status, isconvertedfromlead|Viene Convertito, convertedfromlead|Convertito, created_user_id|Creato Da, template_language|Linguaggio Modello, portalpasswordtype|Codifica Password, portalloginuser|Utente Accesso Portale, oldid|Vecchio Id"}
+
+
+
+,{
+  "title": "Aziende",
+  "tags": "ENTITY CRM",
+  "text": "[[MemberOf]] [[Contatti]]  Contatti: [[Opportunita]] [[Preventivi]] [[Ordini di Vendita]] [[Fatture]] [[Attivita]] [[Email]] [[Documenti]] [[Assistenza Clienti]] [[Prodotti]] [[Campagne]] [[Servizi]] [[CobroPago]] [[Assets]] [[Progetti]] [[InventoryDetails]] [[cbSurveyDone]] [[cbSurveyAnswer]] [[cbCompany]] [[Messages]] \n\nAziende attributes: account_no|Nr Azienda, accountname|Nome Azienda, phone|Telefono, website|Sito Web, fax|Fax, tickersymbol|Simbolo Ticker, otherphone|Altro Telefono, account_id|Membro di, email1|Email, employees|Impiegati, email2|Altra Email, ownership|Proprieta, rating|Valutazione, industry|Industria, siccode|Codice SIC, accounttype|Tipo, annual_revenue|Fatturato Annuo, emailoptout|Blocca Email, notify_owner|Notifica Proprietario, assigned_user_id|Assegnato a, createdtime|Data Creazione, modifiedtime|Data Modifica, modifiedby|Last Modified By, bill_street|Indirizzo (Fatturazione), ship_street|Indirizzo (Spedizione), bill_city|Cittá (Fatturazione), ship_city|Cittá (Spedizione), bill_state|Provincia (Fatturazione), ship_state|Provincia (Spedizione), bill_code|Codice (Fatturazione), ship_code|Codice (Spedizione), bill_country|Paese (Fatturazione), ship_country|Paese (Spedizione), bill_pobox|BOX (fatturazione), ship_pobox|BOX (spedizione), description|Descrizione, campaignrelstatus|Stato, isconvertedfromlead|Viene convertito, convertedfromlead|Convertito, created_user_id|Creato da, oldid|Vecchio Id"},
+
+
+
+{
+  "title": "Leads",
+  "tags": "ENTITY CRM",
+  "text": "[[cbtranslation]] Attivita: [[Email]]: [[Documenti]] [[Prodotti]] [[Campagne]] [[Servizi]] [[cbSurveyDone]] [[cbSurveyAnswer]] [[Messages]]:Leads attributes: lead_no|Nr Lead, salutationtype|Formula saluti, firstname|Nome, lastname|Cognome, company|Societa, phone|Telefono, mobile|Cellulare, fax|Fax, designation|Designazione, email|Email, leadsource|Fonte Lead, website|Sito Web, industry|Settore, leadstatus|Stato Lead, annualrevenue|Fatturato, rating|Valutazione, noofemployees|Numero Impiegati, assigned_user_id|Assegnato a, secondaryemail|Mail Secondaria, createdtime|Periodo Creato, modifiedtime|Periodo Modificato, modifiedby|Ultima Modifica di, lane|Via, code|CAP, city|Citta, country|Stato, state|Provincia, pobox|BOX, description|Descrizione, campaignrelstatus|Status, emailoptout|Fuori Opt Email, created_user_id|Creato da"}
+
+
+
+,{
+  "title": "Documenti",
+  "tags": "ENTITY CRM",
+  "text": "[[DocumentFolders]] Documenti attributes: note_no|Nr Documento, notes_title|Titolo, createdtime|Data Creazione, modifiedtime|Data Modifica, filename|Nome File, assigned_user_id|Assegnato a, notecontent|Note, filetype|Tipo File, filesize|Dimensione, filelocationtype|Tipo Scarica, fileversion|Versione, filestatus|Attvo, filedownloadcount|Scarica Contatore, folderid|Document Group, modifiedby|Ultima Modifica di, created_user_id|Creato da, template|Modello, template_for|Modello per, mergetemplate|Unisci Modello, document_number|Numero Documento, document_category|Categoria Documoneto, document_date|Data Documento"}
+
+
+
+,{
+  "title": "Email",
+  "tags": "ENTITY CRM",
+  "text": "[[Contatti]] [[Documenti]] Email attributes: emailid|ID, parent_type|Modulo Entita Vendite, activitytype|Tipo Attivita, assigned_user_id|Assegnato a, subject|Soggetto, filename|Allegato, description|Descrizione, time_start|Orario Inizio, createdtime|Orario Creazione, modifiedtime|Orario Modifica, access_count|Conteggio Accessi, modifiedby|Ultima Modifica di, from_email|Da, saved_toid|To, ccmail|CC, bccmail|BCC, parent_id|ID Genitore, email_flag|Bandiera Email, bounce|Rimbalzare, clicked|Cliccato, spamreport|Spam, delivered|Consegnato, dropped|Droppato, open|Aperto, unsubscribe|Annulla iscrizione, replyto|Rispondi a"},
+
+{
+  "title": "assistenza clienti",
+  "tags": "ENTITY CRM",
+  "text": "[[HDRelatedTo]] [[HDProducts]] [[Attivita]] [[Documenti]] [[Servizi]] [[CobroPago]] [[Progetti]] [[Email]] attributes: id|ID, cliente_id|Cliente, tipo_problema|Tipoproblema, descrizione|Descrizione, data_apertura|Data apertura, data_risoluzione|Datarisoluzione, stato|Stato, priorità|Priorità, operatore|Operatore, soluzione|Soluzione"
+},
+
+
+
+{
+  "title": "prodotti",
+  "tags": "ENTITY CRM",
+  "text": "[[HDRelatedTo]] [[HDProducts]] [[Con varie entita]] [[Attivita]] [[Documenti]] [[Servizi]] [[CobroPago]] [[Progetti]] [[Email]] attributes: id|ID, nome|Nome, descrizione|Descrizione, categoria|Categoria, prezzo|Prezzo, magazzino|Magazzino, codice_articolo|Codice articolo, fornitore|Fornitore, data_creazione|Data creazione"}
+
+
+
+,{
+  "title": "faq",
+  "tags": "ENTITY CRM",
+  "text": "[[Documenti]] attributes: id|ID, domanda|Domanda, risposta|Risposta, categoria|Categoria, visualizzazioni|Visualizzazioni, data_creazione|Data creazione, autore|Autore, stato|Stato"}
+
+
+
+,{
+  "title": "listini",
+  "tags": "ENTITY CRM",
+  "text": "[[pricebookproductrel]] attributes: id|ID, prodotto_id|Prodotto, prezzo|Prezzo,F sconto|Sconto, data_inizio|Data inizio, data_fine|Data fine, valuta|Valuta, data_creazione|Data creazione"}
+
+
+
+,{
+  "title": "ordini di acquisto",
+  "tags": "ENTITY CRM",
+  "text": "[[Attivita]] [[Documenti]] [[CobroPago]] [[InventoryDetails]] attributes: id|ID, fornitore_id|Fornitore, data_ordine|Data ordine, stato|Stato, importo_totale|Importo totale, metodo_pagamento|Metodo pagamento, data_consegna|Data consegna, note|Note"}
+
+
+
+,{
+  "title": "ordini di vendita",
+  "tags": "ENTITY CRM",
+  "text": "[[Aziende]] [[Contatti]] [[Preventivi]] [[Opportunita]] [[Utenti]] [[Attivita]] [[Documenti]] [[Fatture]] [[CobroPago]] [[InventoryDetails]] attributes: id|ID, cliente_id|Cliente, data_ordine|Data ordine, stato|Stato, importo_totale|Importo totale, metodo_pagamento|Metodo pagamento, data_consegna|Data consegna, note|Note"},
+
+{
+  "title": "fatture",
+  "tags": "ENTITY CRM",
+  "text": "[[Aziende]] [[Contatti]] [[Ordini di Vendita]] [[Utenti]] [[Attivita]] [[Documenti]] [[CobroPago]] [[Assets]] [[InventoryDetails]] Fatture attributes: id|ID, numero_fattura|Numero, data_emissione|Data, importo|Importo, iva|IVA, stato_pagamento|Stato, data_scadenza|Scadenza, metodo_pagamento|Metodo, note|Note"},
+
+{
+  "title": "campagna",
+  "tags": "ENTITY CRM",
+  "text": "[[Contatti]] [[Leads]] [[Opportunita]] [[Attivita]] [[Aziende]] [[CobroPago]] [[Messages]] Campagna attributes: id|ID, nome_campagna|Nome, data_inizio|Inizio,data_fine|Fine, budget|Budget, canale|Canale, obiettivi|Obiettivi, stato|Stato, note|Note"
+},
+
+{
+  "title": "utenti",
+  "tags": "ENTITY CRM",
+  "text": "[[ruolo]] Utenti attributes: id|ID, username|Username, password|Password,nome|Nome, cognome|Cognome, email|Email, data_registrazione|Registrazione,ultimo_accesso|Ultimo accesso, stato|Stato"
+}
+,
+{
+  "title": "servizi a contratto",
+  "tags": "ENTITY CRM",
+  "text": "[[Assistenza Clienti]] [[Documenti]]  [[RelatedTo]] Servizi a contratto attributes: contract_no|Nr Contratto, assigned_user_id|Assegnato a, createdtime|Periodo Creazione, modifiedtime|Periodo Modifica, start_date|Data Partenza, end_date|Data Chiusura, sc_related_to|Relazionato a, tracking_unit|Unita di monitoraggio, total_units|Unita Totali, used_units|Unita Usate, subject|Soggetto, due_date|Data Scadenza, planned_duration|Durata Prevista, actual_duration|Durata Effettiva, contract_status|Stato, contract_priority|Priorita, contract_type|Tipo, progress|Progresso, modifiedby|Ultima Modifica di, created_user_id|Creato da"},
+
+{
+  "title": "servizi",
+  "tags": "ENTITY CRM",
+  "text": "[[Assistenza Clienti]] [[Preventivi]] [[Ordini di Acquisto]] [[Ordini di Vendita]] [[Fatture]] [[pricebookproductrel]] [[Leads]] [[Aziende]] [[Contatti]] [[Opportunita]] [[Documenti]] [[Fornitori]] [[InventoryDetails]] Servizi attributes: service_no|Nr Servizio, servicename|Nome Servizio, discontinued|Attivo, sales_start_date|Data Inizio Vendita, sales_end_date|Data Fine Vendita, start_date|Data Inizio Supporto, expiry_date|Data Fine Supporto, website|Sito Web, createdtime|Periodo Creazione, modifiedtime|Periodo Modifica, modifiedby|Ultima Modifica di, service_usageunit|Unita di Misura, qty_per_unit|N. di Unita, assigned_user_id|Proprietario, servicecategory|Categoria, unit_price|Prezzo, taxclass|Tipologia Tassa, commissionrate|Tasso Commissione (%), description|Descrizione, cost_price|Costo Prezzo, divisible|Divisibile, created_user_id|Creato da"},
+{
+  "title": "aggiornamento app",
+  "tags": "ENTITY CRM",
+  "text": "[[cbtranslation]] Aggiornamento app attributes: cbupd_no|App Aggiornamento No, author|Autore, filename|Nome Schedario, classname|Nome classe, execstate|Stato di esecuzione, execdate|Data di esecuzione, systemupdate|Aggiornamento di sistema, execorder|Ordine di esecuzione, perspective|Perspectiva, assigned_user_id|Assegnato a, blocked|Bloccato, createdtime|Tempo Creato, modifiedtime|Tempo Modificato, modifiedby|Ultima Modifica di, description|Descrizione, created_user_id|Creato da, appcs|Modifica Applicazione"},
+
+{
+  "title": "pagamenti",
+  "tags": "ENTITY CRM",
+  "text": "[[CPParent]] [[CPRelatedTo]] pagamenti attributes: id|ID, id_cliente|Cliente, id_fattura|Fattura, data_pagamento|Data, importo|Importo, metodo_pagamento|Metodo, stato|Stato"}
+
+,{
+  "title": "installazioni",
+  "tags": "ENTITY CRM",
+  "text": "[[Assistenza Clienti]] [[Documenti]] installazioni attributes: id|ID, id_cliente|Cliente, id_prodotto|Prodotto, data_installazione|Data, posizione|Posizione, note|Note"
+},
+
+{
+  "title": "commenti",
+  "tags": "ENTITY CRM",
+  "text": "[[MCRelatedTo]] [[Documenti:]] commenti attributes: id|ID, id_cliente|Cliente, id_ticket|Ticket, data_commento|Data, testo|Testo, autore|Autore"
+},
+
+{
+  "title": "scadenze",
+  "tags": "ENTITY CRM",
+  "text": "[[cliente]] [[contratto]] scadenze attributes: id|ID, id_cliente|Cliente, id_contratto|Contratto, data_scadenza|Data, importo|Importo, stato|Stato"
+},
+
+{
+  "title": "progetti",
+  "tags": "ENTITY CRM",
+  "text": "[[Aziende]] [[Contatti]] [[RelatedTo]] [[Operazioni]] [[Scadenze]] [[Documenti]] [[Assistenza Clienti]] [[Email]] progetti attributes: id|ID, nome|Nome, cliente_id|Cliente, data_inizio|Inizio, data_fine|Fine, budget|Budget, stato|Stato, descrizione|Descrizione"},
+{
+  "title": "smsinfo",
+  "tags": "ENTITY CRM",
+  "text": "[[Aziende]] [[Contatti]] [[Leads]] smsinfo attributes: id|ID, contatto_id|Contatto, campagna_id|Campagna, data_invio|Data, testo|Testo, stato|Stato, risposta|Risposta"},
+
+{
+  "title": "variabli globali",
+  "tags": "ENTITY CRM",
+  "text": "variabli globali attributes: id|ID, nome|Nome, valore|Valore, tipo|Tipo,descrizione|Descrizione, modificabile|Modificabile"
+},
+
+{
+  "title": "dettagli inventario",
+  "tags": "ENTITY CRM",
+  "text": "[[Aziende]] [[Contatti]] [[Fornitori]] [[Prodotti]] [[Servizi]] [[Fatture]] [[Preventivi]] [[Ordini di Vendita]] [[Ordini di Acquisto]] dettagli inventario attributes: id|ID, prodotto_id|Prodotto, magazzino_id|Magazzino, quantita|Quantità, livello_riordino|Riordino, ubicazione|Ubicazione"},
+
+{
+  "title": "mappe",
+  "tags": "ENTITY CRM",
+  "text": "[[GlobalVariable]] mappe attributes: id|ID, nome|Nome, progetto_id|Progetto,tipo|Tipo, contenuto|Contenuto, data_creazione|Creazione"
+},
+
+{
+  "title": "termini e condizioni",
+  "tags": "ENTITY CRM",
+  "text": "[[Fatture]] [[Ordini di Vendita]] [[Preventivi]] [[Ordini di Acquisto]] termini e condizioni attributes: id|ID, documento_id|Documento, versione|Versione, testo|Testo, data_approvazione|Approvazione, stato|Stato"
+},
+
+{
+  "title": "calendario",
+  "tags": "ENTITY CRM",
+  "text": "[[Contatti]] [[cbCalendar]] [[Documenti]] calendario attributes: id|ID, utente_id|Utente, attività_id|Attività, data_inizio|Inizio, data_fine|Fine, titolo|Titolo, descrizione|Descrizione"
+},
+
+{
+  "title": "traduzioni",
+  "tags": "ENTITY CRM",
+  "text": " traduzioni attributes: id|ID, lingua_id|Lingua, chiave|Chiave, valore|Valore, modulo|Modulo, data_modifica|Modifica"
+},
+
+{
+  "title": "azioni aziendali",
+  "tags": "ENTITY CRM",
+  "text": "[[Documenti]] azioni aziendali attributes: id|ID, utente_id|Utente, tipo|Tipo, descrizione|Descrizione, data|Data, risultato|Risultato"
+},
+
+{
+  "title": "sondaggi",
+  "tags": "ENTITY CRM",
+  "text": "[[cbSurveyQuestion]] [[cbSurveyDone]] [[cbSurveyAnswer]] [[cbSurveyPath]] sondaggi attributes: id|ID, cliente_id|Cliente, titolo|Titolo, descrizione|Descrizione, data_inizio|Inizio, data_fine|Fine, stato|Stato"},
+{
+  "title": "domande del sondaggio",
+  "tags": "ENTITY CRM",
+  "text": "[[cbSurveyAnswer]] domande del sondaggio attributes: id|ID, sondaggio_id|Sondaggio, testo_domanda|Domanda, tipo_risposta|Tipo Risposta, obbligatoria|Obbligatoria, ordine|Ordine"},
+
+{
+  "title": "sondaggi fatti",
+  "tags": "ENTITY CRM",
+  "text": "[[cbSurveyAnswer]] sondaggi fatti attributes: id|ID, cliente_id|Cliente,sondaggio_id|Sondaggio, data_compilazione|Data, stato|Stato, punteggio|Punteggio"
+},
+
+{
+  "title": "cbSurveyAnswer",
+  "tags": "ENTITY CRM",
+  "text":  "cbSurveyAnswer attributes: id|ID, survey_id|Sondaggio, question_id|Domanda, answer|Risposta, respondent_id|Rispondente, timestamp|Data/Ora"},
+
+{
+  "title": "sedi mutua",
+  "tags": "ENTITY CRM",
+  "text": "[[Documenti]] sedi mutua attributes: id|ID, mutua_id|Mutua, indirizzo|Indirizzo,citta|Città, telefono|Telefono, email|Email, responsabile|Responsabile"
+},
+
+{
+  "title": "visualizza autorizzazioni",
+  "tags": "ENTITY CRM",
+  "text": "visualizza autorizzazioni attributes: id|ID,utente_id|Utente, ruolo_id|Ruolo, permesso|Permesso, ambito|Ambito,data_assegnazione|Assegnazione"
+},
+
+{
+  "title": "query avanzate",
+  "tags": "ENTITY CRM",
+  "text": "[[cbPulse]] query avanzate attributes: id|ID, nome|Nome, sql|SQL, descrizione|Descrizione, creato_da|Creato da, data_creazione|Creazione, modulo|Modulo"
+},
+
+{
+  "title": "componenti prodotto",
+  "tags": "ENTITY CRM",
+  "text": "[[ProductFrom]] [[ProductTo]] componenti prodotto attributes: id|ID, prodotto_id|Product, componente_id|Component, quantita|Quantity, costo|Cost, note|Notes"
+},
+
+{
+  "title": "messaggi",
+  "tags": "ENTITY CRM",
+  "text": "[[cliente]] [[campagna]] messaggi attributes: id|ID, cliente_id|Customer, campagna_id|Campaign, tipo|Type, contenuto|Content, data_invio|Send Date, stato|Status"
+},
+
+{
+  "title": "impulsi",
+  "tags": "ENTITY CRM",
+  "text": "[[query]] impulsi attributes: id|ID, query_id|Query, nome|Name, frequenza|Frequency, ultima_esecuzione|Last Run, stato|Status, destinatari|Recipients"
+},
+
+{
+  "title": "template di messaggi",
+  "tags": "ENTITY CRM",
+  "text": "[[Documenti]] template di messaggi attributes: id|ID, modulo_id|Module, nome_template|Template Name, oggetto|Subject, corpo|Body, variabili|Variables"
+},
+
+{
+  "title": "credenziali",
+  "tags": "ENTITY CRM",
+  "text": " credenziali attributes: id|ID, utente_id|User, tipo|Type, nome"},
+
+{
+  "title": "cartelle documenti",
+  "tags": "ENTITY CRM",
+  "text": "[[Documenti]] cartelle documenti attributes: folder_id|Folder ID, folder_name|Folder Name, parent_folder|Parent Folder, created_date|Created Date, modified_date|Modified Date, owner|Owner"
+},
+
+{
+  "title": "price lists",
+  "tags": "ENTITY CRM",
+  "text": "price lists attributes: price_list_id|Price List ID, product_id|Product ID, price|Price, currency|Currency, valid_from|Valid From, valid_to|Valid To"
+},
+
+{
+  "title": "gestione numbering",
+  "tags": " CRM",
+  "text": "[[modules]] gestione numbering attributes: sequence_id|Sequence ID, module_name|Module, prefix|Prefix, next_number|Next Number, format|Format"
+},
+
+{
+  "title": "percorso di indagine",
+  "tags": "ENTITY CRM",
+  "text": " percorso di indagine attributes: path_id|Path ID, survey_id|SurveyID, question_sequence|Question Sequence, branch_logic|Branch Logic, required|Required"
+},
+
+{
+  "title": "assistiti (famigliari)",
+  "tags": "ENTITY CRM",
+  "text": "[[Documenti]] [[iwDipendentiFda]] assistiti (famigliari) attributes: family_id|Family ID, patient_id|Patient ID, relationship|Relationship, contact_info|Contact Info, emergency_contact|Emergency Contact"},
+
+ {
+      "title": "emessi(dettaglio)",
+      "tags": "ENTITY CRM",
+      "text": "[[emessi(testata)]] [[prestazioni]] attributes: dettaglio_id|Dettaglio ID, emesso_id|Emesso ID, prestazione_id|Prestazione ID, quantita|Quantità, importo|Importo"    },
+    {
+      "title": "assisstiti(handicap)",
+      "tags": "ENTITY CRM",
+      "text": "[[assistiti]] attributes: handicap_id|Handicap ID, assistito_id|Assistito ID, tipo_handicap|Tipo Handicap, gravita|Gravità, data_riconoscimento|Data Riconoscimento"    },
+    {
+      "title": "Assistiti (Indirizzi)",
+      "tags": "ENTITY CRM",
+      "text": "[[assistiti]] [[comuni]] attributes: indirizzo_id|Indirizzo ID, assistito_id|Assistito ID, tipo_indirizzo|Tipo Indirizzo, indirizzo|Indirizzo, cap|CAP, comune_id|Comune ID"    },
+    {
+      "title": "Enti (Indirizzi)",
+      "tags": "ENTITY CRM",
+      "text": "[[enti]] [[comuni]] attributes: indirizzo_id|Indirizzo ID, ente_id|Ente ID, tipo_indirizzo|Tipo Indirizzo, indirizzo|Indirizzo, cap|CAP, comune_id|Comune ID"    },
+    {
+      "title": "Prestazioni Listino",
+      "tags": "ENTITY CRM",
+      "text": "[[prestazioni]] [[listini]] attributes: prestazione_listino_id|Prestazione Listino ID, prestazione_id|Prestazione ID, listino_id|Listino ID, prezzo|Prezzo, valido_dal|Valido Dal, valido_al|Valido Al"    },
+        {
+      "title": "prestazioni fornitori",
+      "tags": "ENTITY CRM",
+      "text": "[[iwGaranzieListino]] [[fornitori]] attributes: prestazione_fornitore_id|Prestazione Fornitore ID, prestazione_id|Prestazione ID, fornitore_id|Fornitore ID, codice_fornitore|Codice Fornitore, prezzo|Prezzo, valido_dal|Valido Dal, valido_al|Valido Al"    },
+
+    { "title": "Soci (Movimenti)",
+      "tags": "ENTITY CRM",
+      "text": "Attributes: movimento_id|Movimento ID, socio_id|Socio ID, tipo_movimento|Tipo Movimento, data_movimento|Data Movimento, motivazione|Motivazione"    }
+
+      ,{
+      "title": "Sussidi (Condizioni)",
+      "tags": "ENTITY CRM",
+      "text": "Attributes: condizione_id|Condizione ID, sussidio_id|Sussidio ID, fda_id|FdA ID, giorni_carenza|Giorni Carenza, tipo_carenza|Tipo Carenza"    },
+    {
+      "title": "Sconti e Maggiorazioni",
+      "tags": "ENTITY CRM",
+      "text": "[[Sussidi (Condizioni)]]\n\nAttributes:\nsconto_id|Sconto ID\naccordo_id|AccordoID\ntipo|Tipo\nvalore|Valore\nvalido_dal|Valido Dal\nvalido_al|Valido Al\n\n"
+    },
+    {
+      "title": "Prestazioni FdA",
+      "tags": "ENTITY CRM",
+      "text": "[[prestazioni]] [[fda]]\n\nAttributes:\nprestazione_fda_id|Prestazione FdA ID\nprestazione_id|Prestazione ID\nfda_id|FdA ID\nmassimale|Massimale\nfranchigia|Franchigia\n\n"
+    },
+    {
+      "title": "Prestazioni",
+      "tags": "ENTITY CRM",
+      "text": "[[iwFdaGaranzia]] [[iwGaranzieFornitori]] Attributes: prestazione_id|Prestazione ID, descrizione|Descrizione, codice|Codice, categoria|Categoria"    },
+    {
+      "title": "Prestazioni Gruppi",
+      "tags": "ENTITY CRM",
+      "text": "[[iwGaranzie]]\n\nAttributes:\ngruppo_id|Gruppo ID\nnome_gruppo|Nome Gruppo\ndescrizione|Descrizione"
+    },
+    {
+      "title": "Medici",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nmedico_id|Medico ID\nente_id|Ente ID\nnome|Nome\nspecializzazione|Specializzazione1"
+    },
+
+        {
+      "title": "FdA Assistiti",
+      "tags": "ENTITY CRM",
+      "text": "[[iwEmessi]] \n\nAttributes:\nfda_assistito_id|FdA Assistito ID\nfda_id|FdA ID\nassistito_id|Assistito ID\nmassimale|Massimale\nfranchigia|Franchigia\n"
+    },
+
+
+    {
+      "title": "FdA Enti",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiFda]]\n\nAttributes:\nfda_ente_id|FdA Ente ID\nfda_id|FdA ID\nente_id|Ente ID\npriorita_liquidazione Priorità Liquidazione"},
+
+    {
+      "title": "Soci",
+      "tags": "ENTITY CRM",
+      "text": "[[iwSociMovimenti]]\n\nAttributes:\nsocio_id|Socio ID\nassistito_id|Assistito ID\nente_id|Ente ID\ntipo_socio|Tipo Socio"
+    },
+
+    {
+      "title": "FdA Sostitutive",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nfda_sostitutiva_id|FdA Sostitutiva ID\nfda_originale_id|FdA Originale ID\nfda_sostituta_id|FdA Sostituta ID\n\n"    },
+    {
+      "title": "Maggiorazione Compensi",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nmaggiorazione_id|Maggiorazione ID\naccordo_id|Accordo ID\nimporto_maggiorazione|Importo Maggiorazione"
+    },
+    {
+      "title": "FdA",
+      "tags": "ENTITY CRM",
+      "text": "[[iwFdaGaranzia]] [[Documenti]] [[iwEntifda]] [[cbCalendar]]\n\nAttributes:\nfda_id|FdA ID\nnome_fda|Nome FdA\ndescrizione|Descrizione\n"    },
+    {
+      "title": "Accordi",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiFda]] [[iwEntifda]] [[iwSussidiCondizioni]] [[iwMaggiorazioneCompensi]] [[Documenti]] [[cbCalendar]]\n\nAttributes:\naccordo_id|Accordo ID\nente_id|Ente ID\ndata_accordo|Data Accordo\n\n"    },
+
+        {
+      "title": "Enti (Dati Contabili)",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiFda]] [[iwAccordo]]\n\nAttributes:\ndato_contabile_id|Dato Contabile ID\nente_id|Ente ID\nbanca_id|Banca ID\niban|IBAN\nswift|SWIFT\n\n"    },
+    {
+      "title": "Assistiti (Dati Contabili)",
+      "tags": "ENTITY CRM",
+      "text": "[[iwEmessi]] [[iwDipendentiFda]]\n\nAttributes:\ndato_contabile_id|Dato Contabile ID\nassistito_id|Assistito ID\nbanca_id|Banca ID\niban|IBAN\nswift|SWIFT\n" },
+    {
+      "title": "AbiCab",
+      "tags": "ENTITY CRM",
+      "text": "[[iwEnticontabili]] [[iwDipendentiContabili]]\n\nAttributes:\nabicab_id|AbiCab ID\nbanca_id|BancaID\nlocalita_id|Località ID\nabi|ABI\ncab|CAB\n\n"
+    },
+    {
+      "title": "Assistiti",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiContabili]] [[iwDipendentiFamigliari]] [[iwDipendentiFda]] [[iwDipendentiHandicap]] [[iwDipendentiIndirizzi]] [[iwSoci]] [[cbCalendar]] [[iwEmessi]] [[Documenti]]Assistito n.\n Titolo onorifico\n Cognome\n Nome\n Codice fiscale\n Partita IVA\n Sesso\n Data di Nascita\n Cittadinanza\n Data morte\n Stato civile\n Titolo Di Studio\n Categoria Attivita\n Professione\n Assistito\n Abilitato portale\n Codice Univoco\n Assegnato a\n Creato da\n Orario creazione\n Orario modifica\n Descrizione\n Comune di Nascita\n Nazione Nascita\n Lingua\n Rif. Interno Mutua\n Pagante\n Matricola Mutua\n Vecchio Id\n Data Assunzione\n Data Dimissione\n Tipo Dipendente Interno\n Email\n Stato\n Data Stato\n Utenza Portale\n Eta\n Area Geografica\n Denominazione\n Ente Riferimento\n Mutua\n Numero di Giorni\n % Copertura\n Codice Identificativo\n Sia\n Agenzia Mutua\n Macro Area\n Presidio Mutua\n Agezia Dismessa\n Data Dismissione Agenzia\n Riferimento Interno\n Commerciale Interno\n Fonte Commerciale\n Data Inizio Trattativa\n Note\n Matricola Ente Riferimento\n Applicazione LTC primaria Data di Calcolo\n Applicazione LTC secondaria Data di Calcolo\n Applicazione LTC primaria\n Applicazione LTC primaria Importo\n Applicazione LTC secondaria\n Applicazione LTC secondaria Importo\n Visus Eseguito\n Valore Visus sx\n Valore visus dx\n Iscritto da ante 1998\n Iscritto regolare dal 2014\n Sussidio Solidarieta Erogato\n Sussidio Straordinario 1\n Sussidio Straordinario 2\n Sussidio Straordinario 3\n Sussidio allo Studio 1\n Sussidio allo Studio 2\n Visus Lontano sx\n Visus Lontano dx\n Visus Permanenza sx\n Visus Permananza dx\n Visus Vicino Ultimo Aggiornamento\n Visus Lontano Ultimo Aggiornamento\n Visus Permanenza Ultimo Aggiornamento\n Data Lavorato Sussidio Straordinario 1\n Data Lavorato Sussidio Straordinario 2\n Data Lavorato Sussidio Straordinario 3\n Data Lavorato Sussidio Solidarieta Erogato\n Data Lavorato Sussidio allo Studio 1\n Data Lavorato Sussidio allo Studio 2\n Quantita Sussidio Straordinario 1\n Quantita Sussidio Straordinario 2\n Quantita Sussidio Straordinario 3\n Quantita Sussidio Solidarieta Erogato\n Quantita Sussidio allo Studio 1\n Quantita Sussidio allo Studio 2\n Anni di Anzianita di Permanenza\n Provincia\n"    },
+    {
+      "title": "Valute",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiContabili]] [[iwEnticontabili]]\n\nAttributes:\nvaluta_id|Valuta ID\ncodice|Codice\nsimbolo|Simbolo\n\n"    },
+    {
+      "title": "Localita",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendenti]] [[iwDipendentiIndirizzi]] [[iwEntiIndirizzi]] [[iwTabAbiCab]]\n\nAttributes:\nlocalita_id|Località ID\nprovincia_id|Provincia ID\nnome|Nome\ncap|CAP\n\n"    },
+    {
+      "title": "Provincie",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiIndirizzi]] [[iwEntiIndirizzi]] [[iwTabLocalita]] [[iwTabAbiCab]]\n\nAttributes:\nprovincia_id|Provincia ID\nregione_id|Regione ID\nnome|Nome\nsigla|Sigla\n\n"    },
+    {
+      "title": "Regioni",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiIndirizzi]] [[iwEntiIndirizzi]] [[iwTabLocalita]] [[iwTabProvince]]\n\nAttributes:\nregione_id|Regione ID\nnome|Nome\ncodice|Codice\n\n"    },
+        {
+      "title": "Enti",
+      "tags": "ENTITY CRM",
+      "text": "[[iwAccordo]] [[iwEnticontabili]] [[iwEntifda]] [[iwEntiIndirizzi]] [[iwSoci]] [[Documenti]] [[iwEmessi]] [[cbCalendar]] [[iwDipendentiFda]] [[iwGaranzieListino]] [[iwDipendenti]]\n\nAttributes:\nente_id|Ente ID\nateco_id|Ateco ID\nnazione_id|Nazione ID\nragione_sociale|Ragione Sociale\npiva|Partita IVA\n\n"    },
+    {
+      "title": "Nazioni",
+      "tags": "ENTITY CRM",
+      "text": "[[iwTabLocalita]] [[iwTabProvince]] [[iwTabRegioni]]\n\nAttributes:\nnazione_id|Nazione ID\ncontinente_id|Continente ID\nnome|Nome\ncodice|Codice\n\n"    },
+    {
+      "title": "Lingue",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendenti]] [[iwTabNazioni]] [[iwEnti]]\n\nAttributes:\nlingua_id|Lingua ID\nnome|Nome\ncodice|Codice\n\n"    },
+    {
+      "title": "Ateco",
+      "tags": "ENTITY CRM",
+      "text": "[[iwTabNazioni]]\n\nAttributes:\nateco_id|Ateco ID\ncodice|Codice\ndescrizione|Descrizione\n\n"    },
+    {
+      "title": "Continenti",
+      "tags": "ENTITY CRM",
+      "text": "[[iwTabNazioni]]\n\nAttributes:\ncontinente_id|ContinenteID\nnome|Nome\ncodice|Codice\n\n"
+    },
+    {
+      "title": "Ripartizione Geografica",
+      "tags": "ENTITY CRM",
+      "text": "[[iwTabLocalita]] [[iwTabNazioni]] [[iwTabProvince]] [[iwTabRegioni]] [[iwEnti]] [[iwDipendenti]]\n\nAttributes:\nripartizione_id|Ripartizione ID\nnome|Nome\nzona|Zona\n\n"    },
+    {
+      "title": "Emessi (Testata)",
+      "tags": "ENTITY CRM",
+      "text": "[[iwEmessi]]\n\nAttributes:\nemesso_id|Emesso ID\nente_id|Ente ID\naccordo_id|Accordo ID\ndata_emissione|Data Emissione\nimporto|Importo\n\n"    },
+    {
+      "title": "Sussidi (Liquidatori)",
+      "tags": "ENTITY CRM",
+      "text": "[[Documenti]]\n\nAttributes:\nliquidatore_id|Liquidatore ID\nsussidio_id|Sussidio ID\nliquidatore_nome|Nome Liquidatore\n\n"
+    },
+    {
+      "title": "Sussidi (Testata)",
+      "tags": "ENTITY CRM",
+      "text": "[[Documenti]]\n\nAttributes:\nsussidio_id|Sussidio ID\nassistito_id|Assistito ID\nfda_id|FdA ID\ndata_richiesta|Data Richiesta\n\n"
+    },
+    {
+      "title": "Sussidi (Dettagli)",
+      "tags": "ENTITY CRM",
+      "text": "[[Documenti]]\n\nAttributes:\ndettaglio_id|Dettaglio ID\nsussidio_id|Sussidio ID\nprestazione_id|Prestazione ID\nimporto|Importo\n"
+    },
+    {
+      "title": "Prestazioni FdA Enti",
+      "tags": "ENTITY CRM",
+      "text": "[[Documenti]]\n\nAttributes:\nprestazione_fda_ente_id|Prestazione FdA Ente ID\nprestazione_id|Prestazione ID\nfda_id|FdA ID\nente_id|Ente ID\n\n"    },
+    {
+      "title": "Emessi (Dettagli Importati)",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\ndettaglio_importato_id|Dettaglio Importato ID\nemesso_id|Emesso ID\nimporto|Importo\n\n"    },
+    {
+      "title": "Prestazioni FdA Assistiti",
+      "tags": "ENTITY CRM",
+      "text": "[[Documenti]]\n\nAttributes:\nprestazione_fda_assistito_id|Prestazione FdA Assistito ID\nprestazione_id|Prestazione ID\nfda_id|FdA ID\nassistito_id|Assistito ID\n\n"    },
+    {
+      "title": "FdA Assistiti (Coperture)",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\ncopertura_id|Copertura ID\nfda_id|FdA ID\nassistito_id|Assistito ID\nmese|Mese\ncoperto|Coperto\n\n"
+    },
+    {
+      "title": "Tasks",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\ntask_id|Task ID\nutente_id|Utente ID\ndescrizione|Descrizione\nstato|Stato\n\n"
+    },
+
+        {
+      "title": "Richieste di Pagamento",
+      "tags": "ENTITY CRM",
+      "text": "[[iwEmessi]] [[Documenti]] \n\nAttributes:\nrichiesta_id|Richiesta ID\nemesso_id|Emesso ID\nconto_id|Conto ID\nimporto|Importo\nstato|Stato\n\n"
+    },
+    {
+      "title": "Assistiti (Dettaglio Coperture)",
+      "tags": "ENTITY CRM",
+      "text": " [[fda]]\n\nAttributes:\ncopertura_id|Copertura ID\nassistito_id|Assistito ID\nfda_id|FdA ID\nmese|Mese\nimporto Importo\n\nCon uno entita:\nassistiti|1\nfda|1"
+    },
+    {
+      "title": "Editore Configurazione",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nconfig_id|Config ID\nnome|Nome\nvalore|Valore\ntipo|Tipo\n\nCon varie entita:\nmoduli|*"
+    },
+    {
+      "title": "Prestazioni Listino Testata",
+      "tags": "ENTITY CRM",
+      "text": "[[listini]] [[iwGaranzieListino]]\n\nAttributes:\ntestata_id|Testata ID\nlistino_id|Listino ID\nfornitore_id|Fornitore ID\ndata_inizio|Data Inizio\n\n"
+    },
+    {
+      "title": "Accordo Convenzioni",
+      "tags": "ENTITY CRM",
+      "text": "[[prestazioni_listino]]\n\nAttributes:\nconvenzione_id|Convenzione ID\naccordo_id|Accordo ID\nlistino_id|Listino ID\n\n1"
+    },
+    {
+      "title": "Richieste di Pagamento di Sussidi",
+      "tags": "ENTITY CRM",
+      "text": "[[sussidi]] [[dati_contabili]]\n\nAttributes:\nrichiesta_id|Richiesta ID\nsussidio_id|Sussidio ID\nconto_id|Conto ID\nimporto|Importo\n\n"
+    },
+    {
+      "title": "MDI",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nmdi_id|MDI ID\nnome|Nome\ndescrizione|Descrizione\n\n"
+    },
+
+        {
+      "title": "Portal Login Informations",
+      "tags": "ENTITY CRM",
+      "text": "[[contacts]]\n\nAttributes:\nlogin_id|Login ID\ncontact_id|Contact ID\nusername|Username\nlast_login|Last Login\nstatus|Status\n\n"
+    },
+    {
+      "title": "MemberOf",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]]\n\nAttributes:\nmember_id|Member ID\naccount_id|Account ID\nrole|Role\njoin_date|Join Date\n\n"
+    },
+    {
+      "title": "Contacts",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]]\n\nAttributes:\ncontact_id|Contact ID\naccount_id|Account ID\nfirstname|First Name\nlastname|Last Name\nemail|Email\n\n"
+    },
+    {
+      "title": "Accounts",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\naccount_id|Account ID\naccountname|Account Name\nwebsite|Website\nindustry|Industry\n\n"
+    },
+    {
+      "title": "Services",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nservice_id|Service ID\nservicename|Service Name\ndescription|Description\nprice|Price\n\n"
+    },
+    {
+      "title": "Products",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nproduct_id|Product ID\nproductname|Product Name\nproductcode|Product Code\nprice|Price\n\n"
+    },
+    {
+      "title": "Project",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]]\n\nAttributes:\nproject_id|Project ID\naccount_id|Account ID\nprojectname|Project Name\nstartdate|Start Date\n\n"
+    },
+    {
+      "title": "Potentials",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]] [[contacts]]\n\nAttributes:\npotential_id|Potential ID\naccount_id|Account ID\ncontact_id|Contact ID\namount|Amount\nstage|Stage\n"
+    },
+    {
+      "title": "ProjectTask",
+      "tags": "ENTITY CRM",
+      "text": "[[project]]\n\nAttributes:\ntask_id|Task ID\nproject_id|Project ID\ntaskname|Task Name\nstatus|Status\n\n"
+    },
+
+        {
+      "title": "Leads",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nlead_id|Lead ID\nfirstname|First Name\nlastname|Last Name\ncompany|Company\nstatus|Status\n\n"
+    },
+    {
+      "title": "Accounts",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\naccount_id|Account ID\naccountname|Account Name\nwebsite|Website\nindustry|Industry\n\n"
+    },
+    {
+      "title": "SalesOrder",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]] [[potentials]]\n\nAttributes:\norder_id|Order ID\naccount_id|Account ID\npotential_id|Potential ID\ntotal|Total\nstatus|Status\n\n"
+    },
+    {
+      "title": "HelpDesk",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]] [[contacts]]\n\nAttributes:\nticket_id|Ticket ID\naccount_id|Account ID\ncontact_id|Contact ID\npriority|Priority\nstatus|Status\n"
+    },
+    {
+      "title": "ProjectMilestone",
+      "tags": "ENTITY CRM",
+      "text": "[[project]]\n\nAttributes:\nmilestone_id|Milestone ID\nproject_id|Project ID\nmilestonename|Milestone Name\ndate|Date\n\n"
+    },
+    {
+      "title": "Assets",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]] [[products]]\n\nAttributes:\nasset_id|Asset ID\naccount_id|Account ID\nproduct_id|Product ID\nserialnumber|Serial Number\nstatus|Status\n\n"
+    },
+    {
+      "title": "Vendors",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nvendor_id|Vendor ID\nvendorname|Vendor Name\nemail|Email\nphone|Phone\n\n"
+    },
+    {
+      "title": "Potentials",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]] [[contacts]]\n\nAttributes:\npotential_id|Potential ID\naccount_id|Account ID\ncontact_id|Contact ID\namount|Amount\nstage|Stage\n\n"
+    },
+    {
+      "title": "PurchaseOrder",
+      "tags": "ENTITY CRM",
+      "text": "[[vendors]] [[accounts]]\n\nAttributes:\npo_id|PO ID\nvendor_id|Vendor ID\naccount_id|Account ID\ntotal|Total\nstatus|Status\n\n"
+    },
+
+        {
+      "title": "Quotes",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]] [[potentials]]\n\nAttributes:\nquote_id|Quote ID\naccount_id|Account ID\npotential_id|Potential ID\nquotestage|Quote Stage\nvalidtill|Valid Till\n\n"    },
+    {
+      "title": "Project",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]]\n\nAttributes:\nproject_id|Project ID\naccount_id|Account ID\nprojectname|Project Name\nstartdate|Start Date\nstatus|Status"    },
+    {
+      "title": "ProjectTask",
+      "tags": "ENTITY CRM",
+      "text": "[[project]]\n\nAttributes:\ntask_id|Task ID\nproject_id|Project ID\ntaskname|Task Name\nduedate|Due Date\nstatus|Status\n\n"
+    },
+    {
+      "title": "ServiceContracts",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]]\n\nAttributes:\ncontract_id|Contract ID\naccount_id|AccountID\ncontract_no|Contract No\nstart_date|Start Date\nend_date|End Date\n\n"
+    },
+    {
+      "title": "Leads",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nlead_id|Lead ID\nfirstname|First Name\nlastname|Last Name\ncompany|Company\nstatus|Status\n\n"
+    },
+    {
+      "title": "Campaigns",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\ncampaign_id|Campaign ID\ncampaignname|Campaign Name\ncampaigntype|Campaign Type\nstartdate|Start Date\nstatus|Status\n\n"
+    },
+    {
+      "title": "Invoice",
+      "tags": "ENTITY CRM",
+      "text": "[[salesorder]] [[accounts]]\n\nAttributes:\ninvoice_id|Invoice ID\nsalesorder_id|SalesOrder ID\naccount_id|Account ID\ninvoicedate|Invoice Date\nduedate|Due Date\n\n"
+    },
+    {
+      "title": "Accounts",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\naccount_id|Account ID\naccountname|Account Name\nwebsite|Website\nindustry|Industry\n\n"
+    },
+    {
+      "title": "Vendors",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nvendor_id|Vendor ID\nvendorname|Vendor Name\nemail|Email\nphone|Phone\n\n"
+    },
+
+        {
+      "title": "CPRelatedTo",
+      "tags": "ENTITY CRM",
+      "text": "[[products]] [[servicecontracts]]\n\nAttributes:\nrelation_id|Relation ID\nproduct_id|Product ID\ncontract_id|Contract ID\nrelation_type|Relation Type\n\n"
+    },
+    {
+      "title": "HelpDesk",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]] [[contacts]]\n\nAttributes:\nticket_id|Ticket ID\naccount_id|Account ID\ncontact_id|Contact ID\nsubject|Subject\npriority|Priority\n\n"
+    },
+    {
+      "title": "ProjectMilestone",
+      "tags": "ENTITY CRM",
+      "text": "[[project]]\n\nAttributes:\nmilestone_id|Milestone ID\nproject_id|Project ID\nmilestonename|Milestone Name\nduedate|Due Date\n\n"
+    },
+    {
+      "title": "Assets",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]] [[products]]\n\nAttributes:\nasset_id|Asset ID\naccount_id|Account ID\nproduct_id|Product ID\nserialnumber|Serial Number\npurchasedate|Purchase Date\n\n"
+    },
+    {
+      "title": "Services",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nservice_id|Service ID\nservicename|Service Name\ndescription|Description\nunit_price|Unit Price\n\n"
+    },
+    {
+      "title": "PurchaseOrder",
+      "tags": "ENTITY CRM",
+      "text": "[[vendors]] [[accounts]]\n\nAttributes:\npo_id|PO ID\nvendor_id|Vendor ID\naccount_id|Account ID\npodate|PO Date\ntotal|Total\n\n"
+    },
+    {
+      "title": "Quotes",
+      "tags": "ENTITY CRM",
+      "text": "[[accounts]] [[potentials]]\n\nAttributes:\nquote_id|Quote ID\naccount_id|Account ID\npotential_id|Potential ID\nsubject|Subject\nvalidtill|Valid Till\n\n"
+    },
+    {
+      "title": "ProductFrom",
+      "tags": "ENTITY CRM",
+      "text": "[[products]]\n\nAttributes:\ncomponent_id|Component ID\nproduct_id|Product ID\ncomponent_product_id|Component Product ID\nquantity|Quantity\n\n"
+    },
+    {
+      "title": "ProductTo",
+      "tags": "ENTITY CRM",
+      "text": "[[products]]\n\nAttributes:\ncomponent_id|Component ID\nproduct_id|Product ID\ncomponent_product_id|Component Product ID\nquantity|Quantity\n\n"
+    },
+    {
+      "title": "Variabili Speciali",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nvariable_id|Variable ID\nvariable_name|Variable Name\nvariable_value|Variable Value\nvariable_type|Variable Type\n\n"
+    }]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

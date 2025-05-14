@@ -1,0 +1,137 @@
+Opportunita
+contatti
+aziende
+leads
+documenti
+email
+assistenza clienti
+prodotti
+faq
+listini
+ordini di acquisto
+ordini di vendita
+fatture
+campagna
+utenti
+servizi a contratto
+servizi
+aggiornamento app
+pagamenti
+installazioni
+commenti
+scadenze
+progetti
+smsinfo
+variabli globali
+dettagli inventario
+mappe
+termini e condizioni
+calendario
+traduzioni
+azioni aziendali
+sondaggi
+domande del sondaggio
+sondaggi fatti
+cbSurveyAnswer
+sedi mutua
+visualizza autorizzazioni
+query avanzate
+componenti prodotto
+messaggi
+impulsi
+template di messaggi
+credenziali
+cartelle documenti
+price lists
+gestione numbering
+percorso di indagine
+assistiti (famigliari)
+emessi(dettaglio)
+assisstiti(handicap)
+Assistiti (Indirizzi)
+Enti (Indirizzi)
+Prestazioni Listino
+Prestazioni Fornitori
+Soci (Movimenti)
+Sussidi (Condizioni)
+Sconti e Maggiorazioni
+Prestazioni FdA
+Prestazioni
+Prestazioni Gruppi
+Medici
+FdA Assistiti
+FdA Enti
+Soci
+FdA Sostitutive
+Maggiorazione Compensi
+FdA
+Accordi
+Enti (Dati Contabili)
+Assistiti (Dati Contabili)
+AbiCab
+Assistiti
+Valute
+Localita
+Provincie
+Regioni
+Enti
+Nazioni
+Lingue
+Ateco
+Continenti
+Ripartizione Geografica
+Emessi (Testata)
+Sussidi (Liquidatori)
+Sussidi (Testata)
+Sussidi (Dettagli)
+Prestazioni FdA Enti
+Emessi (Dettagli Importati)
+Prestazioni FdA Assistiti
+FdA Assistiti (Coperture)
+Tasks
+Richieste di Pagamento
+Assistiti (Dettaglio Coperture)
+Editore Configurazione
+Prestazioni Listino Testata
+Accordo Convenzioni
+Richieste di Pagamento di Sussidi
+MDI
+Portal Login Informations
+MemberOf
+Contacts
+Accounts
+Services
+Products
+Project
+Contacts
+Potentials
+ProjectTask
+Leads
+Accounts
+SalesOrder
+HelpDesk
+ProjectMilestone
+Assets
+Accounts
+Vendors
+Potentials
+PurchaseOrder
+Quotes
+Project
+ProjectTask
+ServiceContracts
+Leads
+Campaigns
+Invoice
+Accounts
+Vendors
+CPRelatedTo
+HelpDesk
+ProjectMilestone
+Assets
+Services
+PurchaseOrder
+Quotes
+ProductFrom
+ProductTo
+Variabili Speciali

@@ -1,0 +1,208 @@
+
+[{
+  "title": "assistiti (famigliari)",
+  "tags": "ENTITY CRM",
+  "text": "[[Documenti]] [[iwDipendentiFda]] assistiti (famigliari) attributes: family_id|Family ID, patient_id|Patient ID, relationship|Relationship, contact_info|Contact Info, emergency_contact|Emergency Contact"},
+
+   {
+      "title": "emessi(dettaglio)",
+      "tags": "ENTITY CRM",
+      "text": "[[emessi(testata)]] [[prestazioni]] attributes: dettaglio_id|Dettaglio ID, emesso_id|Emesso ID, prestazione_id|Prestazione ID, quantita|Quantità, importo|Importo"    },
+
+{
+      "title": "assisstiti(handicap)",
+      "tags": "ENTITY CRM",
+      "text": "[[assistiti]] attributes: handicap_id|Handicap ID, assistito_id|Assistito ID, tipo_handicap|Tipo Handicap, gravita|Gravità, data_riconoscimento|Data Riconoscimento"    },
+      
+      {
+      "title": "Assistiti (Indirizzi)",
+      "tags": "ENTITY CRM",
+      "text": "[[assistiti]] [[comuni]] attributes: indirizzo_id|Indirizzo ID, assistito_id|Assistito ID, tipo_indirizzo|Tipo Indirizzo, indirizzo|Indirizzo, cap|CAP, comune_id|Comune ID"    },
+
+
+ {
+      "title": "Enti (Indirizzi)",
+      "tags": "ENTITY CRM",
+      "text": "[[enti]] [[comuni]] attributes: indirizzo_id|Indirizzo ID, ente_id|Ente ID, tipo_indirizzo|Tipo Indirizzo, indirizzo|Indirizzo, cap|CAP, comune_id|Comune ID"    },
+
+          {
+      "title": "Prestazioni Listino",
+      "tags": "ENTITY CRM",
+      "text": "[[prestazioni]] [[listini]] attributes: prestazione_listino_id|Prestazione Listino ID, prestazione_id|Prestazione ID, listino_id|Listino ID, prezzo|Prezzo, valido_dal|Valido Dal, valido_al|Valido Al"    },
+
+        {"title": "Prestazioni fornitori",
+      "tags": "ENTITY CRM",
+      "text": "[[iwGaranzieListino]] [[fornitori]] attributes: prestazione_fornitore_id|Prestazione Fornitore ID, prestazione_id|Prestazione ID, fornitore_id|Fornitore ID, codice_fornitore|Codice Fornitore, prezzo|Prezzo, valido_dal|Valido Dal, valido_al|Valido Al"    },
+       { "title": "Soci (Movimenti)",
+      "tags": "ENTITY CRM",
+      "text": "Attributes: movimento_id|Movimento ID, socio_id|Socio ID, tipo_movimento|Tipo Movimento, data_movimento|Data Movimento, motivazione|Motivazione"    }
+
+      ,{
+      "title": "Sussidi (Condizioni)",
+      "tags": "ENTITY CRM",
+      "text": "Attributes: condizione_id|Condizione ID, sussidio_id|Sussidio ID, fda_id|FdA ID, giorni_carenza|Giorni Carenza, tipo_carenza|Tipo Carenza"    },
+    {
+      "title": "Sconti e Maggiorazioni",
+      "tags": "ENTITY CRM",
+      "text": "[[Sussidi (Condizioni)]]\n\nAttributes:\nsconto_id|Sconto ID\naccordo_id|AccordoID\ntipo|Tipo\nvalore|Valore\nvalido_dal|Valido Dal\nvalido_al|Valido Al\n\n"
+    },
+    {
+      "title": "Prestazioni FdA",
+      "tags": "ENTITY CRM",
+      "text": "[[prestazioni]] [[fda]]\n\nAttributes:\nprestazione_fda_id|Prestazione FdA ID\nprestazione_id|Prestazione ID\nfda_id|FdA ID\nmassimale|Massimale\nfranchigia|Franchigia\n\n"
+    },
+    {
+      "title": "Prestazioni",
+      "tags": "ENTITY CRM",
+      "text": "[[iwFdaGaranzia]] [[iwGaranzieFornitori]] Attributes: prestazione_id|Prestazione ID, descrizione|Descrizione, codice|Codice, categoria|Categoria"    },
+    {
+      "title": "Prestazioni Gruppi",
+      "tags": "ENTITY CRM",
+      "text": "[[iwGaranzie]]\n\nAttributes:\ngruppo_id|Gruppo ID\nnome_gruppo|Nome Gruppo\ndescrizione|Descrizione"
+    },
+    {
+      "title": "Medici",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nmedico_id|Medico ID\nente_id|Ente ID\nnome|Nome\nspecializzazione|Specializzazione1"
+    },
+
+        {
+      "title": "FdA Assistiti",
+      "tags": "ENTITY CRM",
+      "text": "[[iwEmessi]] \n\nAttributes:\nfda_assistito_id|FdA Assistito ID\nfda_id|FdA ID\nassistito_id|Assistito ID\nmassimale|Massimale\nfranchigia|Franchigia\n"
+    },
+
+
+    {
+      "title": "FdA Enti",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiFda]]\n\nAttributes:\nfda_ente_id|FdA Ente ID\nfda_id|FdA ID\nente_id|Ente ID\npriorita_liquidazione Priorità Liquidazione"},
+
+    {
+      "title": "Soci",
+      "tags": "ENTITY CRM",
+      "text": "[[iwSociMovimenti]]\n\nAttributes:\nsocio_id|Socio ID\nassistito_id|Assistito ID\nente_id|Ente ID\ntipo_socio|Tipo Socio"
+    },
+
+    {
+      "title": "FdA Sostitutive",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nfda_sostitutiva_id|FdA Sostitutiva ID\nfda_originale_id|FdA Originale ID\nfda_sostituta_id|FdA Sostituta ID\n\n"    },
+    {
+      "title": "Maggiorazione Compensi",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\nmaggiorazione_id|Maggiorazione ID\naccordo_id|Accordo ID\nimporto_maggiorazione|Importo Maggiorazione"
+    },
+    {
+      "title": "FdA",
+      "tags": "ENTITY CRM",
+      "text": "[[iwFdaGaranzia]] [[Documenti]] [[iwEntifda]] [[cbCalendar]]\n\nAttributes:\nfda_id|FdA ID\nnome_fda|Nome FdA\ndescrizione|Descrizione\n"    },
+    {
+      "title": "Accordi",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiFda]] [[iwEntifda]] [[iwSussidiCondizioni]] [[iwMaggiorazioneCompensi]] [[Documenti]] [[cbCalendar]]\n\nAttributes:\naccordo_id|Accordo ID\nente_id|Ente ID\ndata_accordo|Data Accordo\n\n"    },
+
+        {
+      "title": "Enti (Dati Contabili)",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiFda]] [[iwAccordo]]\n\nAttributes:\ndato_contabile_id|Dato Contabile ID\nente_id|Ente ID\nbanca_id|Banca ID\niban|IBAN\nswift|SWIFT\n\n"    },
+    {
+      "title": "Assistiti (Dati Contabili)",
+      "tags": "ENTITY CRM",
+      "text": "[[iwEmessi]] [[iwDipendentiFda]]\n\nAttributes:\ndato_contabile_id|Dato Contabile ID\nassistito_id|Assistito ID\nbanca_id|Banca ID\niban|IBAN\nswift|SWIFT\n" },
+    {
+      "title": "AbiCab",
+      "tags": "ENTITY CRM",
+      "text": "[[iwEnticontabili]] [[iwDipendentiContabili]]\n\nAttributes:\nabicab_id|AbiCab ID\nbanca_id|BancaID\nlocalita_id|Località ID\nabi|ABI\ncab|CAB\n\n"
+    },
+    {
+      "title": "Assistiti",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiContabili]] [[iwDipendentiFamigliari]] [[iwDipendentiFda]] [[iwDipendentiHandicap]] [[iwDipendentiIndirizzi]] [[iwSoci]] [[cbCalendar]] [[iwEmessi]] [[Documenti]]Assistito n.\n Titolo onorifico\n Cognome\n Nome\n Codice fiscale\n Partita IVA\n Sesso\n Data di Nascita\n Cittadinanza\n Data morte\n Stato civile\n Titolo Di Studio\n Categoria Attivita\n Professione\n Assistito\n Abilitato portale\n Codice Univoco\n Assegnato a\n Creato da\n Orario creazione\n Orario modifica\n Descrizione\n Comune di Nascita\n Nazione Nascita\n Lingua\n Rif. Interno Mutua\n Pagante\n Matricola Mutua\n Vecchio Id\n Data Assunzione\n Data Dimissione\n Tipo Dipendente Interno\n Email\n Stato\n Data Stato\n Utenza Portale\n Eta\n Area Geografica\n Denominazione\n Ente Riferimento\n Mutua\n Numero di Giorni\n % Copertura\n Codice Identificativo\n Sia\n Agenzia Mutua\n Macro Area\n Presidio Mutua\n Agezia Dismessa\n Data Dismissione Agenzia\n Riferimento Interno\n Commerciale Interno\n Fonte Commerciale\n Data Inizio Trattativa\n Note\n Matricola Ente Riferimento\n Applicazione LTC primaria Data di Calcolo\n Applicazione LTC secondaria Data di Calcolo\n Applicazione LTC primaria\n Applicazione LTC primaria Importo\n Applicazione LTC secondaria\n Applicazione LTC secondaria Importo\n Visus Eseguito\n Valore Visus sx\n Valore visus dx\n Iscritto da ante 1998\n Iscritto regolare dal 2014\n Sussidio Solidarieta Erogato\n Sussidio Straordinario 1\n Sussidio Straordinario 2\n Sussidio Straordinario 3\n Sussidio allo Studio 1\n Sussidio allo Studio 2\n Visus Lontano sx\n Visus Lontano dx\n Visus Permanenza sx\n Visus Permananza dx\n Visus Vicino Ultimo Aggiornamento\n Visus Lontano Ultimo Aggiornamento\n Visus Permanenza Ultimo Aggiornamento\n Data Lavorato Sussidio Straordinario 1\n Data Lavorato Sussidio Straordinario 2\n Data Lavorato Sussidio Straordinario 3\n Data Lavorato Sussidio Solidarieta Erogato\n Data Lavorato Sussidio allo Studio 1\n Data Lavorato Sussidio allo Studio 2\n Quantita Sussidio Straordinario 1\n Quantita Sussidio Straordinario 2\n Quantita Sussidio Straordinario 3\n Quantita Sussidio Solidarieta Erogato\n Quantita Sussidio allo Studio 1\n Quantita Sussidio allo Studio 2\n Anni di Anzianita di Permanenza\n Provincia\n"    },
+    {
+      "title": "Valute",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiContabili]] [[iwEnticontabili]]\n\nAttributes:\nvaluta_id|Valuta ID\ncodice|Codice\nsimbolo|Simbolo\n\n"    },
+    {
+      "title": "Localita",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendenti]] [[iwDipendentiIndirizzi]] [[iwEntiIndirizzi]] [[iwTabAbiCab]]\n\nAttributes:\nlocalita_id|Località ID\nprovincia_id|Provincia ID\nnome|Nome\ncap|CAP\n\n"    },
+    {
+      "title": "Provincie",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiIndirizzi]] [[iwEntiIndirizzi]] [[iwTabLocalita]] [[iwTabAbiCab]]\n\nAttributes:\nprovincia_id|Provincia ID\nregione_id|Regione ID\nnome|Nome\nsigla|Sigla\n\n"    },
+    {
+      "title": "Regioni",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendentiIndirizzi]] [[iwEntiIndirizzi]] [[iwTabLocalita]] [[iwTabProvince]]\n\nAttributes:\nregione_id|Regione ID\nnome|Nome\ncodice|Codice\n\n"    },
+        {
+      "title": "Enti",
+      "tags": "ENTITY CRM",
+      "text": "[[iwAccordo]] [[iwEnticontabili]] [[iwEntifda]] [[iwEntiIndirizzi]] [[iwSoci]] [[Documenti]] [[iwEmessi]] [[cbCalendar]] [[iwDipendentiFda]] [[iwGaranzieListino]] [[iwDipendenti]]\n\nAttributes:\nente_id|Ente ID\nateco_id|Ateco ID\nnazione_id|Nazione ID\nragione_sociale|Ragione Sociale\npiva|Partita IVA\n\n"    },
+    {
+      "title": "Nazioni",
+      "tags": "ENTITY CRM",
+      "text": "[[iwTabLocalita]] [[iwTabProvince]] [[iwTabRegioni]]\n\nAttributes:\nnazione_id|Nazione ID\ncontinente_id|Continente ID\nnome|Nome\ncodice|Codice\n\n"    },
+    {
+      "title": "Lingue",
+      "tags": "ENTITY CRM",
+      "text": "[[iwDipendenti]] [[iwTabNazioni]] [[iwEnti]]\n\nAttributes:\nlingua_id|Lingua ID\nnome|Nome\ncodice|Codice\n\n"    },
+    {
+      "title": "Ateco",
+      "tags": "ENTITY CRM",
+      "text": "[[iwTabNazioni]]\n\nAttributes:\nateco_id|Ateco ID\ncodice|Codice\ndescrizione|Descrizione\n\n"    },
+    {
+      "title": "Continenti",
+      "tags": "ENTITY CRM",
+      "text": "[[iwTabNazioni]]\n\nAttributes:\ncontinente_id|ContinenteID\nnome|Nome\ncodice|Codice\n\n"
+    },
+    {
+      "title": "Ripartizione Geografica",
+      "tags": "ENTITY CRM",
+      "text": "[[iwTabLocalita]] [[iwTabNazioni]] [[iwTabProvince]] [[iwTabRegioni]] [[iwEnti]] [[iwDipendenti]]\n\nAttributes:\nripartizione_id|Ripartizione ID\nnome|Nome\nzona|Zona\n\n"    },
+    {
+      "title": "Emessi (Testata)",
+      "tags": "ENTITY CRM",
+      "text": "[[iwEmessi]]\n\nAttributes:\nemesso_id|Emesso ID\nente_id|Ente ID\naccordo_id|Accordo ID\ndata_emissione|Data Emissione\nimporto|Importo\n\n"    },
+    {
+      "title": "Sussidi (Liquidatori)",
+      "tags": "ENTITY CRM",
+      "text": "[[Documenti]]\n\nAttributes:\nliquidatore_id|Liquidatore ID\nsussidio_id|Sussidio ID\nliquidatore_nome|Nome Liquidatore\n\n"
+    },
+    {
+      "title": "Sussidi (Testata)",
+      "tags": "ENTITY CRM",
+      "text": "[[Documenti]]\n\nAttributes:\nsussidio_id|Sussidio ID\nassistito_id|Assistito ID\nfda_id|FdA ID\ndata_richiesta|Data Richiesta\n\n"
+    },
+    {
+      "title": "Sussidi (Dettagli)",
+      "tags": "ENTITY CRM",
+      "text": "[[Documenti]]\n\nAttributes:\ndettaglio_id|Dettaglio ID\nsussidio_id|Sussidio ID\nprestazione_id|Prestazione ID\nimporto|Importo\n"
+    },
+    {
+      "title": "Prestazioni FdA Enti",
+      "tags": "ENTITY CRM",
+      "text": "[[Documenti]]\n\nAttributes:\nprestazione_fda_ente_id|Prestazione FdA Ente ID\nprestazione_id|Prestazione ID\nfda_id|FdA ID\nente_id|Ente ID\n\n"    },
+    {
+      "title": "Emessi (Dettagli Importati)",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\ndettaglio_importato_id|Dettaglio Importato ID\nemesso_id|Emesso ID\nimporto|Importo\n\n"    },
+    {
+      "title": "Prestazioni FdA Assistiti",
+      "tags": "ENTITY CRM",
+      "text": "[[Documenti]]\n\nAttributes:\nprestazione_fda_assistito_id|Prestazione FdA Assistito ID\nprestazione_id|Prestazione ID\nfda_id|FdA ID\nassistito_id|Assistito ID\n\n"    },
+    {
+      "title": "FdA Assistiti (Coperture)",
+      "tags": "ENTITY CRM",
+      "text": "\n\nAttributes:\ncopertura_id|Copertura ID\nfda_id|FdA ID\nassistito_id|Assistito ID\nmese|Mese\ncoperto|Coperto\n\n"
+    }
+
+       ,{     "title": "Assistiti (Dettaglio Coperture)",
+      "tags": "ENTITY CRM",
+      "text": " [[fda]]\n\nAttributes:\ncopertura_id|Copertura ID\nassistito_id|Assistito ID\nfda_id|FdA ID\nmese|Mese\nimporto Importo\n\n"
+    },    {
+      "title": "Prestazioni Listino Testata",
+      "tags": "ENTITY CRM",
+      "text": "[[listini]] [[iwGaranzieListino]]\n\nAttributes:\ntestata_id|Testata ID\nlistino_id|Listino ID\nfornitore_id|Fornitore ID\ndata_inizio|Data Inizio\n\n"
+    }]
+   
