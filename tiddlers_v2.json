@@ -16,7 +16,7 @@
 ,{
   "title": "Aziende",
   "tags": "ENTITY CRM",
-  "text": "[[MemberOf]] [[Contatti]]  Contatti: [[Opportunita]] [[Preventivi]] [[Ordini di Vendita]] [[Fatture]] [[Attivita]] [[Email]] [[Documenti]] [[Assistenza Clienti]] [[Prodotti]] [[Campagne]] [[Servizi]] [[CobroPago]] [[Assets]] [[Progetti]] [[InventoryDetails]] [[cbSurveyDone]] [[cbSurveyAnswer]] [[cbCompany]] [[Messages]] \n\nAziende attributes: account_no|Nr Azienda, accountname|Nome Azienda, phone|Telefono, website|Sito Web, fax|Fax, tickersymbol|Simbolo Ticker, otherphone|Altro Telefono, account_id|Membro di, email1|Email, employees|Impiegati, email2|Altra Email, ownership|Proprieta, rating|Valutazione, industry|Industria, siccode|Codice SIC, accounttype|Tipo, annual_revenue|Fatturato Annuo, emailoptout|Blocca Email, notify_owner|Notifica Proprietario, assigned_user_id|Assegnato a, createdtime|Data Creazione, modifiedtime|Data Modifica, modifiedby|Last Modified By, bill_street|Indirizzo (Fatturazione), ship_street|Indirizzo (Spedizione), bill_city|Cittá (Fatturazione), ship_city|Cittá (Spedizione), bill_state|Provincia (Fatturazione), ship_state|Provincia (Spedizione), bill_code|Codice (Fatturazione), ship_code|Codice (Spedizione), bill_country|Paese (Fatturazione), ship_country|Paese (Spedizione), bill_pobox|BOX (fatturazione), ship_pobox|BOX (spedizione), description|Descrizione, campaignrelstatus|Stato, isconvertedfromlead|Viene convertito, convertedfromlead|Convertito, created_user_id|Creato da, oldid|Vecchio Id"},
+  "text": "[[MemberOf]] [[Contatti]]  [[Opportunita]] [[Preventivi]] [[Ordini di Vendita]] [[Fatture]] [[Attivita]] [[Email]] [[Documenti]] [[Assistenza Clienti]] [[Prodotti]] [[Campagne]] [[Servizi]] [[CobroPago]] [[Assets]] [[Progetti]] [[InventoryDetails]] [[cbSurveyDone]] [[cbSurveyAnswer]] [[cbCompany]] [[Messages]] \n\nAziende attributes: account_no|Nr Azienda, accountname|Nome Azienda, phone|Telefono, website|Sito Web, fax|Fax, tickersymbol|Simbolo Ticker, otherphone|Altro Telefono, account_id|Membro di, email1|Email, employees|Impiegati, email2|Altra Email, ownership|Proprieta, rating|Valutazione, industry|Industria, siccode|Codice SIC, accounttype|Tipo, annual_revenue|Fatturato Annuo, emailoptout|Blocca Email, notify_owner|Notifica Proprietario, assigned_user_id|Assegnato a, createdtime|Data Creazione, modifiedtime|Data Modifica, modifiedby|Last Modified By, bill_street|Indirizzo (Fatturazione), ship_street|Indirizzo (Spedizione), bill_city|Cittá (Fatturazione), ship_city|Cittá (Spedizione), bill_state|Provincia (Fatturazione), ship_state|Provincia (Spedizione), bill_code|Codice (Fatturazione), ship_code|Codice (Spedizione), bill_country|Paese (Fatturazione), ship_country|Paese (Spedizione), bill_pobox|BOX (fatturazione), ship_pobox|BOX (spedizione), description|Descrizione, campaignrelstatus|Stato, isconvertedfromlead|Viene convertito, convertedfromlead|Convertito, created_user_id|Creato da, oldid|Vecchio Id"},
 
 
 
@@ -59,6 +59,11 @@
   "tags": "ENTITY CRM",
   "text": "[[Documenti]] attributes: id|ID, domanda|Domanda, risposta|Risposta, categoria|Categoria, visualizzazioni|Visualizzazioni, data_creazione|Data creazione, autore|Autore, stato|Stato"}
 
+,{
+  "title": "fornitori",
+  "tags": "ENTITY CRM",
+  "text": "[[Prodotti]]\n[[Ordini di Acquisto]]\n[[Contatti]]\n[[Email]]\n[[CobroPago]]\n[[Servizi]]\n[[Attivita]]\n[[InventoryDetails]]\n[[Documenti]] attributes: Nome Fornitore:\nNr. Fornitore:\nTelefono:\nEmail:\nSito Web:\nCodice Contabile:\nCategoria:\nOrario creazione:\nOrario modifica:\nUltima Modifica di:\nVia:\nBOX:\nCitta:\nProvincia:\nCAP:\nStato:\nDescrizione:\nAssegnato a:\nCreato da:\n"}
+
 
 
 ,{
@@ -66,12 +71,17 @@
   "tags": "ENTITY CRM",
   "text": "[[pricebookproductrel]] attributes: id|ID, prodotto_id|Prodotto, prezzo|Prezzo,F sconto|Sconto, data_inizio|Data inizio, data_fine|Data fine, valuta|Valuta, data_creazione|Data creazione"}
 
+,{
+  "title": "preventivi",
+  "tags": "ENTITY CRM",
+  "text": "Nr. Preventivo, Soggetto, Nome Opportunita, Stadio Preventivo, Valido fino a, Nome Contatto, Trasportatore, Sub totale, Spedizione, Responsabile inventario, Arrotondamento, Totale, Tipo Tassa, Sconto Percentuale, Ammontare Sconto, S&H Amount, Nome Azienda, Assegnato a, Data Creazione, Data Modifica, Ultima Modifica di, Valuta, Tasso Conversione, Indirizzo (fatturazione), Indirizzo (spedizione), Citta (fatturazione), Citta (spedizione), Provincia (fatturazione), Provincia (spedizione), Codice Fatturazione, Codice Spedizione, Stato (fatturazione), Stato (spedizione), BOX (fatturazione), BOX (spedizione), Descrizione, Terms & Conditions, Creato da, Termini e Condizioni, Totale Lordo, Sconto Linea, Sconto Globale, Sconto Totale, Net Totale (aGD), SH Totale, SH Imposta, Adeguamento Finale, Somma Totale, Net Totale (bGD), VAT, Vendite, Servizio, Tassare Totale, Ritenzione Tassare Totale, [[Aziende]] [[Contatti]] [[Opportunita]] [[Utenti]] [[Ordini di Vendita]] [[Attivita]] [[Documenti]] [[CobroPago]] [[InventoryDetails]]"}
 
 
 ,{
   "title": "ordini di acquisto",
   "tags": "ENTITY CRM",
   "text": "[[Attivita]] [[Documenti]] [[CobroPago]] [[InventoryDetails]] attributes: id|ID, fornitore_id|Fornitore, data_ordine|Data ordine, stato|Stato, importo_totale|Importo totale, metodo_pagamento|Metodo pagamento, data_consegna|Data consegna, note|Note"}
+
 
 
 
@@ -127,6 +137,12 @@
   "tags": "ENTITY CRM",
   "text": "[[MCRelatedTo]] [[Documenti:]] commenti attributes: id|ID, id_cliente|Cliente, id_ticket|Ticket, data_commento|Data, testo|Testo, autore|Autore"
 },
+
+{
+  "title": "operazioni",
+  "tags": "ENTITY CRM",
+  "text": "Nome Operazione, Tipo, Priorita, Progetto, Assegnata a, Codice Operazione, Numero Operazione, Progresso, Ore lavorate, Data inizio, Data Fine, Tempo Creato, Tempo modificato, Ultima Modifica di, Descrizione, E-Mail, Status, Creato da, [[Documenti]], [[Email]]"},
+
 
 {
   "title": "scadenze",
@@ -301,7 +317,7 @@
       "tags": "ENTITY CRM",
       "text": "[[prestazioni]] [[listini]] attributes: prestazione_listino_id|Prestazione Listino ID, prestazione_id|Prestazione ID, listino_id|Listino ID, prezzo|Prezzo, valido_dal|Valido Dal, valido_al|Valido Al"    },
         {
-      "title": "prestazioni fornitori",
+      "title": "Prestazioni fornitori",
       "tags": "ENTITY CRM",
       "text": "[[iwGaranzieListino]] [[fornitori]] attributes: prestazione_fornitore_id|Prestazione Fornitore ID, prestazione_id|Prestazione ID, fornitore_id|Fornitore ID, codice_fornitore|Codice Fornitore, prezzo|Prezzo, valido_dal|Valido Dal, valido_al|Valido Al"    },
 
@@ -482,12 +498,12 @@
     {
       "title": "Assistiti (Dettaglio Coperture)",
       "tags": "ENTITY CRM",
-      "text": " [[fda]]\n\nAttributes:\ncopertura_id|Copertura ID\nassistito_id|Assistito ID\nfda_id|FdA ID\nmese|Mese\nimporto Importo\n\nCon uno entita:\nassistiti|1\nfda|1"
+      "text": " [[fda]]\n\nAttributes:\ncopertura_id|Copertura ID\nassistito_id|Assistito ID\nfda_id|FdA ID\nmese|Mese\nimporto Importo\n\n"
     },
     {
       "title": "Editore Configurazione",
       "tags": "ENTITY CRM",
-      "text": "\n\nAttributes:\nconfig_id|Config ID\nnome|Nome\nvalore|Valore\ntipo|Tipo\n\nCon varie entita:\nmoduli|*"
+      "text": "\n\nAttributes:\nconfig_id|Config ID\nnome|Nome\nvalore|Valore\ntipo|Tipo\n\n"
     },
     {
       "title": "Prestazioni Listino Testata",
